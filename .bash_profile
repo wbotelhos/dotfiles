@@ -1,9 +1,8 @@
-# ALIASES
+# ALIAS
 	alias pstom='ps aux | grep tomcat'
 	alias celar='clear' # fail ^^
 	alias ..='cd ..'
 	alias la='ls -lah'
-	alias grep='grep --color=auto' # highlight search term
 
 	# GIT
 		alias gst='git status'
