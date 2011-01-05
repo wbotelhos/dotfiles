@@ -1,0 +1,24 @@
+[user]
+	name = Washington Botelho
+	email = wbotelhos@gmail.com
+
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+	
+[color "branch"]
+	current = cyan
+	local = yellow
+	remote = blue
+	
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red
+	new = green bold
+
+[color "status"]
+	added = green
+	changed = yellow
+	untracked = cyan
