@@ -1,6 +1,6 @@
 # ALIAS
 	alias pstom='ps aux | grep tomcat'
-	alias celar='clear' # fail ^^
+	alias cls='clear'
 	alias ..='cd ..'
 	alias la='ls -lah'
 
@@ -9,8 +9,8 @@
 
 
 # ENVIRONMENT
-	export TOMCAT_HOME=/Applications/apache-tomcat-6.0.29
-	export ANT_HOME=/Applications/apache-ant-1.7.1
+	export TOMCAT_HOME=/Users/${USER}/Development/apache-tomcat-6.0.29
+	export ANT_HOME=/Users/${USER}/Development/apache-ant-1.7.1
 
 	export PATH=$PATH:$ANT_HOME/bin
 
