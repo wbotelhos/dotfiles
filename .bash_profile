@@ -7,12 +7,12 @@
 	# GIT
 		alias gst='git status'
 
-
 # ENVIRONMENT
 	export TOMCAT_HOME=/Users/${USER}/Development/apache-tomcat-6.0.29
 	export ANT_HOME=/Users/${USER}/Development/apache-ant-1.7.1
+	export MYSQL_HOME=/usr/local/mysql-5.1.42-osx10.5-x86_64
 
-	export PATH=$PATH:$ANT_HOME/bin
+	export PATH=$PATH:$ANT_HOME/bin:$MYSQL_HOME/bin
 
 	# WINE
 		export EP_LIB=/Users/${USER}/workspace/wine/env/ep6lib
