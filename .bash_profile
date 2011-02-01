@@ -20,6 +20,8 @@
 
 		export PATH=$PATH:$JAVA_HOME/bin
 
+# RUBY
+	[[ -s "~/.rvm/scripts/rvm" ]] && source "~/.rvm/scripts/rvm" # loads RVM into a shell session
 
 # COLOR
 	export GREP_OPTIONS='--color=auto'
@@ -31,7 +33,7 @@
 	parse_git_branch() {
 	  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 	}
- 
+
 	# 30m - Black | 31m - Red | 32m - Green | 33m - Yellow | 34m - Blue | 35m - Purple | 36m - Cyan | 37m - White | green others...
 	# 0 - Normal | 1 - Bold | 2 -
 	function prompt {
@@ -44,5 +46,5 @@
 		local CYAN="\[\033[0;36m\]"
 		local WHITE="\[\033[0;37m\]"
 		local WHITEBOLD="\[\033[1;37m\]"
-		export PS1="${WHITE}\u${RED}@${PURPLE}\h ${CYAN}\w ${WHITE}\$(parse_git_branch) ${YELLOW}$ \[\e[m\]\[\e[m\]"
+		export PS1="${WHITE}\u${RED}@${PURPLE}\h ${CYAN}\w ${WHITE}(`~/.rvm/bin/rvm-prompt v`) \$(parse_git_branch) ${YELLOW}$ \[\e[m\]\[\e[m\]"
 	}; prompt
