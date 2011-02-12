@@ -1,12 +1,3 @@
-# ALIAS
-	alias pstom='ps aux | grep tomcat'
-	alias cls='clear'
-	alias ..='cd ..'
-	alias la='ls -lah'
-
-	# GIT
-		alias gst='git status'
-
 # ENVIRONMENT
 	export TOMCAT_HOME=/Users/${USER}/Development/apache-tomcat-6.0.29
 	export ANT_HOME=/Users/${USER}/Development/apache-ant-1.7.1
@@ -16,12 +7,26 @@
 
 	# WINE
 		export EP_LIB=/Users/${USER}/workspace/wine/env/ep6lib
-		export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home
+		#export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home
+		export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home
 
 		export PATH=$PATH:$JAVA_HOME/bin
 
+	# ALIAS
+		alias pstom='ps aux | grep tomcat'
+		alias cls='clear'
+		alias ..='cd ..'
+		alias la='ls -lah'
+		alias clstom='rm ${TOMCAT_HOME}/logs/*.log'
+		alias shuttom='${TOMCAT_HOME}/bin/shutdown.sh'
+		alias starttom='${TOMCAT_HOME}/bin/startup.sh'
+
+		# GIT
+			alias gst='git status'
+
 # RUBY
-	[[ -s "~/.rvm/scripts/rvm" ]] && source "~/.rvm/scripts/rvm" # loads RVM into a shell session
+	source ~/.rvm/scripts/rvm
+	#[[ -s "~/.rvm/scripts/rvm" ]] && source "~/.rvm/scripts/rvm" # loads RVM into a shell session
 
 # COLOR
 	export GREP_OPTIONS='--color=auto'
