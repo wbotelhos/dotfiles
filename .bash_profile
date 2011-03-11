@@ -7,7 +7,6 @@
 
 	# WINE
 		export EP_LIB=/Users/${USER}/workspace/wine/env/ep6lib
-		#export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home
 		export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home
 
 		export PATH=$PATH:$JAVA_HOME/bin
@@ -24,9 +23,11 @@
 		# GIT
 			alias gst='git status'
 
+		# MKV
+			alias mkv='~/Development/mkvdts2ac3.sh -f -i -n -d -c English --new ~/mkv.mkv'
+
 # RUBY
 	source ~/.rvm/scripts/rvm
-	#[[ -s "~/.rvm/scripts/rvm" ]] && source "~/.rvm/scripts/rvm" # loads RVM into a shell session
 
 # COLOR
 	export GREP_OPTIONS='--color=auto'
