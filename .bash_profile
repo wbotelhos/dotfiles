@@ -3,28 +3,26 @@
 	export ANT_HOME=/Users/${USER}/Development/apache-ant-1.7.1
 	export MYSQL_HOME=/usr/local/mysql-5.1.42-osx10.5-x86_64
 
-	export PATH=$PATH:$ANT_HOME/bin:$MYSQL_HOME/bin
-
 	# WINE
-		export EP_LIB=/Users/${USER}/workspace/wine/env/ep6lib
-		export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home
+	export EP_LIB=/Users/${USER}/workspace/wine/env/ep6lib
+	export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home
 
-		export PATH=$PATH:$JAVA_HOME/bin
+	export PATH=$PATH:$JAVA_HOME/bin:$ANT_HOME/bin:$MYSQL_HOME/bin
 
-	# ALIAS
-		alias pstom='ps aux | grep tomcat'
-		alias cls='clear'
-		alias ..='cd ..'
-		alias la='ls -lah'
-		alias clstom='rm ${TOMCAT_HOME}/logs/*.log'
-		alias shuttom='${TOMCAT_HOME}/bin/shutdown.sh'
-		alias starttom='${TOMCAT_HOME}/bin/startup.sh'
+# ALIAS
+	alias pstom='ps aux | grep tomcat'
+	alias cls='clear'
+	alias ..='cd ..'
+	alias la='ls -lah'
+	alias clstom='rm ${TOMCAT_HOME}/logs/*.log'
+	alias shuttom='${TOMCAT_HOME}/bin/shutdown.sh'
+	alias starttom='${TOMCAT_HOME}/bin/startup.sh'
 
-		# GIT
-			alias gst='git status'
-
-		# MKV
-			alias mkv='~/Development/mkvdts2ac3.sh -f -i -n -d -c English --new ~/mkv.mkv'
+	# GIT
+	alias gst='git status'
+	
+	# MKV
+	alias mkv='~/Development/mkvdts2ac3.sh -f -i -n -d -c English --new ~/mkv.mkv'
 
 # RUBY
 	source ~/.rvm/scripts/rvm
