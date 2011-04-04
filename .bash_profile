@@ -1,6 +1,6 @@
 # ENVIRONMENT
 	export TOMCAT_HOME=/Users/${USER}/Development/apache-tomcat-6.0.29
-	export ANT_HOME=/Users/${USER}/Development/apache-ant-1.7.1
+	export ANT_HOME=/Users/${USER}/Development/apache-ant-1.8.2
 	export MYSQL_HOME=/usr/local/mysql-5.1.42-osx10.5-x86_64
 
 	# WINE
