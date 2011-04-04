@@ -24,6 +24,9 @@
 	# MKV
 	alias mkv='~/Development/mkvdts2ac3.sh -f -i -n -d -c English --new ~/mkv.mkv'
 
+	# WINE
+	alias windex='cp /Users/botelho/Programmer/Wine/resources/* /Users/botelho/workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/com.elasticpath.search/WEB-INF/conf/resources'
+
 # RUBY
 	source ~/.rvm/scripts/rvm
 
