@@ -1,13 +1,10 @@
 # ENVIRONMENT
-	export TOMCAT_HOME=/Users/${USER}/Development/apache-tomcat-6.0.29
+	export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home
 	export ANT_HOME=/Users/${USER}/Development/apache-ant-1.8.2
 	export MYSQL_HOME=/usr/local/mysql-5.1.42-osx10.5-x86_64
+	export TOMCAT_HOME=/Users/${USER}/Development/apache-tomcat-6.0.32
 
-	# WINE
-	export EP_LIB=/Users/${USER}/workspace/wine/env/ep6lib
-	export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home
-
-	export PATH=$PATH:$JAVA_HOME/bin:$ANT_HOME/bin:$MYSQL_HOME/bin
+	export PATH=$PATH:$JAVA_HOME/bin:$ANT_HOME/bin:$MYSQL_HOME/bin:$TOMCAT_HOME/bin
 
 # ALIAS
 	alias pstom='ps aux | grep tomcat'
@@ -23,9 +20,6 @@
 	
 	# MKV
 	alias mkv='~/Development/mkvdts2ac3.sh -f -i -n -d -c English --new ~/mkv.mkv'
-
-	# WINE
-	alias windex='cp /Users/botelho/Programmer/Wine/resources/* /Users/botelho/workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/com.elasticpath.search/WEB-INF/conf/resources'
 
 # RUBY
 	source ~/.rvm/scripts/rvm
