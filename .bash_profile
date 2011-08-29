@@ -1,23 +1,30 @@
 # ENVIRONMENT
-	export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home
 	export ANT_HOME=/Users/${USER}/Development/apache-ant-1.8.2
+	export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home
+	export JETTY_HOME=/Users/${USER}/Development/jetty-6.1.3
+	export M2_HOME=/Users/${USER}/Development/apache-maven-3.0.3
 	export MYSQL_HOME=/usr/local/mysql-5.1.42-osx10.5-x86_64
 	export TOMCAT_HOME=/Users/${USER}/Development/apache-tomcat-6.0.32
 
-	export PATH=$PATH:$JAVA_HOME/bin:$ANT_HOME/bin:$MYSQL_HOME/bin:$TOMCAT_HOME/bin
+	export REPO=~/.m2/repository
+
+	export PATH=$PATH:$ANT_HOME/bin:$JAVA_HOME/bin:$JAVA_HOME/bin:$M2_HOME/bin:$MYSQL_HOME/bin:$TOMCAT_HOME/bin
 
 # ALIAS
-	alias pstom='ps aux | grep tomcat'
-	alias cls='clear'
 	alias ..='cd ..'
-	alias la='ls -lah'
+	alias cls='clear'
 	alias clstom='rm ${TOMCAT_HOME}/logs/*.log'
+	alias clsbash='echo "" > .bash_history'
+	alias la='ls -lah'
+	alias pstom='ps aux | grep tomcat'
 	alias shuttom='${TOMCAT_HOME}/bin/shutdown.sh'
 	alias starttom='${TOMCAT_HOME}/bin/startup.sh'
 
 	# GIT
 	alias gst='git status'
-	
+	alias gpl='git pull origin master'
+	alias gps='git push origin master'
+
 	# MKV
 	alias mkv='~/Development/mkvdts2ac3.sh -f -i -n -d -c English --new ~/mkv.mkv'
 
