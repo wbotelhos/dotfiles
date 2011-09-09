@@ -1,6 +1,8 @@
 # ENVIRONMENT
 	export ANT_HOME=/Users/${USER}/Development/apache-ant-1.8.2
 	export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home
+#	export JAVA_HOME=~/Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home
+	export JBOSS_HOME=~/Users/${USER}/Development/jboss-5.1.0.GA
 	export JETTY_HOME=/Users/${USER}/Development/jetty-6.1.3
 	export M2_HOME=/Users/${USER}/Development/apache-maven-3.0.3
 	export MYSQL_HOME=/usr/local/mysql-5.1.42-osx10.5-x86_64
@@ -8,7 +10,7 @@
 
 	export REPO=~/.m2/repository
 
-	export PATH=$PATH:$ANT_HOME/bin:$JAVA_HOME/bin:$JAVA_HOME/bin:$M2_HOME/bin:$MYSQL_HOME/bin:$TOMCAT_HOME/bin
+	export PATH=$PATH:$ANT_HOME/bin:$JAVA_HOME/bin:$JBOSS_HOME/bin:$JAVA_HOME/bin:$M2_HOME/bin:$MYSQL_HOME/bin:$TOMCAT_HOME/bin
 
 # ALIAS
 	alias ..='cd ..'
