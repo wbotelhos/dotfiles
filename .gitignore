@@ -4,7 +4,11 @@ dist
 target
 WebContent/WEB-INF/classes
 
+doc.txt
+test/runner.htm
+
 .DS_Store
 
 *.class
+*.zip
 *.war

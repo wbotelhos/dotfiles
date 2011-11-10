@@ -21,6 +21,9 @@
 	alias pstom='ps aux | grep tomcat'
 	alias shuttom='${TOMCAT_HOME}/bin/shutdown.sh'
 	alias starttom='${TOMCAT_HOME}/bin/startup.sh'
+	alias startmy='sudo /Library/StartupItems/MySQLCOM/MySQLCOM stop'
+	alias startmy='sudo /Library/StartupItems/MySQLCOM/MySQLCOM start'
+	alias restartmy='sudo /Library/StartupItems/MySQLCOM/MySQLCOM restart'
 
 	# GIT
 	alias gst='git status'
