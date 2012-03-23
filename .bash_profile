@@ -30,6 +30,10 @@
 	alias shutboss='$JBOSS_HOME/bin/shutdown.sh -S'
 	alias startboss='$JBOSS_HOME/bin/run.sh'
 
+	#MongoDB
+	alias startmongo='$MONGO_HOME/bin/mongod --dbpath $MONGO_HOME/data/db'
+	alias connmongo='$MONGO_HOME/bin/mongo'
+
 	# GIT
 	alias gst='git status'
 	alias gpl='git pull origin master'
