@@ -1,34 +1,34 @@
 # ENVIRONMENT
-	export ANT_HOME=/Users/${USER}/Development/apache-ant-1.8.2
+	export ANT_HOME=/Users/$USER/Development/apache-ant-1.8.2
 	export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home
 #	export JAVA_HOME=~/Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home
-	export JBOSS_HOME=/Users/${USER}/Development/jboss-5.1.0.GA
-	export JETTY_HOME=/Users/${USER}/Development/jetty-6.1.3
-	export M2_HOME=/Users/${USER}/Development/apache-maven-3.0.3
+	export JBOSS_HOME=/Users/$USER/Development/jboss-5.1.0.GA
+	export JETTY_HOME=/Users/$USER/Development/jetty-6.1.3
+	export M2_HOME=/Users/$USER/Development/apache-maven-3.0.3
 	export MACPORTS=/opt/local/bin:/opt/local/sbin
-	export MONGO_HOME=/Users/${USER}/Development/mongodb-2.0.2
+	export MONGO_HOME=/Users/$USER/Development/mongodb-2.0.2
 	export MYSQL_HOME=/usr/local/mysql-5.1.42-osx10.5-x86_64
 	export RABBIT_MQ=/usr/local/sbin
-	export TOMCAT_HOME=/Users/${USER}/Development/apache-tomcat-7.0.23
+	export TOMCAT_HOME=/Users/$USER/Development/apache-tomcat-7.0.23
 
 	export PATH=$PATH:$ANT_HOME/bin:$JAVA_HOME/bin:$JBOSS_HOME/bin:$JAVA_HOME/bin:$M2_HOME/bin:$MACPORTS:$MONGO_HOME/bin:$MYSQL_HOME/bin:$RABBIT_MQ:$TOMCAT_HOME/bin
 
-	export REPO=/Users/${USER}/.m2/repository
+	export REPO=/Users/$USER/.m2/repository
 
 # ALIAS
 	alias ..='cd ..'
 	alias cls='clear'
-	alias clstom='rm ${TOMCAT_HOME}/logs/*.log'
+	alias clstom='rm $TOMCAT_HOME/logs/*.log'
 	alias clsbash='echo "" > .bash_history'
 	alias la='ls -lah'
 	alias pstom='ps aux | grep tomcat'
-	alias shuttom='sudo ${TOMCAT_HOME}/bin/shutdown.sh'
-	alias starttom='sudo ${TOMCAT_HOME}/bin/startup.sh'
+	alias shuttom='sudo $TOMCAT_HOME/bin/shutdown.sh'
+	alias starttom='sudo $TOMCAT_HOME/bin/startup.sh'
 	alias stopmy='sudo /Library/StartupItems/MySQLCOM/MySQLCOM stop'
 	alias startmy='sudo /Library/StartupItems/MySQLCOM/MySQLCOM start'
 	alias restartmy='sudo /Library/StartupItems/MySQLCOM/MySQLCOM restart'
-	alias shutboss='${JBOSS_HOME}/bin/shutdown.sh -S'
-	alias startboss='${JBOSS_HOME}/bin/run.sh'
+	alias shutboss='$JBOSS_HOME/bin/shutdown.sh -S'
+	alias startboss='$JBOSS_HOME/bin/run.sh'
 
 	# GIT
 	alias gst='git status'
@@ -70,5 +70,5 @@
 		local CYAN="\[\033[0;36m\]"
 		local WHITE="\[\033[0;37m\]"
 		local WHITEBOLD="\[\033[1;37m\]"
-		export PS1="${WHITE}\u${RED}@${PURPLE}\h ${CYAN}\w ${WHITE}(`~/.rvm/bin/rvm-prompt v`) \$(parse_git_branch) ${YELLOW}$ \[\e[m\]\[\e[m\]"
+		export PS1="$WHITE\u$RED@$PURPLE\h $CYAN\w $WHITE(`~/.rvm/bin/rvm-prompt v`) \$(parse_git_branch) $YELLOW$ \[\e[m\]\[\e[m\]"
 	}; prompt
