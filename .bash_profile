@@ -11,7 +11,7 @@
 	export RABBIT_MQ=/usr/local/sbin
 	export TOMCAT_HOME=/Users/$USER/Development/apache-tomcat-7.0.23
 
-	export PATH=$PATH:$ANT_HOME/bin:$JAVA_HOME/bin:$JBOSS_HOME/bin:$JAVA_HOME/bin:$M2_HOME/bin:$MACPORTS:$MONGO_HOME/bin:$MYSQL_HOME/bin:$RABBIT_MQ:$TOMCAT_HOME/bin
+	export PATH=$PATH:$ANT_HOME/bin:$ANT_HOME/lib:$JAVA_HOME/bin:$JBOSS_HOME/bin:$JAVA_HOME/bin:$M2_HOME/bin:$MACPORTS:$MONGO_HOME/bin:$MYSQL_HOME/bin:$RABBIT_MQ:$TOMCAT_HOME/bin
 
 	export REPO=/Users/$USER/.m2/repository
 
@@ -22,6 +22,7 @@
 	alias clsbash='echo "" > .bash_history'
 	alias la='ls -lah'
 	alias pstom='ps aux | grep tomcat'
+	alias psjava='jps -l'
 	alias shuttom='sudo $TOMCAT_HOME/bin/shutdown.sh'
 	alias starttom='sudo $TOMCAT_HOME/bin/startup.sh'
 	alias stopmy='sudo /Library/StartupItems/MySQLCOM/MySQLCOM stop'
