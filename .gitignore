@@ -1,14 +1,26 @@
+# Eclipse
 build
 classes
 dist
 target
 WebContent/WEB-INF/classes
 
+# jQuery
 doc.txt
 test/runner.htm
+*.zip
 
+# Mac
 .DS_Store
 
+# Java
 *.class
-*.zip
 *.war
+
+# Ruby
+/bin
+/.bundle
+/config/database.yml
+/db/*.sqlite3
+/log/*.log
+/tmp
