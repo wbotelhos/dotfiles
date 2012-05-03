@@ -15,11 +15,14 @@
 
 	export REPO=/Users/$USER/.m2/repository
 
+# RUBY
+	source ~/.rvm/scripts/rvm
+
 # ALIAS
 	alias ..='cd ..'
 	alias cls='clear'
 	alias clstom='rm $TOMCAT_HOME/logs/*.log'
-	alias clsbash='echo "" > .bash_history'
+	alias clsbash='echo "" > ~/.bash_history'
 	alias la='ls -lah'
 	alias pstom='ps aux | grep tomcat'
 	alias psjava='jps -l'
@@ -31,11 +34,11 @@
 	alias shutboss='$JBOSS_HOME/bin/shutdown.sh -S'
 	alias startboss='$JBOSS_HOME/bin/run.sh'
 
-	#MongoDB
+	## MONGODB
 	alias startmongo='$MONGO_HOME/bin/mongod --dbpath $MONGO_HOME/data/db'
 	alias connmongo='$MONGO_HOME/bin/mongo'
 
-	# GIT
+	## GIT
 	alias gst='git status'
 	alias gpl='git pull origin master'
 	alias gps='git push origin master'
@@ -44,14 +47,14 @@
 		git commit $1 -m $2 --author="Daniel Faria <danielfariati@gmail.com>"
 	}
 
-	# MKV
+	## MKV
 	alias mkv='~/Development/mkvdts2ac3.sh -f -i -n -d -c English --new ~/mkv.mkv'
 
-	# Amazon
+	## AMAZON
 	alias deploy='~/workspace/mockr/deploy.sh'
 
-# RUBY
-	source ~/.rvm/scripts/rvm
+	## RUBY
+	alias clsmigrate='rake db:drop:all; rake db:create:all; rake db:migrate; rake db:seed'
 
 # COLOR
 	export GREP_OPTIONS='--color=auto'
