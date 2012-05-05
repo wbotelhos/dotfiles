@@ -40,8 +40,6 @@
 
 	## GIT
 	alias gst='git status'
-	alias gpl='git pull origin master'
-	alias gps='git push origin master'
 
 	function gp() {
 		git commit $1 -m $2 --author="Daniel Faria <danielfariati@gmail.com>"

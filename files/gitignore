@@ -1,26 +1,30 @@
 # Eclipse
 build
-classes
-dist
 target
-WebContent/WEB-INF/classes
+
+# Global
+*.log
+*.swp
+*.zip
 
 # jQuery
 doc.txt
 test/runner.htm
-*.zip
 
 # Mac
 .DS_Store
+
+# NetBeans
+dist
 
 # Java
 *.class
 *.war
 
 # Ruby
+*.sqlite3
+database.yml
+log/*
 /bin
 /.bundle
-/config/database.yml
-/db/*.sqlite3
-/log/*.log
 /tmp

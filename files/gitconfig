@@ -2,11 +2,14 @@
 	name = Washington Botelho
 	email = wbotelhos@gmail.com
 
+[core]
+	excludesfile = /Users/wbotelhos/.gitignore
+
 [color]
 	branch = auto
 	diff = auto
 	status = auto
-	
+
 [color "branch"]
 	current = cyan
 	local = yellow
