@@ -27,4 +27,5 @@ database.yml
 log/*
 /bin
 /.bundle
+/config/*.sphinx.conf
 /tmp
