@@ -17,4 +17,5 @@ Tweak to make MacOSX more enjoyable.
 ``` shell
 git clone git@github.com:wbotelhos/dotfiles.git
 ./dotfiles/install.sh
+./dotfiles/macosx.sh
 ```

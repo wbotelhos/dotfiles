@@ -50,5 +50,8 @@ echo "Disable send and reply animations in Mail.app"
 defaults write com.apple.Mail DisableReplyAnimations -bool true
 defaults write com.apple.Mail DisableSendAnimations -bool true
 
+echo "Enables keyboard auto repeat"
+defaults write -g ApplePressAndHoldEnabled -bool false
+
 echo "Kill affected applications"
 for app in Safari Finder Dock Mail SystemUIServer; do killall "$app" >/dev/null 2>&1; done
