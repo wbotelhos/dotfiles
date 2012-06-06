@@ -6,6 +6,7 @@ GRAY="\033[0;36m"
 echo -e "\n${GREEN}Initializing...${NO_COLOR}\n"
 
 cp files/bash_profile ~/.bash_profile
+cp files/caprc ~/.caprc
 cp files/gemrc ~/.gemrc
 cp files/gitconfig ~/.gitconfig
 cp files/gitignore ~/.gitignore
