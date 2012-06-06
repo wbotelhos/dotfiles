@@ -29,3 +29,7 @@ log/*
 /.bundle
 /config/*.sphinx.conf
 /tmp
+
+# Python
+.Python
+*.pyc
