@@ -68,7 +68,7 @@
 
   # 30m - Black | 31m - Red | 32m - Green | 33m - Yellow | 34m - Blue | 35m - Purple | 36m - Cyan | 37m - White | green others...
   # 0 - Normal | 1 - Bold | 2 -
-  function prompt {
+  function prompt() {
     local BLACK="\[\033[0;30m\]"
     local RED="\[\033[0;31m\]"
     local GREEN="\[\033[0;32m\]"
