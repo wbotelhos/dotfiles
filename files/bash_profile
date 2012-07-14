@@ -21,6 +21,7 @@
 
 # ALIAS
 	alias ..='cd ..'
+	alias rspec='bundle exec rspec'
 	alias cls='clear'
 	alias clstom='rm $TOMCAT_HOME/logs/*.log'
 	alias clsbash='echo "" > ~/.bash_history'
