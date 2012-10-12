@@ -14,7 +14,7 @@
 	current = cyan
 	local = yellow
 	remote = blue
-	
+
 [color "diff"]
 	meta = yellow bold
 	frag = magenta bold
