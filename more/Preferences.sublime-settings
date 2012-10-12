@@ -1,0 +1,13 @@
+{
+	"bold_folder_labels"								: true,
+	"ensure_newline_at_eof_on_save"			: true,
+	"font_size"													: 13,
+	"highlight_line"										: true,
+	"highlight_modified_tabs"						: true,
+	"hot_exit"													: false,
+	"tab_completion"										: false,
+	"tab_size"													: 2,
+	"translate_tabs_to_spaces"					: false,
+	"tree_animation_enabled"						: false,
+	"trim_trailing_white_space_on_save"	: true
+}
