@@ -15,6 +15,8 @@
   export PATH=$PATH:$ANT_HOME/bin:$JAVA_HOME/bin:$JBOSS_HOME/bin:$JETTY_HOME/bin:$JRUBY_HOME/bin:$M2_HOME/bin:$MACPORTS:$MONGO_HOME/bin:$MYSQL_HOME/bin:$RABBIT_MQ:$TOMCAT_HOME/bin
 
   export REPO=/Users/$USER/.m2/repository
+  export EDITOR='/usr/local/bin/sublime'
+  export GIT_EDITOR='/usr/local/bin/sublime'
 
 # RUBY
   source ~/.rvm/scripts/rvm
@@ -67,17 +69,14 @@
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
   }
 
-  # 30m - Black | 31m - Red | 32m - Green | 33m - Yellow | 34m - Blue | 35m - Purple | 36m - Cyan | 37m - White | green others...
-  # 0 - Normal | 1 - Bold | 2 -
+  # 30: Black | 31: Red | 32: Green | 33: Yellow | 34: Blue | 35: Purple | 36: Cyan | 37: White | green others...
+  # 0: Normal | 1: Bold
   function prompt() {
-    local BLACK="\[\033[0;30m\]"
-    local BLUE="\[\033[0;34m\]"
-    local CYAN="\[\033[0;36m\]"
-    local GREEN="\[\033[0;32m\]"
-    local PURPLE="\[\033[0;35m\]"
-    local RED="\[\033[0;31m\]"
-    local WHITE="\[\033[0;37m\]"
-    local WHITEBOLD="\[\033[1;37m\]"
-    local YELLOW="\[\033[0;33m\]"
+    local CYAN='\[\033[0;36m\]'
+    local PURPLE='\[\033[0;35m\]'
+    local RED='\[\033[0;31m\]'
+    local WHITE='\[\033[0;37m\]'
+    local YELLOW='\[\033[0;33m\]'
+
     export PS1="$WHITE\u$RED@$PURPLE\h $CYAN\w $WHITE(`~/.rvm/bin/rvm-prompt v`) \$(parse_git_branch) $YELLOW$ \[\e[m\]\[\e[m\]"
   }; prompt
