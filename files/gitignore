@@ -8,8 +8,7 @@ target
 *.zip
 
 # jQuery
-doc.txt
-test/runner.htm
+spec/runner.htm
 
 # Mac
 .DS_Store
@@ -21,16 +20,15 @@ dist
 *.class
 *.war
 
+# Python
+*.pyc
+.Python
+
+
 # Ruby
 *.sqlite3
-database.yml
-log/*
-/bin
 /.bundle
 /config/*.sphinx.conf
 /db/sphinx
 /tmp
-
-# Python
-.Python
-*.pyc
+/log
