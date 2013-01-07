@@ -10,6 +10,8 @@ if [ -e "$sublime_path" ]; then
   ./alias.sh
   ./profile.sh
   ./snippet.sh
+  ./keymap.sh
+  ./plugin.sh
 else
   echo "The 'Sublime Text 2.app' is not installed yet. Do it first!"
 fi

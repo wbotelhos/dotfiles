@@ -6,6 +6,6 @@ NO_COLOR='\033[1;0m'
 library=/Users/$USER/Library
 
 echo -e "\n${GRAY}Copying user profile file...${NO_COLOR}"
-cp ./sublime/settings/Preferences.sublime-settings $library/'Application Support/Sublime Text 2/Packages/User'
+cp ./settings/Preferences.sublime-settings $library/'Application Support/Sublime Text 2/Packages/User'
 
 echo -e "${GREEN}profile.sh done!${NO_COLOR}\n"

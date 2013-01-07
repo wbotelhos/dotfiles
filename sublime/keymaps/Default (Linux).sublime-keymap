@@ -1,0 +1,4 @@
+[
+  { "keys": ["ctrl+shift+q"], "command": "change_quotes" },
+  { "keys": ["ctrl+shift+a"], "command": "alignment" }
+]
