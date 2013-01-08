@@ -1,4 +1,5 @@
 [
   { "keys": ["ctrl+shift+q"], "command": "change_quotes" },
-  { "keys": ["ctrl+shift+a"], "command": "alignment" }
+  { "keys": ["ctrl+shift+a"], "command": "alignment" },
+  { "keys": ["ctrl+shift+c"], "command": "color_pick" }
 ]
