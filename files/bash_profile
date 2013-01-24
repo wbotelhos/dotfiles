@@ -22,17 +22,18 @@
   source ~/.rvm/scripts/rvm
 
 # ALIAS
+  alias .='cd .'
   alias ..='cd ..'
+  alias ...='cd ../../'
   alias bashclear='echo "" > ~/.bash_history'
   alias cls='clear'
+  alias folders='ls -Gal | grep ^d'
+  alias ip='curl ifconfig.me'
   alias la='ls -lah'
-  alias reload='source ~/.bash_profile'
-  alias work='cd ~/workspace'
   alias psjava='jps -l'
-
-  alias gg='gitg &'
-  alias pull='git pull'
-  alias push='git push origin master --tags'
+  alias reload='source ~/.bash_profile'
+  alias upgrade='sudo apt-get update && sudo apt-get upgrade && sudo apt-get clean'
+  alias work='cd ~/workspace'
 
   alias jbossstart='$JBOSS_HOME/bin/run.sh'
   alias jbossstop='$JBOSS_HOME/bin/shutdown.sh -S'
@@ -51,7 +52,11 @@
   alias mongostart='$MONGO_HOME/bin/mongod --dbpath $MONGO_HOME/data/db'
 
   ## GIT
-  alias gst='git status -s'
+  alias gg='gitg &'
+  alias gl="git log --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan  )<%an>%Creset' --abbrev-commit"
+  alias gs='git status -s'
+  alias pull='git pull'
+  alias push='git push origin master --tags'
 
   function gp() {
     git commit $1 -m $2 --author="Daniel Faria <danielfariati@gmail.com>"
@@ -65,6 +70,8 @@
   alias bi='bundle install'
   alias cucumber='bundle exec cucumber'
   alias migrate='rake db:drop:all; rake db:create:all; rake db:migrate; rake db:setup; rake db:test:prepare'
+  alias rs='rails s'
+  alias rsp='rails s -p 3001'
   alias rspec='bundle exec rspec'
 
 # COLOR
@@ -72,10 +79,6 @@
   export GREP_COLOR='1;37'
   export GREP_OPTIONS='--color=auto'
   export LSCOLORS=ExFxCxDxBxegedabagacad
-
-  parse_git_branch() {
-    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
-  }
 
   # 30: Black | 31: Red | 32: Green | 33: Yellow | 34: Blue | 35: Purple | 36: Cyan | 37: White | green others...
   # 0: Normal | 1: Bold
@@ -88,3 +91,8 @@
 
     export PS1="$WHITE\u$RED@$PURPLE\h $CYAN\w $WHITE(`~/.rvm/bin/rvm-prompt v`) \$(parse_git_branch) $YELLOW$ \[\e[m\]\[\e[m\]"
   }; prompt
+
+  parse_git_branch() {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+  }
+
