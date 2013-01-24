@@ -8,4 +8,4 @@ library=/Users/$USER/Library
 echo -e "${GRAY}Copying snippet files...${NO_COLOR}"
 cp ./snippets/*.sublime-snippet $library/'Application Support/Sublime Text 2/Packages/User'
 
-echo -e "${GREEN}Snippets copied!${NO_COLOR}\n"
+echo -e "${GREEN}snippet.sh done!${NO_COLOR}\n"

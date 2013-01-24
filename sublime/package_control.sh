@@ -11,4 +11,4 @@ cd $library/'Application Support/Sublime Text 2/Installed Packages'
 wget $url
 
 echo -e "${GRAY}Open Package Control: cmd + shift + p and type install${NO_COLOR}"
-echo -e "${GREEN}package_control done!${NO_COLOR}\n"
+echo -e "${GREEN}package_control.sh done!${NO_COLOR}\n"

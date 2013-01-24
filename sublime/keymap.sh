@@ -8,4 +8,4 @@ library=/Users/$USER/Library
 echo -e "${GRAY}Copying keymaps files...${NO_COLOR}"
 cp ./keymaps/*.sublime-keymap $library/'Application Support/Sublime Text 2/Packages/User'
 
-echo -e "${GREEN}Keymaps copied!${NO_COLOR}\n"
+echo -e "${GREEN}keymap.sh done!${NO_COLOR}\n"
