@@ -5,7 +5,11 @@ NO_COLOR='\033[1;0m'
 
 force=$1
 
-cd "/Users/$USER/Library/Application Support/Sublime Text 2/Packages"
+if [ `uname` == 'Linux' ]; then
+  cd /home/$USER/.config/sublime-text-2/Packages
+else
+  cd "/Users/$USER/Library/Application Support/Sublime Text 2/Packages"
+fi
 
 download() {
   if [ -e "$2" ]; then

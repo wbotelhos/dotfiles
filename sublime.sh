@@ -3,17 +3,21 @@ GRAY='\033[0;36m'
 GREEN='\033[0;32m'
 NO_COLOR='\033[1;0m'
 
-sublime_path='/Applications/Sublime Text 2.app'
+if [ `uname` == 'Linux' ]; then
+  path="/home/$USER/Development/Sublime Text 2/sublime_text"
+else
+  path='/Applications/Sublime Text 2.app'
+fi
 
-if [ -e "$sublime_path" ]; then
+if [ -e "$path" ]; then
   cd sublime
   ./alias.sh
-  ./profile.sh
-  ./snippet.sh
   ./keymap.sh
   ./plugin.sh
+  ./settings.sh
+  ./snippet.sh
 else
-  echo "The 'Sublime Text 2.app' is not installed yet. Do it first!"
+  echo "The 'Sublime Text 2' is not installed yet. Do it first!"
 fi
 
 echo -e "${GREEN}Done!${NO_COLOR}\n"

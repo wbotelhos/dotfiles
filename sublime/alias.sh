@@ -12,8 +12,11 @@ echo -e "\n${GRAY}Generating the alias '${aliaz}' open command...${NO_COLOR}"
 if [ -L "$alias_path" ]; then
   echo -e "${RED}The alias '${aliaz}' already exists! [skipped]${NO_COLOR}"
 else
-  echo $alias_path
-  sudo ln -s '/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl' $alias_path
+  if [ `uname` == 'Linux' ]; then
+    sudo ln -s '/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl' $alias_path
+  else
+    sudo ln -s "/home/$USER/Development/Sublime Text 2/sublime_text" $alias_path
+  fi
 fi
 
 echo -e "${GREEN}alias.sh done!${NO_COLOR}"
