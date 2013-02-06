@@ -54,6 +54,7 @@
 
   ## GIT
   alias ck='git checkout'
+  alias clone='git clone'
   alias gg='gitg &'
   alias gl="git log --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan  )<%an>%Creset' --abbrev-commit"
   alias gs='git status -s'
