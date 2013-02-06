@@ -38,6 +38,7 @@ download 'https://github.com/colinta/SublimeChangeQuotes'             'ChangeQuo
 download 'https://github.com/eddorre/SublimeERB'                      'ERB'
 download 'https://github.com/jnordberg/sublime-colorpick'             'ColorPicker'
 download 'https://github.com/kek/sublime-expand-selection-to-quotes'  'ExpandQuotes'
+download 'https://github.com/kemayo/sublime-text-2-git'               'Git'
 download 'https://github.com/Kronuz/SublimeCodeIntel'                 'CodeIntel'
 download 'https://github.com/phillipkoebbe/DetectSyntax'              'DetectSyntax'
 download 'https://github.com/sergeche/emmet-sublime'                  'Emmet'
