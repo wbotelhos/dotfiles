@@ -16,6 +16,7 @@ if [ -e "$path" ]; then
   ./plugin.sh
   ./settings.sh
   ./snippet.sh
+  ./syntax.sh
 else
   echo "The 'Sublime Text 2' is not installed yet. Do it first!"
 fi
