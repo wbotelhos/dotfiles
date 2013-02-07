@@ -69,6 +69,7 @@
   ## RUBY
   alias be='bundle exec'
   alias bi='bundle install'
+  alias bu='bundle update'
   alias cucumber='bundle exec cucumber feature'
   alias migrate='rake db:drop:all; rake db:create:all; rake db:migrate; rake db:setup; rake db:test:prepare'
   alias rs='rails s'
