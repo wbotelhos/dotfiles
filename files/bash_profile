@@ -34,6 +34,7 @@
   alias ps='ps aux | grep'
   alias psjava='jps -l'
   alias reload='source ~/.bash_profile'
+  alias speedup='sudo find /private/var/log/asl/* -mtime +5 -exec rm -rf {} \;'
   alias upgrade='sudo apt-get update && sudo apt-get upgrade && sudo apt-get clean'
   alias work='cd ~/workspace'
 
