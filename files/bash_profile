@@ -53,6 +53,7 @@
   alias mongostart='$MONGO_HOME/bin/mongod --dbpath $MONGO_HOME/data/db'
 
   ## GIT
+  alias ck='git checkout'
   alias gg='gitg &'
   alias gl="git log --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan  )<%an>%Creset' --abbrev-commit"
   alias gs='git status -s'
@@ -72,6 +73,7 @@
   alias bu='bundle update'
   alias cucumber='bundle exec cucumber feature'
   alias migrate='rake db:drop:all; rake db:create:all; rake db:migrate; rake db:setup; rake db:test:prepare'
+  alias rc='rails c'
   alias rs='rails s'
   alias rsp='rails s -p 3001'
   alias rspec='bundle exec rspec'
