@@ -7,7 +7,7 @@
   export JRUBY_HOME=/Library/Frameworks/JRuby.framework/Versions/Current
   export M2_HOME=/Users/$USER/Development/apache-maven-3.0.3
   export MACPORTS=/opt/local/bin:/opt/local/sbin
-  export MONGO_HOME=/Users/$USER/Development/mongodb-2.0.2
+  export MONGO_HOME=/usr/local/mongodb
   export MYSQL_HOME=/usr/local/mysql-5.1.42-osx10.5-x86_64
   export RABBIT_MQ=/usr/local/sbin
   export TOMCAT_HOME=/Users/$USER/Development/apache-tomcat-7.0.23
@@ -37,6 +37,7 @@
   alias speedup='sudo find /private/var/log/asl/* -mtime +5 -exec rm -rf {} \;'
   alias upgrade='sudo apt-get update && sudo apt-get upgrade && sudo apt-get clean'
   alias work='cd ~/workspace'
+  alias ec2='ssh -i'
 
   alias jbossstart='$JBOSS_HOME/bin/run.sh'
   alias jbossstop='$JBOSS_HOME/bin/shutdown.sh -S'
@@ -58,12 +59,16 @@
   alias clone='git clone'
   alias gg='gitg &'
   alias gl="git log --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan  )<%an>%Creset' --abbrev-commit"
-  alias gs='git status -s'
+  alias gs='git status -sb'
   alias pull='git pull'
   alias push='git push origin master --tags'
 
   function gp() {
     git commit $1 -m $2 --author="Daniel Faria <danielfariati@gmail.com>"
+  }
+
+  function ec2() {
+    ssh -i "~/.ssh/$1.pem" "ubuntu@$2"
   }
 
   ## MKV
