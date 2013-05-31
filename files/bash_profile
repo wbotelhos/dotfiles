@@ -55,13 +55,15 @@
   alias mongostart='$MONGO_HOME/bin/mongod --dbpath $MONGO_HOME/data/db'
 
   ## GIT
-  alias ck='git checkout'
   alias clone='git clone'
+  alias gc='git commit'
   alias gg='gitg &'
+  alias gk='git checkout'
   alias gl="git log --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan  )<%an>%Creset' --abbrev-commit"
   alias gs='git status -sb'
+  alias master='git checkout master'
   alias pull='git pull'
-  alias push='git push origin master --tags'
+  alias push='git push; git push --tags'
 
   function gp() {
     git commit $1 -m $2 --author="Daniel Faria <danielfariati@gmail.com>"
