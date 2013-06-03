@@ -27,6 +27,7 @@
   alias ...='cd ../../'
   alias bashclear='echo "" > ~/.bash_history'
   alias cls='clear'
+  alias fetch='git fetch --all; git fetch --tag'
   alias folders='ls -Gal | grep ^d'
   alias ip='curl ifconfig.me'
   alias kill='kill -9'
