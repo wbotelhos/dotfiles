@@ -1,0 +1,4 @@
+<snippet>
+  <content><![CDATA[require 'debugger';debugger]]></content>
+  <tabTrigger>debug</tabTrigger>
+</snippet>
