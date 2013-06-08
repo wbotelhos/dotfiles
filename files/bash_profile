@@ -58,6 +58,7 @@
   ## GIT
   alias clone='git clone'
   alias gc='git commit'
+  alias gd='git difftool -y -x "sdiff" | less'
   alias gg='gitg &'
   alias gk='git checkout'
   alias gl="git log --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan  )<%an>%Creset' --abbrev-commit"
