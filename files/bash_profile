@@ -25,7 +25,7 @@
   alias .='cd .'
   alias ..='cd ..'
   alias ...='cd ../../'
-  alias bashclear='echo "" > ~/.bash_history'
+  alias bashclear='history -c'
   alias cls='clear'
   alias fetch='git fetch --all; git fetch --tag'
   alias folders='ls -Gal | grep ^d'
