@@ -64,7 +64,7 @@
   alias gk='git checkout'
   alias gl="git log --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan  )<%an>%Creset' --abbrev-commit"
   alias gm='git merge'
-  alias gp='git pop'
+  alias gp='git stash pop'
   alias gs='git status -sb'
   alias gt='git add .; git stash'
   alias master='git checkout master'
