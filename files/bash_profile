@@ -70,7 +70,7 @@
   alias master='git checkout master'
   alias pull='git pull'
   alias push='git push; git push --tags'
-  alias umaster='git checkout upstream_master'
+  alias stash='git add .; git stash'
 
   function gp() {
     git commit $1 -m $2 --author="$3 <${4}>"
