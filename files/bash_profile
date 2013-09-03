@@ -76,6 +76,12 @@
     git commit $1 -m $2 --author="$3 <${4}>"
   }
 
+  function tag() {
+    git tag -a "${1}" -m "${1}"
+
+    echo "Now your project is on version '`git describe`'"
+  }
+
   function ec2() {
     ssh -i "~/.ssh/$1.pem" "ubuntu@$2"
   }
