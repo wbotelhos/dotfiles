@@ -1,16 +1,19 @@
 {
-  "bold_folder_labels"               : true,
-  "ensure_newline_at_eof_on_save"    : true,
-  "font_face"                        : "Menlo",
-  "font_size"                        : 15,
-  "highlight_line"                   : true,
-  "highlight_modified_tabs"          : true,
-  "hot_exit"                         : false,
-  "show_full_path"                   : true,
-  "tab_completion"                   : false,
-  "tab_size"                         : 2,
-  "translate_tabs_to_spaces"         : true,
-  "tree_animation_enabled"           : false,
-  "trim_trailing_white_space_on_save": true,
-  "word_wrap"                        : false
+  "binary_file_patterns"              : ["*.log", "*.sassc", "*.scssc"], // Excluded from Goto and Find
+  "bold_folder_labels"                : true,
+  "ensure_newline_at_eof_on_save"     : true,
+  "file_exclude_patterns"             : ["*.class", "*.gz", "*.log", "*.pyc", "*.sassc", "*.scssc", ".DS_Store"],
+  "folder_exclude_patterns"           : ["estacione_*", "*.gz", ".git"],
+  "font_face"                         : "Menlo",
+  "font_size"                         : 15,
+  "highlight_line"                    : true,
+  "highlight_modified_tabs"           : true,
+  "hot_exit"                          : false,
+  "show_full_path"                    : true,
+  "tab_completion"                    : false,
+  "tab_size"                          : 2,
+  "translate_tabs_to_spaces"          : true,
+  "tree_animation_enabled"            : false,
+  "trim_trailing_white_space_on_save" : true,
+  "word_wrap"                         : false
 }
