@@ -12,7 +12,7 @@
   export RABBIT_MQ=/usr/local/sbin
   export TOMCAT_HOME=/Users/${USER}/Development/apache-tomcat-7.0.23
 
-  export PATH=$PATH:$ANT_HOME/bin:$JAVA_HOME/bin:$JBOSS_HOME/bin:$JETTY_HOME/bin:$JRUBY_HOME/bin:$M2_HOME/bin:$MACPORTS:$MONGO_HOME/bin:$MYSQL_HOME/bin:$RABBIT_MQ:$TOMCAT_HOME/bin
+  export PATH=${PATH}:${ANT_HOME}/bin:${JAVA_HOME}/bin:${JBOSS_HOME}/bin:${JETTY_HOME}/bin:${JRUBY_HOME}/bin:${M2_HOME}/bin:${MACPORTS}:${MONGO_HOME}/bin:${MYSQL_HOME}/bin:${RABBIT_MQ}:${TOMCAT_HOME}/bin
 
   export REPO=/Users/${USER}/.m2/repository
   export EDITOR='/usr/local/bin/sublime'
@@ -25,9 +25,9 @@
   alias ...='cd ../../'
   alias ..='cd ..'
   alias .='cd .'
+  alias capush='git push && git push --tags && cap deploy'
   alias cls='clear'
   alias ec2='ssh -i'
-  alias fetch='git fetch --all; git fetch --tag'
   alias folders='ls -Gal | grep ^d'
   alias hclear='history -c'
   alias ip='curl ifconfig.me'
@@ -40,23 +40,24 @@
   alias upgrade='sudo apt-get update && sudo apt-get upgrade && sudo apt-get clean'
   alias work='cd ~/workspace'
 
-  alias jbossstart='$JBOSS_HOME/bin/run.sh'
-  alias jbossstop='$JBOSS_HOME/bin/shutdown.sh -S'
+  alias jbossstart='${JBOSS_HOME}/bin/run.sh'
+  alias jbossstop='${JBOSS_HOME}/bin/shutdown.sh -S'
 
   alias mysqlrestart='sudo /Library/StartupItems/MySQLCOM/MySQLCOM restart'
   alias mysqlstart='sudo /Library/StartupItems/MySQLCOM/MySQLCOM start'
   alias mysqlstop='sudo /Library/StartupItems/MySQLCOM/MySQLCOM stop'
 
-  alias tomcatclear='rm $TOMCAT_HOME/logs/*.log'
-  alias tomcatstart='sudo $TOMCAT_HOME/bin/shutdown.sh'
-  alias tomcatstop='sudo $TOMCAT_HOME/bin/startup.sh'
+  alias tomcatclear='rm ${TOMCAT_HOME}/logs/*.log'
+  alias tomcatstart='sudo ${TOMCAT_HOME}/bin/shutdown.sh'
+  alias tomcatstop='sudo ${TOMCAT_HOME}/bin/startup.sh'
 
   ## MONGODB
-  alias mongoconn='$MONGO_HOME/bin/mongo'
-  alias mongostart='$MONGO_HOME/bin/mongod --dbpath $MONGO_HOME/data/db'
+  alias mongoconn='${MONGO_HOME}/bin/mongo'
+  alias mongostart='${MONGO_HOME}/bin/mongod --dbpath ${MONGO_HOME}/data/db'
 
   ## GIT
   alias clone='git clone'
+  alias fetch='git fetch --all; git fetch --tag'
   alias ga='git commit -am'
   alias gc='git commit'
   alias gd='git difftool -y -x "sdiff" | less'
@@ -77,13 +78,13 @@
   }
 
   function tag() {
-    git tag -a "${1}" -m "${1}"
+    git tag -a "$1" -m "$1"
 
     echo "Now your project is on version '`git describe`'"
   }
 
-  function ec2() {
-    ssh -i "~/.ssh/$1.pem" "ubuntu@$2"
+  function amazon() {
+    ssh -i "/Users/${USER}/.ssh/${1}.pem" "ubuntu@${1}.${2}"
   }
 
   ## MKV
@@ -116,7 +117,7 @@
     local WHITE='\[\033[0;37m\]'
     local YELLOW='\[\033[0;33m\]'
 
-    export PS1="$WHITE\u$RED@$PURPLE\h $CYAN\w $WHITE(`~/.rvm/bin/rvm-prompt v`) \$(parse_git_branch) $YELLOW$ \[\e[m\]\[\e[m\]"
+    export PS1="${WHITE}\u${RED}@${PURPLE}\h ${CYAN}\w ${WHITE}(`~/.rvm/bin/rvm-prompt v`) \$(parse_git_branch) ${YELLOW}$ \[\e[m\]\[\e[m\]"
   }; prompt
 
   parse_git_branch() {
