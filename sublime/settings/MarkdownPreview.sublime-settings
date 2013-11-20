@@ -1,0 +1,12 @@
+{
+  "allow_css_overrides":     true,
+  "browser":                 "default",
+  "css":                     "default",
+  "enable_highlight":        true,
+  "enable_mathjax":          false,
+  "enabled_extensions":      "default",
+  "github_mode":             "markdown",
+  "markdown_filetypes":      [".md", ".markdown"],
+  "parser":                  "github",
+  "strip_yaml_front_matter": false
+}

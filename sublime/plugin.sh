@@ -48,5 +48,6 @@ download 'https://github.com/wbond/sublime_alignment'                'Alignment'
 download 'https://github.com/wbotelhos/sublime-assignment'           'Assignment'
 download 'https://github.com/zoomix/SublimeToggleSymbol'             'ToggleSymbol'
 download 'https://github.com/adampresley/sublime-js-minify'          'JsMinify'
+download 'https://github.com/revolunet/sublimetext-markdown-preview' 'MarkdownPreview'
 
 echo -e "\n${GREEN}plugin.sh done!${NO_COLOR}\n"
