@@ -8,8 +8,11 @@ LOCALE="${HOME}/.fluxbox"
 echo -e "\n${GREEN}Updating the repository...${NO_COLOR}\n"
 sudo apt-get update
 
+echo -e "\n${GREEN}Installing XScreenSaver...${NO_COLOR}\n"
+sudo apt-get install xscreensaver -y
+
 echo -e "\n${GREEN}Installing Fluxbox...${NO_COLOR}\n"
-sudo apt-get install fluxbox
+sudo apt-get install fluxbox -y
 
 rm -rf $LOCALE
 
