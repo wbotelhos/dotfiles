@@ -3,7 +3,7 @@
 sublime &
 gnome-terminal &
 google-chrome &
-xscreensaver &
+xscreensaver -nosplash &
 numlockx on &
 sudo xrandr --output VGA1 --mode 1440x900 --output HDMI1 --mode 1440x900 --left-of VGA1
 
