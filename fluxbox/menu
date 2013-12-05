@@ -9,8 +9,9 @@
     [commanddialog] (Command)
     [config]        (Configure)
     [exec]          (About)     {(fluxbox -v; fluxbox -info | sed 1d) | xmessage -file - -center}
+    [exec]          (Lock)      {xscreensaver-command -lock}
     [exec]          (Run)       {fbrun}
-    [restart] (Restart)
+    [restart]       (Restart)
     [submenu]       (Skins)
       [stylesdir] (~/.fluxbox/styles)
     [end]
