@@ -1,0 +1,100 @@
+! double click speed
+session.doubleClickInterval:              250
+
+! (window) fullsize even if it goes behind the toolbar
+session.screen0.fullMaximization:         false
+
+! (window) auto focus on new windows
+session.screen0.focusNewWindows:          true
+
+! (fluxbox) skin path
+session.styleFile:                        ~/.fluxbox/styles/fluxy
+
+! (toolbar)
+session.screen0.toolbar.autoHide:         false
+session.screen0.toolbar.visible:          true
+session.screen0.tooltipDelay:             500
+
+! (toolbar) (icon) (right padding)
+session.screen0.iconbar.iconTextPadding:  10
+
+! (toolbar) (icon) (visible)
+session.screen0.iconbar.usePixmap:        true
+
+! time for menu appears
+session.screen0.menuDelay:                0
+
+! (toolbar) position
+session.screen0.slit.placement:           RightBottom
+
+! (toolbar) items displayed
+session.screen0.toolbar.tools:            iconbar, systemtray, clock
+
+! (workspace)
+session.screen0.workspaces:               1
+session.screen0.workspaceNames:           Main
+
+! (toolbar) percent width
+session.screen0.toolbar.widthPercent:     99
+
+! (toolbar) (icons) alignment
+session.screen0.iconbar.alignment:        relative
+
+! (toolbar) position
+session.screen0.toolbar.placement:        BottomLeft
+
+! (title bar) (buttons) options
+session.screen0.titlebar.right:           minimize maximize close
+
+! (toolbar) auto hide
+session.screen0.slit.autoHide:            false
+
+! (clock)
+session.screen0.strftimeFormat:           %l:%M
+
+! (title bar) does not divide in two bar, one with app title with width auto and other 100% with full description
+session.screen0.tabs.intitlebar:          true
+
+! (config) less than 13 will reset this config, strange
+session.configVersion:                    13
+
+! (tabs) uses images to compose the layout
+session.screen0.tabs.usePixmap:           false
+
+! -- pending --
+session.appsFile:                         ~/.fluxbox/apps
+session.keyFile:                          ~/.fluxbox/keys
+session.menuFile:                         ~/.fluxbox/menu
+session.screen0.autoRaise:                true
+session.screen0.clickRaises:              true
+session.screen0.clientMenu.usePixmap:     true
+session.screen0.colPlacementDirection:    TopToBottom
+session.screen0.defaultDeco:              NORMAL
+session.screen0.edgeSnapThreshold:        10
+session.screen0.focusModel:               ClickFocus
+session.screen0.iconbar.mode:             {static groups} (workspace)
+session.screen0.maxDisableMove:           false
+session.screen0.maxDisableResize:         false
+session.screen0.maxIgnoreIncrement:       true
+session.screen0.noFocusWhileTypingDelay:  0
+session.screen0.opaqueMove:               true
+session.screen0.rowPlacementDirection:    LeftToRight
+session.screen0.showwindowposition:       false
+session.screen0.slit.acceptKdeDockapps:   true
+session.screen0.slit.layer:               Dock
+session.screen0.slit.maxOver:             false
+session.screen0.slit.onhead:              0
+session.screen0.tab.placement:            TopLeft
+session.screen0.tabFocusModel:            ClickToTabFocus
+session.screen0.tabs.maxOver:             false
+session.screen0.titlebar.left:            Stick
+session.screen0.toolbar.layer:            Dock
+session.screen0.toolbar.maxOver:          false
+session.screen0.toolbar.onhead:           1
+session.screen0.windowMenu:               ~/.fluxbox/windowmenu
+session.screen0.windowPlacement:          RowMinOverlapPlacement
+session.screen0.workspacewarping:         true
+session.slitlistFile:                     ~/.fluxbox/slitlist
+session.styleOverlay:                     ~/.fluxbox/overlay
+session.tabPadding:                       0
+session.tabsAttachArea:                   Window

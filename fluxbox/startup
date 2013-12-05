@@ -1,0 +1,17 @@
+#!/bin/sh
+
+sublime &
+gnome-terminal &
+google-chrome &
+xscreensaver &
+numlockx on &
+sudo xrandr --output VGA1 --mode 1440x900 --output HDMI1 --mode 1440x900 --left-of VGA1
+
+which fbautostart > /dev/null
+
+if [ $? -eq 0 ]; then
+  fbautostart
+fi
+
+
+exec fluxbox

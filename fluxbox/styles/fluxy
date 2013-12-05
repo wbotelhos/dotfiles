@@ -1,0 +1,118 @@
+style.author:                        wbotelhos@gmail.com
+style.comments:                      http://wbotelhos.com/labs
+style.credits:
+style.date:                          Thu Dec 04 2013
+style.name:                          Fluxy 0.0.1
+
+background.pixmap:                   ~/.fluxbox/backgrounds/background.jpg
+background:                          fullscreen
+
+! (title bar) (background color)
+window.label.focus:                  Flat Solid
+window.label.focus.color:            #60747D
+window.label.focus.colorTo:          #60747D
+window.label.focus.font:             monaco-11
+window.label.focus.justify:          left
+window.label.focus.textColor:        #FFFFFF
+
+window.label.unfocus:                Flat Solid
+window.label.unfocus.color:          #888888
+window.label.unfocus.colorTo:        #888888
+window.label.unfocus.font:           monaco-11
+window.label.unfocus.justify:        left
+window.label.unfocus.textColor:      #FFFFFF
+
+! (title bar) (border color)
+window.title.focus:                  Flat Solid
+window.title.focus.color:            #60747D
+window.title.focus.colorTo:          #60747D
+
+window.title.unfocus:                Flat Solid
+window.title.unfocus.color:          #888888
+window.title.unfocus.colorTo:        #888888
+
+! (title bar) (buttons) (background color)
+window.button.focus:                 Flat Solid
+window.button.focus.color:           #60747D
+window.button.focus.colorTo:         #60747D
+window.button.focus.picColor:        #FFFFFF
+
+window.button.unfocus:               Flat Solid
+window.button.unfocus.color:         #888888
+window.button.unfocus.colorTo:       #888888
+window.button.unfocus.picColor:      #888888
+
+! (title bar) (buttons) (backgroud color)
+window.button.pressed:               Flat Solid
+window.button.pressed.color:         #60747D
+window.button.pressed.colorTo:       #60747D
+
+! (window) (bottom focus indicator) (edge)
+window.grip.focus:                   Flat Solid
+window.grip.focus.color:             #DDCC55
+window.grip.unfocus:                 Flat Solid
+window.grip.unfocus.color:           #888888
+
+! (window) (bottom focus indicator) (middle)
+window.handle.focus:                 Flat Solid
+window.handle.focus.color:           #60747D
+window.handle.unfocus:               Flat Solid
+window.handle.unfocus.color:         #888888
+
+! (clock) (background color)
+toolbar.clock:                       Flat Solid
+toolbar.clock.color:                 #40545D
+toolbar.clock.colorTo:               #40545D
+
+! (clock) (font family)
+toolbar.clock.textColor:             #FFFFFF
+
+! (toolbar) (background color)
+toolbar.windowLabel:                 Flat Solid
+toolbar.windowLabel.color:           #40545D
+toolbar.windowLabel.colorTo:         #40545D
+
+! (toolbar) (iconbar) background color
+toolbar.iconbar.focused:             Flat solid
+toolbar.iconbar.focused.color:       #60747D
+toolbar.iconbar.focused.colorTo:     #60747D
+
+! (toolbar) (font family)
+window.font:                         monaco-9
+window.justify:                      left
+
+! (pop menu) (background color)
+menu.frame:                          Flat Solid
+menu.frame.color:                    #40545D
+menu.frame.colorTo:                  #40545D
+menu.frame.disableColor:             #888888
+
+! (pop menu) (font family)
+menu.frame.font:                     monaco-11
+menu.frame.textColor:                #FFFFFF
+menu.frame.justify:                  left
+
+! (pop menu) (mouseover) (background color)
+menu.hilite:                         Solid
+menu.hilite.color:                   #FFFFFF
+menu.hilite.colorTo:                 #FFFFleftFF
+
+! (pop menu) (header)
+menu.title:                          Flat Solid
+menu.title.color:                    #80949D
+menu.title.colorTo:                  #80949D
+menu.title.font:                     monaco-bold-11
+menu.title.justify:                  center
+menu.title.textColor:                #FFFFFF
+
+! (pop menu) (mouseover) (font family)
+menu.hilite.textColor:               #000000
+
+! [pop menu, toolbar, title bar] (inner space width border)
+bevelWidth:                          0
+
+! [pop menu, toolbar, title bar] (color)
+borderColor:                         #555555
+
+! [pop menu, toolbar, title bar] (out space width border)
+borderWidth:                         1
