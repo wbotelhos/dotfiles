@@ -13,10 +13,10 @@ if [ -e "$path" ]; then
   cd sublime
   ./alias.sh
   ./keymap.sh
-  ./plugin.sh
   ./settings.sh
   ./snippet.sh
   ./syntax.sh
+  ./plugin.sh
 else
   echo "The 'Sublime Text 2' is not installed yet. Do it first!"
 fi
