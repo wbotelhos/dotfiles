@@ -5,7 +5,7 @@ NO_COLOR='\033[1;0m'
 RED='\033[1;31m'
 
 aliaz='sublime'
-alias_path=/usr/local/bin/$aliaz
+alias_path=/usr/local/bin/${aliaz}
 
 echo -e "\n${GRAY}Generating the alias '${aliaz}' open command...${NO_COLOR}"
 
@@ -15,7 +15,7 @@ else
   if [ `uname` == 'Linux' ]; then
     sudo ln -s '/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl' $alias_path
   else
-    sudo ln -s "/home/$USER/Development/Sublime Text 2/sublime_text" $alias_path
+    sudo ln -s "/home/${USER}/Development/Sublime Text 2/sublime_text" $alias_path
   fi
 fi
 
