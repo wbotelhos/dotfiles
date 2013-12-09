@@ -13,5 +13,4 @@ if [ $? -eq 0 ]; then
   fbautostart
 fi
 
-
 exec fluxbox
