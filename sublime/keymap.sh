@@ -6,9 +6,9 @@ NO_COLOR='\033[1;0m'
 echo -e "${GRAY}Copying keymaps files...${NO_COLOR}"
 
 if [ `uname` == 'Linux' ]; then
-  cp ./keymaps/*.sublime-keymap /home/$USER/.config/sublime-text-2/Packages/User
+  cp ./keymaps/*.sublime-keymap ${HOME}/.config/sublime-text-2/Packages/User
 else
-  cp ./keymaps/*.sublime-keymap /Users/$USER/Library/'Application Support/Sublime Text 2'/Packages/User
+  cp ./keymaps/*.sublime-keymap ${HOME}/Library/'Application Support/Sublime Text 2'/Packages/User
 fi
 
 echo -e "${GREEN}keymap.sh done!${NO_COLOR}\n"

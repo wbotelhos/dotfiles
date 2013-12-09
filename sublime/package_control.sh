@@ -8,9 +8,9 @@ url='http://sublime.wbond.net/Package%20Control.sublime-package'
 echo -e "\n${GRAY}Installing Package Control...${NO_COLOR}"
 
 if [ `uname` == 'Linux' ]; then
-  cd "/home/$USER/.config/sublime-text-2"
+  cd "${HOME}/.config/sublime-text-2"
 else
-  cd "/Users/$USER/Library/Application Support/Sublime Text 2"
+  cd "${HOME}/Library/Application Support/Sublime Text 2"
 fi
 
 cd "Installed Packages"

@@ -4,12 +4,12 @@ GREEN='\033[0;32m'
 NO_COLOR='\033[1;0m'
 
 if [ `uname` == 'Linux' ]; then
-  path="/home/$USER/Development/Sublime Text 2/sublime_text"
+  APP_PATH="/home/${USER}/Development/Sublime Text 2/sublime_text"
 else
-  path='/Applications/Sublime Text 2.app'
+  APP_PATH='/Applications/Sublime Text 2.app'
 fi
 
-if [ -e "$path" ]; then
+if [ -e "${APP_PATH}" ]; then
   cd sublime
   ./alias.sh
   ./keymap.sh
