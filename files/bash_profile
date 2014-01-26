@@ -8,7 +8,7 @@
   export M2_HOME=/Users/${USER}/Development/apache-maven-3.0.3
   export MACPORTS=/opt/local/bin:/opt/local/sbin
   export MONGO_HOME=/usr/local/mongodb
-  export MYSQL_HOME=/usr/local/mysql-5.1.42-osx10.5-x86_64
+  export MYSQL_HOME=/usr/local/mysql
   export RABBIT_MQ=/usr/local/sbin
   export TOMCAT_HOME=/Users/${USER}/Development/apache-tomcat-7.0.23
 
