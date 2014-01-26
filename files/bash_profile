@@ -18,6 +18,10 @@
   export EDITOR='/usr/local/bin/sublime'
   export GIT_EDITOR='/usr/local/bin/sublime'
 
+  export AWS_ACCESS_KEY_ID=''
+  export AWS_SECRET_ACCESS_KEY=''
+  export SECRET_TOKEN=''
+
 # RUBY
   source ~/.rvm/scripts/rvm
 
