@@ -10,13 +10,19 @@ markdown='https://gist.github.com/CrazyApi/2354062/raw/c0166961c0746d6942249b53e
 echo -e "${GRAY}Copying syntax files...${NO_COLOR}"
 
 if [ `uname` == 'Linux' ]; then
-  wget $cucumber -O ${HOME}/.config/sublime-text-2/Packages/User/Cucumber.tmLanguage
-  wget $markdown -O ${HOME}/.config/sublime-text-2/Packages/User/Markdown.tmLanguage
-else
-  target=${HOME}/Library/'Application Support/Sublime Text 2'/Packages/User
+  USER_PATH=${HOME}/.config/sublime-text-2/Packages/User
 
-  wget $cucumber -O ${HOME}/Library/'Application Support/Sublime Text 2'/Packages/User/Cucumber.tmLanguage
-  wget $markdown -O ${HOME}/$USER/Library/'Application Support/Sublime Text 2'/Packages/User/Markdown.tmLanguage
+  mkdir -p $USER_PATH
+
+  wget $cucumber -O ${USER_PATH}/Cucumber.tmLanguage
+  wget $markdown -O ${USER_PATH}/Markdown.tmLanguage
+else
+  USER_PATH=${HOME}/Library/'Application Support/Sublime Text 2'/Packages/User
+
+  mkdir -p $USER_PATH
+
+  wget $cucumber -O ${USER_PATH}/Cucumber.tmLanguage
+  wget $markdown -O ${USER_PATH}/Markdown.tmLanguage
 fi
 
 echo -e "${GREEN}syntax.sh done!${NO_COLOR}\n"
