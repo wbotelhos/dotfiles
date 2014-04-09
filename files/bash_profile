@@ -100,7 +100,7 @@
   alias bu='bundle update'
   alias cucumber='bundle exec cucumber feature'
   alias guard='bundle exec guard'
-  alias migrate='rake db:drop:all; rake db:create:all; rake db:migrate; rake db:setup; rake db:test:prepare'
+  alias migrate='rake db:drop:all && rake db:create:all && rake db:migrate && rake db:test:prepare'
   alias rc='rails c'
   alias rs='rails s'
   alias rsp='rails s -p 3001'
