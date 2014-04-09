@@ -1,0 +1,26 @@
+{
+  "reraise_exceptions" : false,
+  "new_file_syntax"    : false,
+  "syntaxes"           : [
+    {
+      "name"  : "RSpec",
+      "rules" : [
+        { "file_name": ".*_spec\\.rb$" }
+      ]
+    },
+
+    {
+      "name"  : "Ruby",
+      "rules" : [
+        { "file_name": "Gemfile" }
+      ]
+    },
+
+    {
+      "name"  : "Jasmine",
+      "rules" : [
+        { "file_name": ".*_spec\\.js$" }
+      ]
+    }
+  ]
+}
