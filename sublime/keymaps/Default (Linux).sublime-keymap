@@ -8,6 +8,7 @@
   { "keys": ["ctrl+shift+@"],    "command": "assignment" },
   { "keys": ["ctrl+shift+a"],    "command": "alignment" },
   { "keys": ["ctrl+shift+c"],    "command": "color_pick" },
+  { "keys": ["ctrl+alt+k"],      "command": "markdown_preview", "args": { "target": "browser", "parser": "markdown" } },
   { "keys": ["ctrl+shift+m"],    "command": "minifyjs" },
   { "keys": ["ctrl+shift+q"],    "command": "change_quotes" }
 ]
