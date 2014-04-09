@@ -1,4 +1,5 @@
 #!/bin/bash
+
 GRAY='\033[0;36m'
 GREEN='\033[0;32m'
 NO_COLOR='\033[1;0m'
@@ -23,6 +24,9 @@ cp files/hgrc ~/.hgrc
 
 echo '.irbrc'
 cp files/irbrc ~/.irbrc
+
+echo '.jshintrc'
+cp files/jshintrc ~/.jshintrc
 
 echo '.pryrc'
 cp files/pryrc ~/.pryrc
