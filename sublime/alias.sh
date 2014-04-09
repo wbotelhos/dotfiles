@@ -19,4 +19,4 @@ else
   sudo ln -s '/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl' $ALIAS_PATH
 fi
 
-echo -e "${GREEN}alias.sh done!${NO_COLOR}"
+echo -e "${GREEN}alias.sh done!${NO_COLOR}\n"
