@@ -26,7 +26,7 @@
   source ~/.rvm/scripts/rvm
 
 # ALIAS
-  alias ...='cd ../../'
+  alias ...='cd ../..'
   alias ..='cd ..'
   alias .='cd .'
   alias cap='bundle exec cap'
@@ -71,11 +71,10 @@
   alias gm='git merge'
   alias gp='git stash pop'
   alias gs='git status -sb'
-  alias gt='git add .; git stash'
+  alias gt='git add . && git stash'
   alias master='git checkout master'
   alias pull='git pull'
-  alias push='git push; git push --tags'
-  alias stash='git add .; git stash'
+  alias push='git push && git push --tags'
 
   function gp() {
     git commit $1 -m $2 --author="$3 <${4}>"
