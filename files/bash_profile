@@ -1,26 +1,17 @@
+export AWS_ACCESS_KEY_ID=''
+export AWS_SECRET_ACCESS_KEY=''
+export SECRET_TOKEN=''
+
 # ENVIRONMENT
-  #export JAVA_HOME=~/Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home
-  export ANT_HOME=/Users/${USER}/Development/apache-ant-1.8.2
   export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home
-  export JBOSS_HOME=/Users/${USER}/Development/jboss-5.1.0.GA
-  export JETTY_HOME=/Users/${USER}/Development/jetty-6.1.3
-  export JRUBY_HOME=/Library/Frameworks/JRuby.framework/Versions/Current
-  export M2_HOME=/Users/${USER}/Development/apache-maven-3.0.3
-  export MACPORTS=/opt/local/bin:/opt/local/sbin
-  export MONGO_HOME=/usr/local/mongodb
+  export MONGO_HOME=${HOME}/Development/mongodb
   export MYSQL_HOME=/usr/local/mysql
-  export RABBIT_MQ=/usr/local/sbin
-  export TOMCAT_HOME=/Users/${USER}/Development/apache-tomcat-7.0.23
+  export TOMCAT_HOME=${HOME}/Development/tomcat
 
-  export PATH=${PATH}:${ANT_HOME}/bin:${JAVA_HOME}/bin:${JBOSS_HOME}/bin:${JETTY_HOME}/bin:${JRUBY_HOME}/bin:${M2_HOME}/bin:${MACPORTS}:${MONGO_HOME}/bin:${MYSQL_HOME}/bin:${RABBIT_MQ}:${TOMCAT_HOME}/bin
+  export PATH=${PATH}:${JAVA_HOME}/bin:${MONGO_HOME}/bin:${MYSQL_HOME}/bin:${TOMCAT_HOME}/bin
 
-  export REPO=/Users/${USER}/.m2/repository
   export EDITOR='/usr/local/bin/sublime'
   export GIT_EDITOR='/usr/local/bin/sublime'
-
-  export AWS_ACCESS_KEY_ID=''
-  export AWS_SECRET_ACCESS_KEY=''
-  export SECRET_TOKEN=''
 
 # RUBY
   source ~/.rvm/scripts/rvm
@@ -45,9 +36,6 @@
   alias upgrade='sudo apt-get update && sudo apt-get upgrade && sudo apt-get clean'
   alias work='cd ~/workspace'
 
-  alias jbossstart='${JBOSS_HOME}/bin/run.sh'
-  alias jbossstop='${JBOSS_HOME}/bin/shutdown.sh -S'
-
   alias mysqlrestart='sudo /Library/StartupItems/MySQLCOM/MySQLCOM restart'
   alias mysqlstart='sudo /Library/StartupItems/MySQLCOM/MySQLCOM start'
   alias mysqlstop='sudo /Library/StartupItems/MySQLCOM/MySQLCOM stop'
@@ -55,10 +43,6 @@
   alias tomcatclear='rm ${TOMCAT_HOME}/logs/*.log'
   alias tomcatstart='sudo ${TOMCAT_HOME}/bin/shutdown.sh'
   alias tomcatstop='sudo ${TOMCAT_HOME}/bin/startup.sh'
-
-  ## MONGODB
-  alias mongoconn='${MONGO_HOME}/bin/mongo'
-  alias mongostart='${MONGO_HOME}/bin/mongod --dbpath ${MONGO_HOME}/data/db'
 
   ## GIT
   alias clone='git clone'
@@ -70,12 +54,12 @@
   alias gk='git checkout'
   alias gl="git log --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan  )<%an>%Creset' --abbrev-commit"
   alias gm='git merge'
-  alias gp='git stash pop'
   alias gs='git status -sb'
-  alias gt='git add . && git stash'
   alias master='git checkout master'
+  alias pop='git stash pop'
   alias pull='git pull'
   alias push='git push && git push --tags'
+  alias stash='git add -A && git stash'
 
   function gp() {
     git commit $1 -m $2 --author="$3 <${4}>"
@@ -88,7 +72,7 @@
   }
 
   function amazon() {
-    ssh -i "/Users/${USER}/.ssh/${1}.pem" "ubuntu@${1}.${2}"
+    ssh -i "${HOME}/.ssh/${1}.pem" "ubuntu@${1}.${2}"
   }
 
   ## MKV
