@@ -1,0 +1,8 @@
+processManagement:
+  pidFilePath: '/usr/local/mongodb/mongodb.pid'
+
+systemLog:
+  destination: 'file'
+  logAppend: true
+  path: '/var/log/mongodb/out.log'
+  quiet: false
