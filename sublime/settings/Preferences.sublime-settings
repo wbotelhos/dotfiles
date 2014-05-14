@@ -1,9 +1,9 @@
 {
-  "binary_file_patterns"              : ["*.log", "*.sassc", "*.scssc"], // Excluded from Goto and Find
+  "binary_file_patterns"              : ["*.log", "*.sassc", "*.scssc"], // Excludes from Goto and Find.
   "bold_folder_labels"                : true,
   "ensure_newline_at_eof_on_save"     : true,
   "file_exclude_patterns"             : ["*.class", "*.gz", "*.log", "*.pyc", "*.sassc", "*.scssc", ".DS_Store"],
-  "folder_exclude_patterns"           : ["estacione_*", "*.gz", ".git"],
+  "folder_exclude_patterns"           : ["estacione_*", "node_modules", "*.gz", ".git"],
   "font_face"                         : "Menlo",
   "font_size"                         : 15,
   "highlight_line"                    : true,
