@@ -2,7 +2,7 @@
   "binary_file_patterns"              : ["*.log", "*.sassc", "*.scssc"], // Excludes from Goto and Find.
   "bold_folder_labels"                : true,
   "ensure_newline_at_eof_on_save"     : true,
-  "file_exclude_patterns"             : ["*.class", "*.gz", "*.log", "*.pyc", "*.sassc", "*.scssc", ".DS_Store"],
+  "file_exclude_patterns"             : ["*.class", "*.gz", "*.log", "*.pyc", "*.sassc", "*.scssc", ".DS_Store", ".DS_Store", "debian/*.deb", "debian/*.substvars", "debian/files"],
   "folder_exclude_patterns"           : ["estacione_*", "node_modules", "*.gz", ".git"],
   "font_face"                         : "Menlo",
   "font_size"                         : 15,
