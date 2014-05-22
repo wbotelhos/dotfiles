@@ -3,21 +3,28 @@
   "new_file_syntax"    : false,
   "syntaxes"           : [
     {
-      "name"  : "RSpec",
+      "name"  : "HTML/HTML",
+      "rules" : [
+        { "file_name": ".*\\.ejs$"}
+      ]
+    },
+    
+    {
+      "name"  : "RSpec/RSpec",
       "rules" : [
         { "file_name": ".*_spec\\.rb$" }
       ]
     },
 
     {
-      "name"  : "Ruby",
+      "name"  : "Ruby/Ruby",
       "rules" : [
         { "file_name": "Gemfile" }
       ]
     },
 
     {
-      "name"  : "Jasmine",
+      "name"  : "Jasmine/Jasmine",
       "rules" : [
         { "file_name": ".*_spec\\.js$" }
       ]
