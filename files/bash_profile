@@ -35,6 +35,7 @@
   alias folders='ls -Gal | grep ^d'
   alias hclear='history -c'
   alias ip='curl ifconfig.me'
+  alias jasminenode='jasmine-node --forceexit'
   alias kill='kill -9'
   alias la='ls -lah'
   alias psx='ps aux | grep'
