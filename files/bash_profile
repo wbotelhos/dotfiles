@@ -37,7 +37,7 @@
   alias ip='curl ifconfig.me'
   alias kill='kill -9'
   alias la='ls -lah'
-  alias ps='ps aux | grep'
+  alias psx='ps aux | grep'
   alias psjava='jps -l'
   alias reload='source ~/.bash_profile'
   alias speedup='sudo find /private/var/log/asl/* -mtime +5 -exec rm -rf {} \;'
