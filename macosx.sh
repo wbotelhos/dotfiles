@@ -57,6 +57,9 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 echo 'Workaround for Accessibility Issues on Mac OS X Mavericks'
 sudo sqlite3 /Library/Application\ Support/com.apple.TCC/TCC.db 'delete from access where client like "%divvy%"'
 
+echo 'Showing the Users directory (temporary)'
+sudo chflags nohidden /Users
+
 echo 'Kill affected applications'
 for app in Safari Finder Dock Mail SystemUIServer; do killall "$app" >/dev/null 2>&1; done
 
