@@ -13,7 +13,7 @@
 ### END INIT INFO
 
 CLI=/usr/local/mongodb/bin/mongo
-CONF=/usr/local/mongodb/mongodb.conf
+CONF=/usr/local/mongodb/mongodb.yml
 DAEMON=/usr/local/mongodb/bin/mongod
 NAME=mongodb
 PID=/var/run/mongodb.pid
