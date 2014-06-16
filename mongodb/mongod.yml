@@ -1,5 +1,5 @@
 processManagement:
-  pidFilePath: '/usr/local/mongodb/mongodb.pid'
+  pidFilePath: '/var/run/mongodb.pid'
 
 systemLog:
   destination: 'file'
