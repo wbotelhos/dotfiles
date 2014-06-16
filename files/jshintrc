@@ -1,75 +1,81 @@
 // http://www.jshint.com/docs/options
 
 {
-  "asi"           : false,    // * Tolerate Automatic Semicolon Insertion (no semicolons)
+  "asi"           : false,    // true: Tolerate Automatic Semicolon Insertion (no semicolons)
   "bitwise"       : true,     // * Prohibit bitwise operators (&, |, ^, etc.)
   "boss"          : false,    // * Tolerate assignments where comparisons would be expected
-  "browser"       : true,     // * Defines globals exposed by modern browsers (window, document, etc)
+  "browser"       : true,     // Web Browser (window, document, etc)
   "camelcase"     : true,     // * Identifiers must be in camelCase
-  "couch"         : false,    // * Defines globals exposed by CouchDB.
-  "curly"         : true,     // * Require {} for every new block or scope
-  "debug"         : false,    // * Allow debugger statements e.g. browser breakpoints.
-  "devel"         : true,     // * Avoid development/debugging codes goes to production (alert, confirm, etc).
-  "dojo"          : false,    // * Defines globals exposed by the Dojo Toolkit. (Dojo Toolkit)
+  "couch"         : false,    // CouchDB
+  "curly"         : true,     // true: Require {} for every new block or scope
+  "debug"         : false,    // true: Allow debugger statements e.g. browser breakpoints.
+  "devel"         : true,     // Development/debugging (alert, confirm, etc)
+  "dojo"          : false,    // Dojo Toolkit
   "eqeqeq"        : true,     // * Require triple equals (===) for comparison
-  "eqnull"        : false,    // * Tolerate use of `== null`
-  "es5"           : false,    // * Allow ES5 syntax (ex: getters and setters)
-  "esnext"        : false,    // * Allow ES.next (ES6) syntax (ex: `const`)
-  "evil"          : false,    // * Tolerate use of `eval` and `new Function()`
-  "expr"          : false,    // * Tolerate `ExpressionStatement` as Programs
-  "forin"         : true,     // * Require filtering for..in loops with obj.hasOwnProperty()
-  "funcscope"     : false,    // * Tolerate defining variables inside control statements"
-  "globals"       : {         // * additional predefined global variables: override?
-    "$"        : false,
-    "console"  : false,
-    "it"       : true,
-    "jQuery"   : false
+  "eqnull"        : false,    // true: Tolerate use of `== null`
+  "es5"           : false,    // true: Allow ES5 syntax (ex: getters and setters)
+  "esnext"        : false,    // true: Allow ES.next (ES6) syntax (ex: `const`)
+  "evil"          : false,    // true: Tolerate use of `eval` and `new Function()`
+  "expr"          : false,    // true: Tolerate `ExpressionStatement` as Programs
+  "forin"         : true,     // true: Require filtering for..in loops with obj.hasOwnProperty()
+  "funcscope"     : false,    // true: Tolerate defining variables inside control statements"
+  "globals"       : {         // additional predefined global variables
+    "$"                     : true,
+    "afterEach"             : true,
+    "beforeEach"            : true,
+    "context"               : true,
+    "describe"              : true,
+    "expect"                : true,
+    "it"                    : true,
+    "jasmine"               : true,
+    "jQuery"                : true,
+    "mostRecentAjaxRequest" : true
   },
-  "globalstrict"  : false,    // * Allow global "use strict" (also enables 'strict')
-  "immed"         : false,    // * Require immediate invocations to be wrapped in parens e.g. `(function () { } ());`
+  "globalstrict"  : false,    // true: Allow global "use strict" (also enables 'strict')
+  "immed"         : false,    // true: Require immediate invocations to be wrapped in parens e.g. `(function () { } ());`
   "indent"        : 2,        // * Number of spaces to use for indentation
-  "iterator"      : false,    // * Tolerate using the `__iterator__` property
-  "jquery"        : false,    // * jQuery is global and cannot be overrided
-  "lastsemic"     : false,    // * Tolerate omitting a semicolon for the last statement of a 1-line block
+  "iterator"      : false,    // true: Tolerate using the `__iterator__` property
+  "jquery"        : false,    // jQuery
+  "lastsemic"     : false,    // true: Tolerate omitting a semicolon for the last statement of a 1-line block
   "latedef"       : true,     // * Require variables/functions to be defined before being used
-  "laxbreak"      : false,    // * Tolerate possibly unsafe line breakings
-  "laxcomma"      : false,    // * Tolerate comma-first style coding
-  "loopfunc"      : false,    // * Tolerate functions being defined in loops
+  "laxbreak"      : false,    // true: Tolerate possibly unsafe line breakings
+  "laxcomma"      : false,    // true: Tolerate comma-first style coding
+  "loopfunc"      : false,    // true: Tolerate functions being defined in loops
   "maxcomplexity" : 5,        // * Max cyclomatic complexity per function
-  "maxdepth"      : false,    // * Max depth of nested blocks (within functions)
-  "maxerr"        : 50,       // * Maximum error before stopping
+  "maxdepth"      : false,    // {int} Max depth of nested blocks (within functions)
+  "maxerr"        : 50,       // {int} Maximum error before stopping
   "maxlen"        : false,    // * Max number of characters per line
-  "maxparams"     : 7,        // * Max number of formal params allowed per function
-  "maxstatements" : false,    // * Max number statements per function
-  "mootools"      : false,    // * MooTools is global and cannot be overrided
-  "moz"           : false,    // * Allow Mozilla specific syntax (extends and overrides esnext features)                               // (ex: `for each`, multiple try/catch, function expression…)
-  "multistr"      : false,    // * Tolerate multi-line strings
+  "maxparams"     : false,    // {int} Max number of formal params allowed per function
+  "maxstatements" : false,    // {int} Max number statements per function
+  "mootools"      : false,    // MooTools
+  "moz"           : false,    // true: Allow Mozilla specific syntax (extends and overrides esnext features)                               // (ex: `for each`, multiple try/catch, function expression…)
+  "multistr"      : false,    // true: Tolerate multi-line strings
   "newcap"        : true,     // * Require capitalization of all constructor functions e.g. `new F()`
-  "noarg"         : true,     // * Prohibit use of `arguments.caller` and `arguments.callee`
+  "noarg"         : true,     // true: Prohibit use of `arguments.caller` and `arguments.callee`
   "node"          : true,     // * Support Node.
   "noempty"       : true,     // * Prohibit use of empty blocks
-  "nomen"         : true,     // * Prohibit dangling `_` in variables
-  "nonew"         : false,    // * Prohibit use of constructors for side-effects (without assignment)
-  "nonstandard"   : false,    // * Widely adopted globals (escape, unescape, etc)
-  "onevar"        : false,    // * Allow only one `var` statement per function
-  "passfail"      : false,    // * Stop on first error
-  "plusplus"      : false,    // * Prohibit use of `++` & `--`
-  "proto"         : false,    // * Tolerate using the `__proto__` property
-  "prototypejs"   : false,    // * Prototype and Scriptaculous are global and cannot be overrided
-  "quotmark"      : "single", // * Allow only single quotes
-  "rhino"         : false,    // * Rhino is global and cannot be overrided
-  "scripturl"     : true,     // * Tolerate script-targeted URLs
-  "shadow"        : true,     // * Allows re-define variables later in code e.g. `var x=1; x=2;`
+  "nomen"         : false,    // true: Prohibit dangling `_` in variables
+  "nonew"         : false,    // true: Prohibit use of constructors for side-effects (without assignment)
+  "nonstandard"   : false,    // Widely adopted globals (escape, unescape, etc)
+  "onevar"        : false,    // true: Allow only one `var` statement per function
+  "passfail"      : false,    // true: Stop on first error
+  "plusplus"      : false,    // true: Prohibit use of `++` & `--`
+  "proto"         : false,    // true: Tolerate using the `__proto__` property
+  "prototypejs"   : false,    // Prototype and Scriptaculous
+  "quotmark"      : "single", //
+  "rhino"         : false,    // Rhino
+  "scripturl"     : false,    // true: Tolerate script-targeted URLs
+  "shadow"        : false,    // true: Allows re-define variables later in code e.g. `var x=1; x=2;`
   "smarttabs"     : false,    // * Tolerate mixed tabs/spaces when used for alignment
-  "strict"        : true,     // * Requires all functions run in ES5 Strict Mode
-  "sub"           : false,    // * Tolerate using `[]` notation when it can still be expressed in dot notation
-  "supernew"      : false,    // * Tolerate `new function () { ... };` and `new Object;`
+  "strict"        : true,     // true: Requires all functions run in ES5 Strict Mode
+  "sub"           : false,    // true: Tolerate using `[]` notation when it can still be expressed in dot notation
+  "supernew"      : false,    // true: Tolerate `new function () { ... };` and `new Object;`
   "trailing"      : true,     // * Prohibit trailing whitespaces
   "undef"         : true,     // * Require all non-global variables to be declared (prevents global leaks)
   "unused"        : true,     // * Require all defined variables be used
-  "validthis"     : false,    // * Tolerate using this in a non-constructor function
-  "white"         : false,    // * Check against strict whitespace and indentation rules
-  "worker"        : false,    // * Web Workers
-  "wsh"           : false,    // * Windows Scripting Host
-  "yui"           : false     // * Yahoo User Interface is global and cannot be overrided
+  "validthis"     : false,    // true: Tolerate using this in a non-constructor function
+  "white"         : false,    // true: Check against strict whitespace and indentation rules
+  "worker"        : false,    // Web Workers
+  "wsh"           : false,    // Windows Scripting Host
+  "yui"           : false     // Yahoo User Interface
 }
