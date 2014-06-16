@@ -63,4 +63,7 @@ sudo chflags nohidden /Users
 echo 'Kill affected applications'
 for app in Safari Finder Dock Mail SystemUIServer; do killall "$app" >/dev/null 2>&1; done
 
+echo 'Kill Finder'
+killall Finder
+
 echo -e "\n${GREEN}Done!${NO_COLOR}\n"
