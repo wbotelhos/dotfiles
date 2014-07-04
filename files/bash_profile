@@ -63,17 +63,23 @@ export SECRET_TOKEN=''
   alias push='git push && git push --tags'
   alias stash='git add -A && git stash'
 
-  function gp() {
+  gp() {
     git commit $1 -m $2 --author="$3 <${4}>"
   }
 
-  function tag() {
+  merge_theirs() {
+    BRANCH=$1
+
+    git merge --strategy recursive -X theirs $BRANCH
+  }
+
+  tag() {
     git tag -a "$1" -m "$1"
 
     echo "Now your project is on version '`git describe`'"
   }
 
-  function amazon() {
+  amazon() {
     ssh -i "${HOME}/.ssh/${1}.pem" "ubuntu@${1}.${2}"
   }
 
@@ -101,7 +107,7 @@ export SECRET_TOKEN=''
 
   # 30: Black | 31: Red | 32: Green | 33: Yellow | 34: Blue | 35: Purple | 36: Cyan | 37: White | green others...
   # 0: Normal | 1: Bold
-  function prompt() {
+  prompt() {
     local CYAN='\[\033[0;36m\]'
     local PURPLE='\[\033[0;35m\]'
     local RED='\[\033[0;31m\]'
