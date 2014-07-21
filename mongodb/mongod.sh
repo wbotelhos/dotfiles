@@ -1,23 +1,21 @@
 #!/bin/bash
 
 ### BEGIN INIT INFO
-# Provides:          mongodb
+# Provides:          mongod
 # Required-Start:    $network $local_fs $remote_fs
 # Required-Stop:     $network $local_fs $remote_fs
 # Default-Start:     2 3 4 5
 # Default-Stop:      0 1 6
 # Should-Start:      $syslog $named
 # Should-Stop:       $syslog $named
-# Short-Description: mongodb daemon
-# Description:       mongodb daemon
+# Short-Description: mongod daemon
+# Description:       mongod daemon
 ### END INIT INFO
 
-CLI=/usr/local/mongodb/bin/mongo
 CONF=/usr/local/mongodb/mongodb.yml
 DAEMON=/usr/local/mongodb/bin/mongod
-NAME=mongodb
+NAME=mongod
 PID=/var/run/mongodb.pid
-PORT=27017
 
 case "$1" in
   start)

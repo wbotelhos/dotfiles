@@ -1,6 +1,7 @@
 [begin] (Fluxy)
   [encoding] {UTF-8}
     [exec] (Chrome)   {google-chrome}
+    [exec] (Explorer) {nautilus / &}
     [exec] (Firefox)  {firefox}
     [exec] (Sublime)  {sublime}
     [exec] (Terminal) {gnome-terminal}
