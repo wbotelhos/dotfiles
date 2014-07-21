@@ -21,8 +21,8 @@ else
 
   mkdir -p $USER_PATH
 
-  wget $cucumber -O ${USER_PATH}/Cucumber.tmLanguage
-  wget $markdown -O ${USER_PATH}/Markdown.tmLanguage
+  wget $cucumber -O "${USER_PATH}/Cucumber.tmLanguage"
+  wget $markdown -O "${USER_PATH}/Markdown.tmLanguage"
 fi
 
 echo -e "${GREEN}syntax.sh done!${NO_COLOR}\n"

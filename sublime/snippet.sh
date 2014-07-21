@@ -12,11 +12,11 @@ if [ `uname` == 'Linux' ]; then
 
   cp ./snippets/*.sublime-snippet ${HOME}/.config/sublime-text-2/Packages/User
 else
-  USER_PATH=${USER_PATH}
+  USER_PATH=${HOME}/Library/'Application Support/Sublime Text 2'/Packages/User
 
   mkdir -p $USER_PATH
 
-  cp ./snippets/*.sublime-snippet ${USER_PATH}
+  cp ./snippets/*.sublime-snippet "$USER_PATH"
 fi
 
 echo -e "${GREEN}snippet.sh done!${NO_COLOR}\n"

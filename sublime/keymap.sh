@@ -16,7 +16,7 @@ else
 
   mkdir -p $USER_PATH
 
-  cp ./keymaps/*.sublime-keymap $USER_PATH
+  cp ./keymaps/*.sublime-keymap "$USER_PATH"
 fi
 
 echo -e "${GREEN}keymap.sh done!${NO_COLOR}\n"

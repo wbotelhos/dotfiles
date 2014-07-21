@@ -16,7 +16,7 @@ else
 
   mkdir -p $USER_PATH
 
-  cp ./settings/Preferences.sublime-settings ${USER_PATH}
+  cp ./settings/Preferences.sublime-settings "$USER_PATH"
 fi
 
 echo -e "${GREEN}profile.sh done!${NO_COLOR}\n"
