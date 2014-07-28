@@ -38,7 +38,9 @@ download 'https://github.com/adampresley/sublime-js-minify'          'JsMinify'
 download 'https://github.com/colinta/SublimeChangeQuotes'            'ChangeQuotes'
 download 'https://github.com/eddorre/SublimeERB'                     'ERB'
 download 'https://github.com/facelessuser/ApplySyntax'               'ApplySyntax'
+download 'https://github.com/facelessuser/BracketHighlighter'        'BracketHighlighter'
 download 'https://github.com/gja/sublime-text-2-jasmine'             'Jasmine'
+download 'https://github.com/jdc0589/JsFormat'                        'JsFormat'
 download 'https://github.com/jnordberg/sublime-colorpick'            'ColorPicker'
 download 'https://github.com/kek/sublime-expand-selection-to-quotes' 'ExpandQuotes'
 download 'https://github.com/kemayo/sublime-text-2-git'              'Git'
@@ -51,6 +53,7 @@ download 'https://github.com/titoBouzout/SideBarEnhancements'        'SideBarEnh
 download 'https://github.com/victorporof/Sublime-JSHint'             'SublimeJSHint'
 download 'https://github.com/wbond/sublime_alignment'                'Alignment'
 download 'https://github.com/wbotelhos/sublime-assignment'           'Assignment'
+download 'https://github.com/wbotelhos/sublime-sass-cleaner'         'SASSCleaner'
 download 'https://github.com/zoomix/SublimeToggleSymbol'             'ToggleSymbol'
 
 echo -e "\n${GREEN}plugin.sh done!${NO_COLOR}\n"
