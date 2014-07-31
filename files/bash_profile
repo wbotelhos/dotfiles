@@ -3,120 +3,123 @@ export AWS_SECRET_ACCESS_KEY=''
 export SECRET_TOKEN=''
 
 # ENVIRONMENT
-  export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home
-  export MONGO_HOME=/usr/local/mongodb
-  export MYSQL_HOME=/usr/local/mysql
-  export REDIS_HOME=/usr/local/redis
-  export TOMCAT_HOME=/usr/local/tomcat
+export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home
+export MONGO_HOME=/usr/local/mongodb
+export MYSQL_HOME=/usr/local/mysql
+export REDIS_HOME=/usr/local/redis
+export TOMCAT_HOME=/usr/local/tomcat
 
-  export PATH=${PATH}:${JAVA_HOME}/bin:${MONGO_HOME}/bin:${MYSQL_HOME}/bin:${REDIS_HOME}/src:${TOMCAT_HOME}/bin
+export PATH=${PATH}:${JAVA_HOME}/bin:${MONGO_HOME}/bin:${MYSQL_HOME}/bin:${REDIS_HOME}/src:${TOMCAT_HOME}/bin
 
-  export EDITOR='/usr/local/bin/sublime'
-  export GIT_EDITOR='/usr/local/bin/sublime'
+export EDITOR='/usr/local/bin/sublime'
+export GIT_EDITOR='/usr/local/bin/sublime'
 
 # RUBY
-  source ~/.rvm/scripts/rvm
+source ~/.rvm/scripts/rvm
 
 # ALIAS
-  alias ...='cd ../..'
-  alias ..='cd ..'
-  alias .='cd .'
-  alias cap='bundle exec cap'
-  alias capush='git push && git push --tags && bundle exec cap deploy'
-  alias cls='clear'
-  alias folders='ls -Gal | grep ^d'
-  alias hclear='history -c'
-  alias ip='curl ifconfig.me'
-  alias jasminenode='jasmine-node --forceexit'
-  alias kill='kill -9'
-  alias killnautilus='killall -9 nautilus'
-  alias la='ls -lah'
-  alias psjava='jps -l'
-  alias psx='ps aux | grep'
-  alias reload='source ~/.bash_profile'
-  alias speedup='sudo find /private/var/log/asl/* -mtime +5 -exec rm -rf {} \;'
-  alias upgrade='sudo apt-get update && sudo apt-get upgrade && sudo apt-get clean'
-  alias work='cd ~/workspace'
+alias ...='cd ../..'
+alias ..='cd ..'
+alias .='cd .'
+alias cap='bundle exec cap'
+alias capush='git push && git push --tags && bundle exec cap deploy'
+alias cls='clear'
+alias folders='ls -Gal | grep ^d'
+alias hclear='history -c'
+alias ip='curl ifconfig.me'
+alias jasminenode='jasmine-node --forceexit'
+alias kill='kill -9'
+alias killnautilus='killall -9 nautilus'
+alias la='ls -lah'
+alias psjava='jps -l'
+alias psx='ps aux | grep'
+alias reload='source ~/.bash_profile'
+alias speedup='sudo find /private/var/log/asl/* -mtime +5 -exec rm -rf {} \;'
+alias upgrade='sudo apt-get update && sudo apt-get upgrade && sudo apt-get clean'
+alias work='cd ~/workspace'
 
-  alias mysqlrestart='sudo /Library/StartupItems/MySQLCOM/MySQLCOM restart'
-  alias mysqlstart='sudo /Library/StartupItems/MySQLCOM/MySQLCOM start'
-  alias mysqlstop='sudo /Library/StartupItems/MySQLCOM/MySQLCOM stop'
+alias mysqlrestart='sudo /Library/StartupItems/MySQLCOM/MySQLCOM restart'
+alias mysqlstart='sudo /Library/StartupItems/MySQLCOM/MySQLCOM start'
+alias mysqlstop='sudo /Library/StartupItems/MySQLCOM/MySQLCOM stop'
 
-  alias tomcatclear='rm ${TOMCAT_HOME}/logs/*.log'
-  alias tomcatstart='sudo ${TOMCAT_HOME}/bin/shutdown.sh'
-  alias tomcatstop='sudo ${TOMCAT_HOME}/bin/startup.sh'
+alias tomcatclear='rm ${TOMCAT_HOME}/logs/*.log'
+alias tomcatstart='sudo ${TOMCAT_HOME}/bin/shutdown.sh'
+alias tomcatstop='sudo ${TOMCAT_HOME}/bin/startup.sh'
 
-  ## GIT
-  alias clone='git clone'
-  alias fetch='git fetch --all; git fetch --tag'
-  alias ga='git commit -am'
-  alias gc='git commit'
-  alias gd='git difftool -y -x "sdiff" | less'
-  alias gg='gitg &'
-  alias gk='git checkout'
-  alias gl="git log --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan  )<%an>%Creset' --abbrev-commit"
-  alias gm='git merge'
-  alias gs='git status -sb'
-  alias master='git checkout master'
-  alias pop='git stash pop'
-  alias pull='git pull'
-  alias push='git push && git push --tags'
-  alias stash='git add -A && git stash'
+## GIT
+alias clone='git clone'
+alias fetch='git fetch --all; git fetch --tag'
+alias ga='git commit -am'
+alias gc='git commit'
+alias gd='git difftool -y -x "sdiff" | less'
+alias gg='gitg &'
+alias gk='git checkout'
+alias gl="git log --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan  )<%an>%Creset' --abbrev-commit"
+alias gm='git merge'
+alias gs='git status -sb'
+alias master='git checkout master'
+alias pull='git pull'
+alias push='git push && git push --tags'
 
-  gp() {
-    git commit $1 -m $2 --author="$3 <${4}>"
-  }
+### stash
+alias sclear='git stash clear'
+alias spop='git stash pop'
+alias stash='git add -A && git stash'
 
-  merge_theirs() {
-    BRANCH=$1
+### rebase
+alias rcontinue='git rebase --continue'
+alias rebase='stash && git pull --rebase'
 
-    git merge --strategy recursive -X theirs $BRANCH
-  }
+merge_theirs() {
+  BRANCH=$1
 
-  tag() {
-    git tag -a "$1" -m "$1"
+  git merge --strategy recursive -X theirs $BRANCH
+}
 
-    echo "Now your project is on version '`git describe`'"
-  }
+tag() {
+  git tag -a "$1" -m "$1"
 
-  amazon() {
-    ssh -i "${HOME}/.ssh/${1}.pem" "ubuntu@${1}.${2}"
-  }
+  echo "Now your project is on version '`git describe`'"
+}
 
-  ## MKV
-  alias mkv='~/Development/mkvdts2ac3.sh -f -i -n -d -c English --new ~/mkv.mkv'
+amazon() {
+  ssh -i "${HOME}/.ssh/${1}.pem" "ubuntu@${1}.${2}"
+}
 
-  ## RUBY
-  alias be='bundle exec'
-  alias bi='bundle install'
-  alias bu='bundle update'
-  alias cucumber='bundle exec cucumber feature'
-  alias guard='bundle exec guard'
-  alias migrate='rake db:drop:all && rake db:create:all && rake db:migrate && rake db:test:prepare'
-  alias rc='rails c'
-  alias rs='rails s'
-  alias rsp='rails s -p 3001'
-  alias rspec='bundle exec rspec'
-  alias spec='bundle exec rspec spec'
+## MKV
+alias mkv='~/Development/mkvdts2ac3.sh -f -i -n -d -c English --new ~/mkv.mkv'
+
+## RUBY
+alias be='bundle exec'
+alias bi='bundle install'
+alias bu='bundle update'
+alias cucumber='bundle exec cucumber feature'
+alias guard='bundle exec guard'
+alias migrate='rake db:drop:all && rake db:create:all && rake db:migrate && rake db:test:prepare'
+alias rc='rails c'
+alias rs='rails s'
+alias rsp='rails s -p 3001'
+alias rspec='bundle exec rspec'
+alias spec='bundle exec rspec spec'
 
 # COLOR
-  export CLICOLOR=1
-  export GREP_COLOR='1;37'
-  export GREP_OPTIONS='--color=auto'
-  export LSCOLORS=ExFxCxDxBxegedabagacad
+export CLICOLOR=1
+export GREP_COLOR='1;37'
+export GREP_OPTIONS='--color=auto'
+export LSCOLORS=ExFxCxDxBxegedabagacad
 
-  # 30: Black | 31: Red | 32: Green | 33: Yellow | 34: Blue | 35: Purple | 36: Cyan | 37: White | green others...
-  # 0: Normal | 1: Bold
-  prompt() {
-    local CYAN='\[\033[0;36m\]'
-    local PURPLE='\[\033[0;35m\]'
-    local RED='\[\033[0;31m\]'
-    local WHITE='\[\033[0;37m\]'
-    local YELLOW='\[\033[0;33m\]'
+# 30: Black | 31: Red | 32: Green | 33: Yellow | 34: Blue | 35: Purple | 36: Cyan | 37: White | green others...
+# 0: Normal | 1: Bold
+prompt() {
+  local CYAN='\[\033[0;36m\]'
+  local PURPLE='\[\033[0;35m\]'
+  local RED='\[\033[0;31m\]'
+  local WHITE='\[\033[0;37m\]'
+  local YELLOW='\[\033[0;33m\]'
 
-    export PS1="${WHITE}\u${RED}@${PURPLE}\h ${CYAN}\w ${WHITE}(`~/.rvm/bin/rvm-prompt v`) \$(parse_git_branch) ${YELLOW}$ \[\e[m\]\[\e[m\]"
-  }; prompt
+  export PS1="${WHITE}\u${RED}@${PURPLE}\h ${CYAN}\w ${WHITE}(`~/.rvm/bin/rvm-prompt v`) \$(parse_git_branch) ${YELLOW}$ \[\e[m\]\[\e[m\]"
+}; prompt
 
-  parse_git_branch() {
-    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
-  }
+parse_git_branch() {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
