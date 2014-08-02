@@ -49,6 +49,7 @@ download 'https://github.com/nathos/sass-textmate-bundle'            'SASSBundle
 download 'https://github.com/revolunet/sublimetext-markdown-preview' 'MarkdownPreview'
 download 'https://github.com/sergeche/emmet-sublime'                 'Emmet'
 download 'https://github.com/SublimeText/RSpec'                      'RSpec'
+download 'https://github.com/SublimeText/Tag'                        'Tag'
 download 'https://github.com/titoBouzout/SideBarEnhancements'        'SideBarEnhancements'
 download 'https://github.com/victorporof/Sublime-JSHint'             'SublimeJSHint'
 download 'https://github.com/wbond/sublime_alignment'                'Alignment'
