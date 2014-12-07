@@ -29,7 +29,8 @@
     "it"                    : true,
     "jasmine"               : true,
     "jQuery"                : true,
-    "mostRecentAjaxRequest" : true
+    "mostRecentAjaxRequest" : true,
+    "xit"                   : true
   },
   "globalstrict"  : false,    // true: Allow global "use strict" (also enables 'strict')
   "immed"         : false,    // true: Require immediate invocations to be wrapped in parens e.g. `(function () { } ());`
