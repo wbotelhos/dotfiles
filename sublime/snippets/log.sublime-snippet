@@ -1,9 +1,11 @@
 <snippet>
-  <content><![CDATA[
+  <content>
+<![CDATA[
 console.log('----------');
 console.log($0);
 console.log('----------');
-]]></content>
+]]>
+  </content>
   <tabTrigger>log</tabTrigger>
   <scope>source.js</scope>
 </snippet>

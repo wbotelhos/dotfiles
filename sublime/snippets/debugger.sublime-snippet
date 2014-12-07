@@ -1,4 +1,5 @@
 <snippet>
-  <content><![CDATA[require 'debugger';debugger]]></content>
+  <content><![CDATA[binding.pry]]></content>
   <tabTrigger>debug</tabTrigger>
+  <tabTrigger>pry</tabTrigger>
 </snippet>
