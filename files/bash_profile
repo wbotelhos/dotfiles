@@ -68,7 +68,7 @@ alias stash='git add -A && git stash'
 
 ### rebase
 alias rcontinue='git rebase --continue'
-alias rebase='stash && git pull --rebase'
+alias rebase='git add -A && git stash && git pull --rebase'
 
 merge_theirs() {
   BRANCH=$1
@@ -101,6 +101,10 @@ alias rs='rails s'
 alias rsp='rails s -p 3001'
 alias rspec='bundle exec rspec'
 alias spec='bundle exec rspec spec'
+
+## JS
+alias jasmine='node_modules/jasmine-node/bin/jasmine-node --forceexit'
+alias jasmine2='node_modules/jasmine-node/bin/jasmine-node --forceExit'
 
 # COLOR
 export CLICOLOR=1
