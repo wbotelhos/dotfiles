@@ -4,7 +4,6 @@
   { "keys": ["ctrl+alt+n"],      "command": "rspec_create_module", "args": {} },
   { "keys": ["ctrl+alt+period"], "command": "open_rspec_file", "args": {} },
   { "keys": ["ctrl+alt+r"],      "command": "exec", "args": { "cmd": ["rspec", "*"] }, "file_regex": "# ([A-Za-z0-9_./ ]+rb):([0-9]+)", "working_dir": "${folder}" },
-  { "keys": ["ctrl+alt+up"],     "command": "select_lines", "args": { "forward": false } },
   { "keys": ["ctrl+shift+'"],    "command": "expand_selection_to_quotes" },
   { "keys": ["ctrl+shift+."],    "command": "erb" },
   { "keys": ["ctrl+shift+;"],    "command": "toggle_symbol" },
