@@ -60,6 +60,7 @@ alias gs='git status -sb'
 alias master='git checkout master'
 alias pull='git pull'
 alias push='git push && git push --tags'
+alias remote='git config remote.origin.url'
 
 ### stash
 alias sclear='git stash clear'
