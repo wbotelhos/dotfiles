@@ -36,6 +36,7 @@ log_backup_and_install() {
 
 download 'https://github.com/adampresley/sublime-js-minify'          'JsMinify'
 download 'https://github.com/alienhard/SublimeAllAutocomplete'       'SublimeAllAutocomplete'
+download 'https://github.com/aukaost/SublimePrettyYAML'              'PrettyYAML'
 download 'https://github.com/Azd325/sublime-text-caniuse'            'CanIUser'
 download 'https://github.com/colinta/SublimeChangeQuotes'            'ChangeQuotes'
 download 'https://github.com/colinta/SublimeFileDiffs'               'SublimeFileDiffs'
