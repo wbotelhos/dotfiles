@@ -34,6 +34,10 @@ cp files/pryrc ~/.pryrc
 echo '.rspec'
 cp files/rspec ~/.rspec
 
+echo '.ssh/config'
+mkdir -p ~/.ssh
+cp files/config ~/.ssh/config
+
 echo -e "\n${GRAY}Refreshing the .bash_profile${NO_COLOR}"
 source ~/.bash_profile
 

@@ -1,0 +1,17 @@
+Host danca.me danca
+  HostName danca.me
+  IdentitiesOnly yes
+  IdentityFile ~/.ssh/danca
+  User user
+
+Host forrostream.com forrostream
+  HostName forrostream.com
+  IdentitiesOnly yes
+  IdentityFile ~/.ssh/forrostream
+  User user
+
+Host 162.244.25.133 wbotelhos
+  HostName 162.244.25.133
+  IdentitiesOnly yes
+  IdentityFile ~/.ssh/wbotelhos
+  User user
