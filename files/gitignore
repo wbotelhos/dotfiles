@@ -1,34 +1,16 @@
-# Eclipse
-build
-target
-
-# Global
 *.log
-*.swp
-*.zip
-
-# jQuery
-spec/runner.htm
-
-# Mac
+*.orig
+*.sw[pon]
+*.tar.gz
+*~
+.bundle
 .DS_Store
-
-# NetBeans
-dist
-
-# Java
-*.class
-*.war
-
-# Python
-*.pyc
-.Python
-
-
-# Ruby
-*.sqlite3
-/.bundle
-/config/*.sphinx.conf
-/db/sphinx
-/tmp
+.sass-cache
+/.capistrano
+/dump.rdb
 /log
+/node_modules
+/pkg
+/public/assets
+/public/javascripts
+/tmp
