@@ -2,7 +2,7 @@ require 'rails/console/app'
 
 extend Rails::ConsoleMethods
 
-if defined?(PryDebugger)
+if defined? PryDebugger
   Pry.commands.alias_command 'c', 'continue'
   Pry.commands.alias_command 'f', 'finish'
   Pry.commands.alias_command 'n', 'next'
