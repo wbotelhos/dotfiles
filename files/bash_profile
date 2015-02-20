@@ -112,3 +112,20 @@ prompt() {
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
+
+## FUNCTIONS
+
+keygen() {
+  PRIVATE_KEY=~/.ssh/"$1"
+  PUBLIC_KEY="${PRIVATE_KEY}.pub"
+  EMAIL=$2
+
+  ssh-keygen -t rsa -b 4096 -f $PRIVATE_KEY -C $2
+
+  chmod 600 $PRIVATE_KEY
+  chmod 600 $PUBLIC_KEY
+
+  ssh-add $PRIVATE_KEY
+
+  cat PUBLIC_KEY
+}
