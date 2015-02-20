@@ -1,17 +1,17 @@
-Host 104.167.105.131 danca.me danca
+Host danca.me danca
   HostName danca.me
   IdentitiesOnly yes
   IdentityFile ~/.ssh/danca
   User user
 
-Host 162.244.25.171 forrostream.com forrostream
+Host forrostream.com forrostream
   HostName forrostream.com
   IdentitiesOnly yes
   IdentityFile ~/.ssh/forrostream
   User user
 
-Host 162.244.25.133 wbotelhos.com wbotelhos
-  HostName 162.244.25.133
+Host wbotelhos.com wbotelhos
+  HostName wbotelhos.com
   IdentitiesOnly yes
   IdentityFile ~/.ssh/wbotelhos
   User user
