@@ -1,9 +1,0 @@
-<snippet>
-  <content><![CDATA[
-puts '>' * 100
-p $0
-puts '<' * 100]]>
-  </content>
-  <tabTrigger>puts</tabTrigger>
-  <!--scope>source.rb</scope-->
-</snippet>
