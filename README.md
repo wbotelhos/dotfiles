@@ -1,16 +1,6 @@
-# Dot files
+# Dotfiles
 
-My personal configurations including MacOSX Tweak.
-
-## Features
-
-#### install.sh
-
-Extract the files prepending the dot character to make it hidden.
-
-#### macosx.sh
-
-Tweak to make MacOSX more enjoyable.
+My personal settings including MacOSX Tweak.
 
 ## Usage
 
