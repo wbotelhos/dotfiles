@@ -1,10 +1,3 @@
-[user]
-	name = Washington Botelho
-	email = wbotelhos@gmail.com
-
-[core]
-	excludesfile = /Users/wbotelhos/.gitignore
-
 [color]
 	branch = auto
 	diff = auto
@@ -25,3 +18,13 @@
 	added = green
 	changed = yellow
 	untracked = cyan
+
+[core]
+	excludesfile = ~/.gitignore
+
+[push]
+	default = simple
+
+[user]
+	name = Washington Botelho
+	email = wbotelhos@gmail.com
