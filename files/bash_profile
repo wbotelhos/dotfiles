@@ -85,6 +85,7 @@ alias rc='rails c'
 alias rs='rails s'
 alias rsp='rails s -p 3001'
 alias rspec='bundle exec rspec'
+alias seed='rake db:seed'
 alias spec='bundle exec rspec spec'
 
 ## JS
