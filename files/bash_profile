@@ -93,36 +93,28 @@ alias spec='bundle exec rspec spec'
 alias jasmine='node_modules/jasmine-node/bin/jasmine-node --forceexit'
 alias jasmine2='node_modules/jasmine-node/bin/jasmine-node --forceExit'
 
-# BASH
 PROMPT_COMMAND='echo -ne "\033]0; ${PWD##*/}\007"'
 
+# BASH
 prompt() {
   local BRANCH=$(git branch 2> /dev/null | grep \* | sed 's/* //')
   local CYAN='\033[0;36m'
   local LOCALLY='\w'
   local NO_COLOR='\033[1;0m'
-  local PURPLE='\033[0;35m'
   local RUBY_VERSION=$(~/.rvm/bin/rvm-prompt v)
-  local USERNAME='\u'
   local WHITE='\033[0;37m'
   local YELLOW='\033[0;33m'
 
-  export PS1="${CYAN}${USERNAME} ${PURPLE}${LOCALLY} ${WHITE}(${RUBY_VERSION}) [${BRANCH}] ${YELLOW}$ ${NO_COLOR}"
+  export PS1="${CYAN}${LOCALLY} ${WHITE}(${RUBY_VERSION}) [${BRANCH}] ${YELLOW}$ ${NO_COLOR}"
 }; prompt
 
 # METHODS
-
 keygen() {
-  PRIVATE_KEY=~/.ssh/"$1"
-  PUBLIC_KEY="${PRIVATE_KEY}.pub"
+  KEY_PATH=~/.ssh/"$1"
   EMAIL=$2
 
-  ssh-keygen -t rsa -b 4096 -f $PRIVATE_KEY -C $2
-
-  chmod 600 $PRIVATE_KEY
-  chmod 600 $PUBLIC_KEY
-
-  ssh-add $PRIVATE_KEY
-
-  cat PUBLIC_KEY
+  ssh-keygen -t rsa -b 4096 -f $KEY_PATH -C $2
+  chmod 600 $KEY_PATH
+  ssh-add $KEY_PATH
+  cat "${KEY_PATH}.pub"
 }
