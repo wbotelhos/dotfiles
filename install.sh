@@ -1,48 +1,81 @@
 #!/bin/bash
 
+##################
+# --- Common --- #
+##################
+
 GRAY='\033[0;36m'
 GREEN='\033[0;32m'
 NO_COLOR='\033[1;0m'
-RED='\033[1;31m'
+YELLOW='\033[1;33m'
 
-echo -e "\n${GRAY}Copying config files...${NO_COLOR}\n"
+##########################
+# --- Configurations --- #
+##########################
 
-echo '.bash_profile'
-cp files/bash_profile ~/.bash_profile
+JOB_NAME='Dotfiles#install'
 
-echo '.caprc'
-cp files/caprc ~/.caprc
+#####################
+# --- Functions --- #
+#####################
 
-echo '.gemrc'
-cp files/gemrc ~/.gemrc
+begin() {
+  echo -e "-------------------------------------"
+  echo -e "${GRAY}Starting ${JOB_NAME}...${NO_COLOR}\n"
+}
 
-echo '.gitconfig'
-cp files/gitconfig ~/.gitconfig
+config() {
+  mkdir -p ~/.ssh
+  cp files/config ~/.ssh/config
+}
 
-echo '.hgrc'
-cp files/hgrc ~/.hgrc
+dotfiles() {
+  cp files/bash_profile ~/.bash_profile
+  cp files/caprc ~/.caprc
+  cp files/gemrc ~/.gemrc
+  cp files/gitconfig ~/.gitconfig
+  cp files/hgrc ~/.hgrc
+  cp files/irbrc ~/.irbrc
+  cp files/jshintrc ~/.jshintrc
+  cp files/pryrc ~/.pryrc
+  cp files/rspec ~/.rspec
+}
 
-echo '.irbrc'
-cp files/irbrc ~/.irbrc
+end() {
+  echo -e "${GREEN}Done!${NO_COLOR}"
+  echo -e "-------------------------------------\n"
+}
 
-echo '.jshintrc'
-cp files/jshintrc ~/.jshintrc
+linking() {
+  if [ `uname` == 'Linux' ]; then
+    ENTRY='source ~/.bash_profile'
+    FILE=~/.bashrc
+    RESULT=$(grep "${ENTRY}" $FILE)
 
-echo '.pryrc'
-cp files/pryrc ~/.pryrc
+    [ "$RESULT" == '' ] && echo $ENTRY >> $FILE
+  fi
+}
 
-echo '.rspec'
-cp files/rspec ~/.rspec
+reload() {
+  . ~/.bash_profile
+}
 
-echo '.ssh/config'
-mkdir -p ~/.ssh
-cp files/config ~/.ssh/config
+terminal() {
+  if [ `uname` != 'Linux' ]; then
+    open ./more/wbotelhos.terminal
+  fi
+}
 
-echo -e "\n${GRAY}Refreshing the .bash_profile${NO_COLOR}"
-source ~/.bash_profile
+#####################
+# ---- Install ---- #
+#####################
 
-echo -e "${GRAY}Applying Terminal config...${NO_COLOR}"
-open more/wbotelhos.terminal
+begin
 
-echo -e "\n${GRAY}* Copy the gitignore file as .gitignore to your projects!"
-echo -e "\n${GREEN}Done!${NO_COLOR}\n"
+dotfiles
+config
+terminal
+linking
+reload
+
+end
