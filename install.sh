@@ -42,7 +42,7 @@ echo -e "\n${GRAY}Refreshing the .bash_profile${NO_COLOR}"
 source ~/.bash_profile
 
 echo -e "${GRAY}Applying Terminal config...${NO_COLOR}"
-open more/Professional.terminal
+open more/wbotelhos.terminal
 
 echo -e "\n${GRAY}* Copy the gitignore file as .gitignore to your projects!"
 echo -e "\n${GREEN}Done!${NO_COLOR}\n"
