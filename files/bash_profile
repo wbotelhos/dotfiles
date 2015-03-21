@@ -94,7 +94,7 @@ alias spec='bundle exec rspec spec'
 alias jasmine='node_modules/jasmine-node/bin/jasmine-node --forceexit'
 alias jasmine2='node_modules/jasmine-node/bin/jasmine-node --forceExit'
 
-PROMPT_COMMAND='echo -ne "\033]0; ${PWD##*/}\007"'
+PROMPT_COMMAND='echo -ne "\033]0; ${PWD##*/}\007" && prompt'
 
 # BASH
 prompt() {
@@ -107,7 +107,7 @@ prompt() {
   local YELLOW='\033[0;33m'
 
   export PS1="${CYAN}${LOCALLY} ${WHITE}(${RUBY_VERSION}) [${BRANCH}] ${YELLOW}$ ${NO_COLOR}"
-}; prompt
+}
 
 # METHODS
 keygen() {
