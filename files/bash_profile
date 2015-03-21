@@ -36,7 +36,6 @@ alias killnautilus='killall -9 nautilus'
 alias la='ls -lah'
 alias psj='jps -l'
 alias psx='ps aux | grep'
-alias reload='source ~/.bashrc; source ~/.bash_profile'
 alias speedup='sudo find /private/var/log/asl/* -mtime +5 -exec rm -rf {} \;'
 alias upgrade='sudo apt-get update && sudo apt-get upgrade && sudo apt-get clean'
 alias work='cd ~/workspace'
@@ -108,6 +107,14 @@ prompt() {
   local YELLOW='\033[0;33m'
 
   export PS1="${CYAN}${LOCALLY} ${WHITE}(${RUBY_VERSION}) [${BRANCH}] ${YELLOW}$ ${NO_COLOR}"
+}
+
+reload() {
+  BASHRC=~/.bashrc
+  BASH_PROFILE=~/.bash_profile
+
+  [ -f $BASHRC ]       && source $BASHRC
+  [ -f $BASH_PROFILE ] && source $BASH_PROFILE
 }
 
 # METHODS
