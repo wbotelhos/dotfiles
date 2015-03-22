@@ -10,8 +10,8 @@ Host forrostream.com forrostream
   IdentityFile ~/.ssh/forrostream
   User user
 
-Host wbotelhos.com wbotelhos
+Host wbotelhos.com blog
   HostName wbotelhos.com
   IdentitiesOnly yes
-  IdentityFile ~/.ssh/wbotelhos
+  IdentityFile ~/.ssh/blog
   User user
