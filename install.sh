@@ -30,15 +30,9 @@ config() {
 }
 
 dotfiles() {
-  cp files/bash_profile ~/.bash_profile
-  cp files/caprc ~/.caprc
-  cp files/gemrc ~/.gemrc
-  cp files/gitconfig ~/.gitconfig
-  cp files/hgrc ~/.hgrc
-  cp files/irbrc ~/.irbrc
-  cp files/jshintrc ~/.jshintrc
-  cp files/pryrc ~/.pryrc
-  cp files/rspec ~/.rspec
+  for file in `ls files`; do
+    cp files/${file} ~/.${file}
+  done
 }
 
 end() {
@@ -61,14 +55,12 @@ reload() {
 }
 
 terminal() {
-  if [ `uname` != 'Linux' ]; then
-    open ./more/wbotelhos.terminal
-  fi
+  [ `uname` != 'Linux' ] && open ./more/wbotelhos.terminal
 }
 
-#####################
-# ---- Install ---- #
-#####################
+###################
+# --- Install --- #
+###################
 
 begin
 
