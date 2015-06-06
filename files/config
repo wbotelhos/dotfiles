@@ -1,3 +1,6 @@
+Host *
+  ServerAliveInterval 240
+
 Host danca.me danca
   HostName danca.me
   IdentitiesOnly yes
