@@ -14,7 +14,7 @@ export TOMCAT_HOME=/usr/local/tomcat
 export PATH=${PATH}:${JAVA_HOME}/bin:${MONGO_HOME}/bin:${MYSQL_HOME}/bin:${REDIS_HOME}/src:${TOMCAT_HOME}/bin:${RVM_HOME}/bin
 
 export EDITOR='/usr/local/bin/sublime'
-export GIT_EDITOR='/usr/local/bin/sublime'
+export GIT_EDITOR='/usr/bin/vim'
 
 # RUBY
 source ~/.rvm/scripts/rvm
@@ -36,6 +36,7 @@ alias killnautilus='killall -9 nautilus'
 alias la='ls -lah'
 alias psj='jps -l'
 alias psx='ps aux | grep'
+alias sb='sublime'
 alias speedup='sudo find /private/var/log/asl/* -mtime +5 -exec rm -rf {} \;'
 alias upgrade='sudo apt-get update && sudo apt-get upgrade && sudo apt-get clean'
 alias work='cd ~/workspace'
@@ -95,6 +96,10 @@ alias jasmine='node_modules/jasmine-node/bin/jasmine-node --forceexit'
 alias jasmine2='node_modules/jasmine-node/bin/jasmine-node --forceExit'
 
 PROMPT_COMMAND='echo -ne "\033]0; ${PWD##*/}\007" && prompt'
+
+go() {
+  cd ~/workspace/$1
+}
 
 # BASH
 prompt() {
