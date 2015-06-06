@@ -1,4 +1,5 @@
 #!/bin/bash
+
 GREEN='\033[0;32m'
 
 echo -e '\nShow path in window title'
@@ -59,6 +60,12 @@ sudo sqlite3 /Library/Application\ Support/com.apple.TCC/TCC.db 'delete from acc
 
 echo 'Showing the Users directory (temporary)'
 sudo chflags nohidden /Users
+
+echo 'Disabling Notification Center'
+sudo defaults write /System/Library/LaunchAgents/com.apple.notificationcenterui KeepAlive -bool False
+
+echo 'Speed up window resize animation'
+sudo defaults write -g NSWindowResizeTime -float 0.003
 
 echo 'Kill affected applications'
 for app in Safari Finder Dock Mail SystemUIServer; do killall "$app" >/dev/null 2>&1; done
