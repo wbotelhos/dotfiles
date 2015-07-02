@@ -43,6 +43,7 @@ alias work='cd ~/workspace'
 
 ## GIT
 alias clone='git clone'
+alias describe='git describe'
 alias fetch='git fetch --all; git fetch --tag'
 alias ga='git commit -am'
 alias gc='git commit'
