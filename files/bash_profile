@@ -1,9 +1,11 @@
 # AMAZON
+
 export AWS_ACCESS_KEY_ID=''
 export AWS_SECRET_ACCESS_KEY=''
 export SECRET_TOKEN=''
 
 # ENVIRONMENT
+
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home
 export MONGO_HOME=/usr/local/mongodb
 export MYSQL_HOME=/usr/local/mysql
@@ -17,9 +19,11 @@ export EDITOR='/usr/local/bin/sublime'
 export GIT_EDITOR='/usr/bin/vim'
 
 # RUBY
+
 source ~/.rvm/scripts/rvm
 
 # ALIAS
+
 alias ...='cd ../..'
 alias ..='cd ..'
 alias .='cd .'
@@ -34,6 +38,7 @@ alias ip='curl ifconfig.me'
 alias kill='kill -9'
 alias killnautilus='killall -9 nautilus'
 alias la='ls -lah'
+alias ports='sudo lsof -i -n -P'
 alias psj='jps -l'
 alias psx='ps aux | grep'
 alias sb='sublime'
@@ -42,6 +47,7 @@ alias upgrade='sudo apt-get update && sudo apt-get upgrade && sudo apt-get clean
 alias work='cd ~/workspace'
 
 ## GIT
+
 alias clone='git clone'
 alias describe='git describe'
 alias fetch='git fetch --all; git fetch --tag'
@@ -59,10 +65,12 @@ alias push='git push && git push --tags'
 alias remote='git config remote.origin.url'
 
 ### stash
+
 alias pop='git stash pop'
 alias stash='git add -A && git stash'
 
 ### rebase
+
 alias rebase...='git rebase --continue'
 alias rebase='git add -A && git stash && git pull --rebase'
 
@@ -85,6 +93,7 @@ tag_remove() {
 }
 
 ## RUBY
+
 alias be='bundle exec'
 alias bi='bundle install'
 alias bu='bundle update'
@@ -99,6 +108,7 @@ alias seed='rake db:seed'
 alias spec='bundle exec rspec spec'
 
 ## JS
+
 alias jasmine='node_modules/jasmine-node/bin/jasmine-node --forceexit'
 alias jasmine2='node_modules/jasmine-node/bin/jasmine-node --forceExit'
 
@@ -109,6 +119,7 @@ go() {
 }
 
 # BASH
+
 prompt() {
   local BRANCH=$(git branch 2> /dev/null | grep \* | sed 's/* //')
   local CYAN='\033[0;36m'
@@ -130,6 +141,7 @@ reload() {
 }
 
 # METHODS
+
 keygen() {
   KEY_PATH=~/.ssh/"$1"
   EMAIL=$2
