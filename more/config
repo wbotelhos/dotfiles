@@ -1,20 +1,20 @@
 Host *
   ServerAliveInterval 240
 
-Host danca.me danca
+Host danca danca.me
   HostName danca.me
   IdentitiesOnly yes
   IdentityFile ~/.ssh/danca
-  User user
+  User ubuntu
 
-Host forrostream.com forrostream
+Host forrostream forrostream.com
   HostName forrostream.com
   IdentitiesOnly yes
   IdentityFile ~/.ssh/forrostream
   User user
 
-Host wbotelhos.com blog
+Host wbotelhos wbotelhos.com
   HostName wbotelhos.com
   IdentitiesOnly yes
-  IdentityFile ~/.ssh/blog
+  IdentityFile ~/.ssh/wbotelhos
   User user

@@ -1,22 +1,21 @@
 #!/bin/bash
 
 ##################
-# --- Common --- #
+# --- common --- #
 ##################
 
 GRAY='\033[0;36m'
 GREEN='\033[0;32m'
 NO_COLOR='\033[1;0m'
-YELLOW='\033[1;33m'
 
-##########################
-# --- Configurations --- #
-##########################
+###################
+# --- configs --- #
+###################
 
 JOB_NAME='Dotfiles#install'
 
 #####################
-# --- Functions --- #
+# --- functions --- #
 #####################
 
 begin() {
@@ -26,7 +25,7 @@ begin() {
 
 config() {
   mkdir -p ~/.ssh
-  cp files/config ~/.ssh/config
+  cp more/config ~/.ssh/config
 }
 
 dotfiles() {
@@ -59,7 +58,7 @@ terminal() {
 }
 
 ###################
-# --- Install --- #
+# --- install --- #
 ###################
 
 begin
