@@ -152,3 +152,7 @@ keygen() {
   ssh-add $KEY_PATH
   cat "${KEY_PATH}.pub"
 }
+
+# WORK
+
+source ~/.work

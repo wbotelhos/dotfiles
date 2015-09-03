@@ -39,6 +39,10 @@ end() {
   echo -e "-------------------------------------\n"
 }
 
+job() {
+  cp more/job ~/.job
+}
+
 linking() {
   if [ `uname` == 'Linux' ]; then
     ENTRY='source ~/.bash_profile'
@@ -67,6 +71,7 @@ dotfiles
 config
 terminal
 linking
+job
 reload
 
 end
