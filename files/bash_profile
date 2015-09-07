@@ -49,11 +49,11 @@ alias work='cd ~/workspace'
 
 ## GIT
 
-alias branch='git branch'
 alias clone='git clone'
 alias describe='git describe'
 alias fetch='git fetch --all; git fetch --tag'
 alias ga='git add -A && git commit -m'
+alias gb='git branch'
 alias gc='git commit'
 alias gd='git difftool -y -x "sdiff" | less'
 alias gg='gitg &'
