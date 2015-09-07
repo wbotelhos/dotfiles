@@ -62,19 +62,13 @@ alias gl="git log --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen(
 alias gm='git merge'
 alias gs='git status -sb'
 alias master='git checkout master'
+alias pop='git stash pop'
 alias pull='git pull'
 alias push='git push && git push --tags'
-alias remote='git config remote.origin.url'
-
-### stash
-
-alias pop='git stash pop'
-alias stash='git add -A && git stash'
-
-### rebase
-
 alias rebase...='git rebase --continue'
 alias rebase='git add -A && git stash && git pull --rebase'
+alias remote='git config remote.origin.url'
+alias stash='git add -A && git stash'
 
 merge_theirs() {
   BRANCH=$1
