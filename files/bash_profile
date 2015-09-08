@@ -112,7 +112,7 @@ alias jasmine2='node_modules/jasmine-node/bin/jasmine-node --forceExit'
 PROMPT_COMMAND='echo -ne "\033]0; ${PWD##*/}\007" && prompt'
 
 go() {
-  cd ~/workspace/$1
+  cd ~/workspace/${1}
 }
 
 # BASH
@@ -126,7 +126,7 @@ prompt() {
   local WHITE='\033[0;37m'
   local YELLOW='\033[0;33m'
 
-  export PS1="${CYAN}${LOCALLY} ${WHITE}(${RUBY_VERSION}) [${BRANCH}] ${YELLOW}$ ${NO_COLOR}"
+  export PS1="${CYAN}${LOCALLY} ${WHITE}(${RUBY_VERSION}) [${BRANCH}]\n${YELLOW}$${NO_COLOR} "
 }
 
 reload() {
@@ -140,8 +140,8 @@ reload() {
 # METHODS
 
 keygen() {
-  KEY_PATH=~/.ssh/"$1"
-  EMAIL=$2
+  KEY_PATH=~/.ssh/"${1}"
+  EMAIL=${2}
 
   ssh-keygen -t rsa -b 4096 -f $KEY_PATH -C $2
   chmod 600 $KEY_PATH
