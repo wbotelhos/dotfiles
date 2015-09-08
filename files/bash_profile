@@ -126,7 +126,7 @@ prompt() {
   local WHITE='\033[0;37m'
   local YELLOW='\033[0;33m'
 
-  export PS1="${CYAN}${LOCALLY} ${WHITE}(${RUBY_VERSION}) [${BRANCH}]\n${YELLOW}$${NO_COLOR} "
+  export PS1="${CYAN}${LOCALLY} ${WHITE}(${RUBY_VERSION}) [${BRANCH}]\n${YELLOW}$ ${NO_COLOR}"
 }
 
 reload() {
