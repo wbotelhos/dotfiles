@@ -109,25 +109,25 @@ alias spec='bundle exec rspec spec'
 alias jasmine='node_modules/jasmine-node/bin/jasmine-node --forceexit'
 alias jasmine2='node_modules/jasmine-node/bin/jasmine-node --forceExit'
 
-PROMPT_COMMAND='echo -ne "\033]0; ${PWD##*/}\007" && prompt'
-
 go() {
   cd ~/workspace/${1}
 }
 
-# BASH
+# PROMPT
 
-prompt() {
-  local BRANCH=$(git branch 2> /dev/null | grep \* | sed 's/* //')
-  local CYAN='\033[0;36m'
-  local LOCALLY='\w'
-  local NO_COLOR='\033[1;0m'
+prompt () {
+  local CYAN="\[\033[0;36m\]"
+  local LIGHT_GREEN="\[\033[1;32m\]"
+  local NO_COLOR="\[\e[0m\]"
+  local YELLOW="\[\033[0;33m\]"
+
+  local BRANCH=`git branch 2> /dev/null | grep \* | sed 's/* //'`
   local RUBY_VERSION=$(~/.rvm/bin/rvm-prompt v)
-  local WHITE='\033[0;37m'
-  local YELLOW='\033[0;33m'
 
-  export PS1="${CYAN}${LOCALLY} ${WHITE}(${RUBY_VERSION}) [${BRANCH}]\n${YELLOW}$ ${NO_COLOR}"
+  PS1="${CYAN}\w\a${NO_COLOR} (${RUBY_VERSION}) ${LIGHT_GREEN}[${BRANCH}]\n${YELLOW}\$ ${NO_COLOR}"
 }
+
+PROMPT_COMMAND=prompt
 
 reload() {
   BASHRC=~/.bashrc
