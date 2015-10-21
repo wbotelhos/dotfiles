@@ -4,7 +4,7 @@ Host *
 Host danca danca.me
   HostName danca.me
   IdentitiesOnly yes
-  IdentityFile ~/.ssh/danca
+  IdentityFile ~/.ssh/danca.pem
   User ubuntu
 
 Host forrostream forrostream.com
