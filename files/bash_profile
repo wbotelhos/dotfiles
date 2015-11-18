@@ -157,6 +157,6 @@ keygen() {
   cat "${KEY_PATH}.pub"
 }
 
-# WORK
+# JOB
 
-source ~/.work
+source ~/.job
