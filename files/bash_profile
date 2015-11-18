@@ -33,7 +33,6 @@ alias capush='git push && git push --tags && bundle exec cap production deploy'
 alias cls='clear'
 alias dev='cd ~/Development'
 alias folders='ls -Gal | grep ^d'
-alias hbs='gulp templates'
 alias hclear='history -c'
 alias hide_files='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder'
 alias ip='curl ifconfig.me'
@@ -71,6 +70,10 @@ alias rebase...='git rebase --continue'
 alias rebase='git add -A && git stash && git pull --rebase'
 alias remote='git config remote.origin.url'
 alias stash='git add -A && git stash'
+
+## JS
+
+alias hbs='gulp templates'
 
 merge_theirs() {
   BRANCH=$1
