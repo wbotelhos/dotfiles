@@ -16,8 +16,8 @@ export POSTGRES_HOME=/Applications/Postgres.app/Contents/Versions/9.4
 
 export PATH=${PATH}:${JAVA_HOME}/bin:${MONGO_HOME}/bin:${MYSQL_HOME}/bin:${REDIS_HOME}/src:${TOMCAT_HOME}/bin:${RVM_HOME}/bin:${POSTGRES_HOME}/bin
 
-export EDITOR='/usr/local/bin/sublime'
-export GIT_EDITOR='/usr/bin/vim'
+export EDITOR=/usr/local/bin/sublime
+export GIT_EDITOR=/usr/bin/vim
 
 # RUBY
 
