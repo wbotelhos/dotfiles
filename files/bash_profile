@@ -105,12 +105,12 @@ alias rspec='bundle exec rspec'
 alias seed='rake db:seed'
 alias spec='bundle exec rspec spec'
 
-guard() {
-  if [ "${1}" == '' ]; then
-    `bundle exec guard`
-  else
-    `~/workspace/${1} && bundle exec guard`
+g() {
+  if [ -z "${1}" ]; then
+    cd ~/workspace/${1}
   fi
+
+  bundle exec guard
 }
 
 ## JS
@@ -124,7 +124,7 @@ go() {
 
 # PROMPT
 
-prompt () {
+prompt() {
   local CYAN="\[\033[0;36m\]"
   local LIGHT_GREEN="\[\033[1;32m\]"
   local NO_COLOR="\[\e[0m\]"
