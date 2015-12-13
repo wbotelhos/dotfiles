@@ -96,7 +96,6 @@ alias be='bundle exec'
 alias bi='bundle install'
 alias bu='bundle update'
 alias cucumber='bundle exec cucumber'
-alias guard='bundle exec guard'
 alias migrate='rake db:drop:all && rake db:create:all && rake db:migrate && rake db:test:prepare'
 alias rc='rails c'
 alias route='rake routes | grep'
@@ -105,6 +104,14 @@ alias rsp='rails s -p 3001'
 alias rspec='bundle exec rspec'
 alias seed='rake db:seed'
 alias spec='bundle exec rspec spec'
+
+guard() {
+  if [ "${1}" == '' ]; then
+    `bundle exec guard`
+  else
+    `~/workspace/${1} && bundle exec guard`
+  fi
+}
 
 ## JS
 
