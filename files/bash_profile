@@ -106,7 +106,7 @@ alias seed='rake db:seed'
 alias spec='bundle exec rspec spec'
 
 g() {
-  if [ -z "${1}" ]; then
+  if [ ! -z "${1}" ]; then
     cd ~/workspace/${1}
   fi
 
