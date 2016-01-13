@@ -141,9 +141,11 @@ PROMPT_COMMAND=prompt
 reload() {
   BASHRC=~/.bashrc
   BASH_PROFILE=~/.bash_profile
+  JOB=~/.job
 
   [ -f $BASHRC ]       && source $BASHRC
   [ -f $BASH_PROFILE ] && source $BASH_PROFILE
+  [ -f $JOB ]          && source $JOB
 }
 
 # METHODS
