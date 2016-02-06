@@ -164,13 +164,31 @@
 	<real>2.04</real>
 	<key>RunCommandAsShell</key>
 	<true/>
+	<key>ShowActiveProcessArgumentsInTabTitle</key>
+	<false/>
+	<key>ShowActiveProcessInTabTitle</key>
+	<true/>
 	<key>ShowActiveProcessInTitle</key>
 	<false/>
+	<key>ShowActivityIndicatorInTab</key>
+	<true/>
 	<key>ShowCommandKeyInTitle</key>
+	<false/>
+	<key>ShowComponentsWhenTabHasCustomTitle</key>
 	<false/>
 	<key>ShowDimensionsInTitle</key>
 	<false/>
+	<key>ShowRepresentedURLInTabTitle</key>
+	<false/>
+	<key>ShowRepresentedURLInTitle</key>
+	<false/>
+	<key>ShowRepresentedURLPathInTabTitle</key>
+	<true/>
+	<key>ShowRepresentedURLPathInTitle</key>
+	<true/>
 	<key>ShowShellCommandInTitle</key>
+	<false/>
+	<key>ShowTTYNameInTabTitle</key>
 	<false/>
 	<key>ShowTTYNameInTitle</key>
 	<false/>
@@ -196,8 +214,10 @@
 	<false/>
 	<key>UseBrightBold</key>
 	<false/>
+	<key>VisualBellOnlyWhenMuted</key>
+	<false/>
 	<key>WindowTitle</key>
-	<string>&lt;3</string>
+	<string></string>
 	<key>columnCount</key>
 	<integer>120</integer>
 	<key>keyMapBoundKeys</key>
@@ -301,6 +321,8 @@
 	</dict>
 	<key>name</key>
 	<string>wbotelhos</string>
+	<key>noWarnProcesses</key>
+	<array/>
 	<key>rowCount</key>
 	<integer>33</integer>
 	<key>shellExitAction</key>
