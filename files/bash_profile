@@ -105,12 +105,12 @@ alias rspec='bundle exec rspec'
 alias seed='rake db:seed'
 alias spec='bundle exec rspec spec'
 
-g() {
+guard() {
   if [ ! -z "${1}" ]; then
     cd ~/workspace/${1}
   fi
 
-  bundle exec guard
+  spring stop && bundle exec guard
 }
 
 ## JS
