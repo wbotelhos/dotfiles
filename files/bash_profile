@@ -121,6 +121,16 @@ rollback() {
     STEP=${1}
   fi
 
+  rake db:rollback STEP=${STEP}
+}
+
+redo() {
+  STEP=1
+
+  if [ ! -z "${1}" ]; then
+    STEP=${1}
+  fi
+
   rake db:rollback STEP=${STEP} && rake db:migrate && rake db:test:prepare
 }
 
