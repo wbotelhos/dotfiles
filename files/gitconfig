@@ -9,22 +9,29 @@
 	remote = blue
 
 [color "diff"]
-	meta = yellow bold
 	frag = magenta bold
-	old = red
+	meta = yellow bold
 	new = green bold
+	old = red
 
 [color "status"]
 	added = green
 	changed = yellow
 	untracked = cyan
 
+[commit]
+	gpgsign = true
+
 [core]
 	excludesfile = ~/.gitignore
+
+[gpg]
+	program = /usr/local/bin/gpg
 
 [push]
 	default = simple
 
 [user]
-	name = Washington Botelho
 	email = wbotelhos@gmail.com
+	name = Washington Botelho
+	signingkey = BECE10A8106CC7A0
