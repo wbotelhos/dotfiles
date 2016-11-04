@@ -57,6 +57,10 @@ reload() {
   . ~/.bash_profile
 }
 
+templates() {
+  cp -R more/git-hooks ~/.git-hooks
+}
+
 terminal() {
   [ `uname` != 'Linux' ] && open ./more/wbotelhos.terminal
 }
@@ -69,6 +73,7 @@ begin
 
 dotfiles
 config
+templates
 terminal
 linking
 job

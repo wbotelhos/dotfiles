@@ -24,6 +24,7 @@
 
 [core]
 	excludesfile = ~/.gitignore
+	hooksPath = ~/.git-hooks
 
 [gpg]
 	program = /usr/local/bin/gpg

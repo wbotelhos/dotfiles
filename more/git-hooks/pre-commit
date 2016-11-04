@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+
+diff = `git diff --cached spec`
+
+if diff =~ /,\s?(:focus|focus:\s?true|:focus\s?=>\s?true)/
+  puts "\e[31mRemove focus tags before committing :)"
+
+  exit 1
+end
+
+if diff =~ /(debugger|biding.pry)/
+  puts "\e[31mRemove debuggers before committing :)"
+  
+  exit 2
+end
