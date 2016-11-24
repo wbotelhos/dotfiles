@@ -111,7 +111,7 @@ guard() {
     cd ~/workspace/${1}
   fi
 
-  spring stop && bundle exec guard
+  bundle exec guard
 }
 
 rollback() {
