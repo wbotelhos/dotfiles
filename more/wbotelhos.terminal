@@ -122,7 +122,13 @@
 	</data>
 	<key>Bell</key>
 	<false/>
+	<key>BellBadge</key>
+	<false/>
+	<key>BellBounce</key>
+	<false/>
 	<key>BlinkText</key>
+	<false/>
+	<key>BookmarkRestorations</key>
 	<false/>
 	<key>CommandString</key>
 	<string></string>
@@ -149,7 +155,7 @@
 	<data>
 	YnBsaXN0MDDUAQIDBAUGGBlYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
 	AAGGoKQHCBESVSRudWxs1AkKCwwNDg8QVk5TU2l6ZVhOU2ZGbGFnc1ZOU05hbWVWJGNs
-	YXNzI0AyAAAAAAAAEBCAAoADXU1lbmxvLVJlZ3VsYXLSExQVFlokY2xhc3NuYW1lWCRj
+	YXNzI0AsAAAAAAAAEBCAAoADXU1lbmxvLVJlZ3VsYXLSExQVFlokY2xhc3NuYW1lWCRj
 	bGFzc2VzVk5TRm9udKIVF1hOU09iamVjdF8QD05TS2V5ZWRBcmNoaXZlctEaG1Ryb290
 	gAEIERojLTI3PEJLUltiaXJ0dniGi5afpqmyxMfMAAAAAAAAAQEAAAAAAAAAHAAAAAAA
 	AAAAAAAAAAAAAM4=
@@ -161,13 +167,21 @@
 	<key>Linewrap</key>
 	<true/>
 	<key>ProfileCurrentVersion</key>
-	<real>2.04</real>
+	<real>2.0499999999999998</real>
 	<key>RunCommandAsShell</key>
 	<true/>
+	<key>ScrollbackLines</key>
+	<integer>500</integer>
+	<key>ShouldLimitScrollback</key>
+	<integer>0</integer>
+	<key>ShouldRestoreContent</key>
+	<false/>
 	<key>ShowActiveProcessArgumentsInTabTitle</key>
 	<false/>
+	<key>ShowActiveProcessArgumentsInTitle</key>
+	<false/>
 	<key>ShowActiveProcessInTabTitle</key>
-	<true/>
+	<false/>
 	<key>ShowActiveProcessInTitle</key>
 	<false/>
 	<key>ShowActivityIndicatorInTab</key>
@@ -183,14 +197,16 @@
 	<key>ShowRepresentedURLInTitle</key>
 	<false/>
 	<key>ShowRepresentedURLPathInTabTitle</key>
-	<true/>
+	<false/>
 	<key>ShowRepresentedURLPathInTitle</key>
-	<true/>
+	<false/>
 	<key>ShowShellCommandInTitle</key>
 	<false/>
 	<key>ShowTTYNameInTabTitle</key>
 	<false/>
 	<key>ShowTTYNameInTitle</key>
+	<false/>
+	<key>ShowTerminalInDockIcon</key>
 	<false/>
 	<key>ShowWindowSettingsNameInTitle</key>
 	<false/>
@@ -214,6 +230,8 @@
 	<false/>
 	<key>UseBrightBold</key>
 	<false/>
+	<key>VisualBell</key>
+	<true/>
 	<key>VisualBellOnlyWhenMuted</key>
 	<false/>
 	<key>WindowTitle</key>
