@@ -1,8 +1,8 @@
 Host *
   ServerAliveInterval 240
 
-Host danca danca.me
-  HostName danca.me
+Host danca danca.com
+  HostName danca.com
   IdentitiesOnly yes
   IdentityFile ~/.ssh/danca.pem
   User ubuntu
