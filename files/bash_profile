@@ -1,5 +1,8 @@
 # ENVIRONMENT
 
+export EDITOR=/usr/local/bin/atom
+export GIT_EDITOR=/usr/bin/vim
+
 export GECKODRIVER_HOME=~/development
 export JAVA_HOME=$(/usr/libexec/java_home)
 export M2_HOME=~/development/apache-maven-3.3.9
@@ -11,13 +14,6 @@ export RVM_HOME=~/.rvm
 export TOMCAT_HOME=/usr/local/tomcat
 
 export PATH=${PATH}:${GECKODRIVER_HOME}:${JAVA_HOME}/bin:${MONGO_HOME}/bin:${MYSQL_HOME}/bin:${REDIS_HOME}/src:${TOMCAT_HOME}/bin:${RVM_HOME}/bin:${POSTGRES_HOME}/bin:${M2_HOME}/bin
-
-export EDITOR=/usr/local/bin/atom
-export GIT_EDITOR=/usr/bin/vim
-
-# RUBY
-
-source ~/.rvm/scripts/rvm
 
 # ALIAS
 
@@ -73,24 +69,8 @@ alias stash='git add -A && git stash'
 ## JS
 
 alias hbs='gulp templates'
-
-merge_theirs() {
-  BRANCH=$1
-
-  git merge --strategy recursive -X theirs $BRANCH
-}
-
-tag() {
-  git tag -a "${1}" -m "${1}"
-
-  echo "Now your project is on version '`git describe`'"
-}
-
-tag_remove() {
-  git tag -d "${1}" && git push origin ":refs/tags/${1}"
-
-  echo "Removed tag ${1}. Now your project is on version '`git describe`'"
-}
+alias jasmine='node_modules/jasmine-node/bin/jasmine-node --forceexit'
+alias jasmine2='node_modules/jasmine-node/bin/jasmine-node --forceExit'
 
 ## RUBY
 
@@ -104,47 +84,17 @@ alias rake='bundle exec rake'
 alias rc='rails c'
 alias route='rake routes | grep'
 alias rs='rails s'
-alias rsp='rails s -p 3001'
 alias rspec='bundle exec rspec'
 alias seed='rake db:seed'
 alias spec='bundle exec rspec spec'
 
-guard() {
-  if [ ! -z "${1}" ]; then
-    cd ~/workspace/${1}
-  fi
+# JOB
 
-  bundle exec guard
-}
+source ~/.job
 
-rollback() {
-  STEP=1
+# RVM
 
-  if [ ! -z "${1}" ]; then
-    STEP=${1}
-  fi
-
-  rake db:rollback STEP=${STEP}
-}
-
-redo() {
-  STEP=1
-
-  if [ ! -z "${1}" ]; then
-    STEP=${1}
-  fi
-
-  rake db:rollback STEP=${STEP} && rake db:migrate && rake db:test:prepare
-}
-
-## JS
-
-alias jasmine='node_modules/jasmine-node/bin/jasmine-node --forceexit'
-alias jasmine2='node_modules/jasmine-node/bin/jasmine-node --forceExit'
-
-go() {
-  cd ~/workspace/${1}
-}
+source ~/.rvm/scripts/rvm
 
 # PROMPT
 
@@ -162,20 +112,22 @@ prompt() {
 
 PROMPT_COMMAND=prompt
 
-reload() {
-  BASHRC=~/.bashrc
-  BASH_PROFILE=~/.bash_profile
-  JOB=~/.job
-
-  [ -f $BASHRC ]       && source $BASHRC
-  [ -f $BASH_PROFILE ] && source $BASH_PROFILE
-  [ -f $JOB ]          && source $JOB
-}
-
 # METHODS
 
 clone() {
   git clone git@github.com:${1}/${2}
+}
+
+go() {
+  cd ~/workspace/${1}
+}
+
+guard() {
+  if [ ! -z "${1}" ]; then
+    cd ~/workspace/${1}
+  fi
+
+  bundle exec guard
 }
 
 keygen() {
@@ -188,6 +140,50 @@ keygen() {
   cat "${KEY_PATH}.pub"
 }
 
-# JOB
+merge_theirs() {
+  BRANCH=$1
 
-source ~/.job
+  git merge --strategy recursive -X theirs $BRANCH
+}
+
+reload() {
+  BASHRC=~/.bashrc
+  BASH_PROFILE=~/.bash_profile
+  JOB=~/.job
+
+  [ -f $BASHRC ]       && source $BASHRC
+  [ -f $BASH_PROFILE ] && source $BASH_PROFILE
+  [ -f $JOB ]          && source $JOB
+}
+
+redo() {
+  STEP=1
+
+  if [ ! -z "${1}" ]; then
+    STEP=${1}
+  fi
+
+  rake db:rollback STEP=${STEP} && rake db:migrate && rake db:test:prepare
+}
+
+rollback() {
+  STEP=1
+
+  if [ ! -z "${1}" ]; then
+    STEP=${1}
+  fi
+
+  rake db:rollback STEP=${STEP}
+}
+
+tag() {
+  git tag -a "${1}" -m "${1}"
+
+  echo "Now your project is on version '`git describe`'"
+}
+
+tag_remove() {
+  git tag -d "${1}" && git push origin ":refs/tags/${1}"
+
+  echo "Removed tag ${1}. Now your project is on version '`git describe`'"
+}
