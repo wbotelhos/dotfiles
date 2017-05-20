@@ -175,6 +175,14 @@ rollback() {
   rake db:rollback STEP=${STEP}
 }
 
+rsp() {
+  if [ ! -z "${1}" ]; then
+    bundle exec rails s -p $1
+  else
+    bundle exec rails s -p 3001
+  fi
+}
+
 tag() {
   git tag -a "${1}" -m "${1}"
 
