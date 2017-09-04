@@ -27,6 +27,7 @@ alias chrome='open /Applications/Google\ Chrome.app'
 alias cls='clear'
 alias dev='cd ~/Development'
 alias firefox='open /Applications/Firefox.app'
+alias flush_memcached="echo 'flush_all' | nc 127.0.0.1 11211"
 alias folders='ls -Gal | grep ^d'
 alias hclear='history -c'
 alias hide_files='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder'
@@ -77,8 +78,7 @@ alias be='bundle exec'
 alias bi='bundle install'
 alias bu='bundle update'
 alias cucumber='bundle exec cucumber'
-alias migrate='rake db:drop:all && rake db:create:all && rake db:drop_tables && rake db:schema:load && rake db:migrate && rake db:test:prepare'
-alias prepare='rake db:migrate; rake db:test:prepare'
+alias migrate='SKIP_DATA_MIGRATER=true rake db:migrate; SKIP_DATA_MIGRATER=true rake db:test:prepare'
 alias r='bundle exec rspec'
 alias rake='bundle exec rake'
 alias rc='rails c'
@@ -116,6 +116,10 @@ PROMPT_COMMAND=prompt
 
 clone() {
   git clone git@github.com:${1}/${2}
+}
+
+deploy() {
+  ./script/codedeploy/deploy.sh "${1}"
 }
 
 go() {
