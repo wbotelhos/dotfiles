@@ -1,9 +1,6 @@
-require 'awesome_print'
 require 'rails/console/app'
 
 extend Rails::ConsoleMethods
-
-AwesomePrint.pry! if defined?(ap)
 
 if defined?(PryByebug) || defined?(PryDebugger)
   Pry.commands.alias_command 'c', 'continue'
