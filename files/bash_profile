@@ -8,6 +8,7 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 export M2_HOME=~/development/apache-maven-3.3.9
 export MONGO_HOME=/usr/local/mongodb
 export MYSQL_HOME=/usr/local/mysql
+export NVM_DIR="${HOME}/.nvm"
 export POSTGRES_HOME=/Applications/Postgres.app/Contents/Versions/9.4
 export REDIS_HOME=/usr/local/redis
 export RVM_HOME=~/.rvm
@@ -96,6 +97,10 @@ source ~/.job
 # RVM
 
 source ~/.rvm/scripts/rvm
+
+# NVM
+
+source /usr/local/opt/nvm/nvm.sh
 
 # PROMPT
 
