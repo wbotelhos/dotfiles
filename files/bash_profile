@@ -79,15 +79,15 @@ alias be='bundle exec'
 alias bi='bundle install'
 alias bu='bundle update'
 alias cucumber='bundle exec cucumber'
-alias migrate='SKIP_DATA_MIGRATER=true rake db:migrate; SKIP_DATA_MIGRATER=true rake db:test:prepare'
+alias migrate='SKIP_DATA_MIGRATER=true rake db:migrate && SKIP_DATA_MIGRATER=true rake db:test:prepare'
 alias r='bundle exec rspec'
-alias rr='BROWSER=chrome bundle exec rspec'
+alias rr='BROWSER=chrome_headless bundle exec rspec'
 alias rake='bundle exec rake'
 alias rc='rails c'
 alias route='rake routes | grep'
 alias rs='rails s'
 alias rspec='bundle exec rspec'
-alias seed='rake db:seed'
+alias seed='SKIP_DATA_MIGRATER=true rake db:seed'
 alias spec='bundle exec rspec spec'
 
 # JOB
@@ -183,7 +183,7 @@ rollback() {
     STEP=${1}
   fi
 
-  rake db:rollback STEP=${STEP}
+  SKIP_DATA_MIGRATER=true rake db:rollback STEP=${STEP}
 }
 
 rsp() {
