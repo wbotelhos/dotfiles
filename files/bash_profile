@@ -40,8 +40,10 @@ alias ports='sudo lsof -i -n -P'
 alias psj='jps -l'
 alias psx='ps aux | grep'
 alias show_files='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder'
+alias sizes='find / -xdev -type f -size +100M -exec du -sh {} ';' | sort -rh | head -n50'
 alias speedup='sudo find /private/var/log/asl/* -mtime +5 -exec rm -rf {} \;'
 alias ss='open /System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app'
+alias stremio='cd /Users/wbotelhos/Library/Application\ Support/stremio/stremio-cache'
 alias upgrade='sudo apt-get update && sudo apt-get upgrade && sudo apt-get clean'
 alias work='cd ~/workspace'
 
@@ -77,7 +79,6 @@ alias jasmine2='node_modules/jasmine-node/bin/jasmine-node --forceExit'
 
 alias be='bundle exec'
 alias bi='bundle install'
-alias bu='bundle update'
 alias cucumber='bundle exec cucumber'
 alias migrate='SKIP_DATA_MIGRATER=true rake db:migrate && SKIP_DATA_MIGRATER=true rake db:test:prepare'
 alias r='bundle exec rspec'
@@ -85,7 +86,7 @@ alias rr='BROWSER=chrome_headless bundle exec rspec'
 alias rake='bundle exec rake'
 alias rc='rails c'
 alias route='rake routes | grep'
-alias rs='rails s'
+alias rs='BULLET=true rails s'
 alias rspec='bundle exec rspec'
 alias seed='SKIP_DATA_MIGRATER=true rake db:seed'
 alias spec='bundle exec rspec spec'
@@ -119,6 +120,15 @@ prompt() {
 PROMPT_COMMAND=prompt
 
 # METHODS
+
+alias bu='bundle update'
+
+bu() {
+  [ `uname` == 'Linux' ]  && number_of_cores=`nproc`
+  [ `uname` == 'Darwin' ] && number_of_cores=`sysctl -n hw.ncpu`
+
+  bundle update --jobs `expr $number_of_cores - 1`
+}
 
 clone() {
   git clone git@github.com:${1}/${2}
@@ -188,9 +198,9 @@ rollback() {
 
 rsp() {
   if [ ! -z "${1}" ]; then
-    bundle exec rails s -p $1
+    BULLET=true bundle exec rails s -p $1
   else
-    bundle exec rails s -p 3001
+    BULLET=true bundle exec rails s -p 3001
   fi
 }
 

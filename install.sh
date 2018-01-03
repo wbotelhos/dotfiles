@@ -24,8 +24,11 @@ begin() {
 }
 
 config() {
+  mkdir -p ~/.bundle
   mkdir -p ~/.ssh
-  cp more/config ~/.ssh/config
+
+  cp more/bundle/config ~/.bundle/config
+  cp more/ssh/config    ~/.ssh/config
 }
 
 dotfiles() {
