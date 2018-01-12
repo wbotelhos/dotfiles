@@ -1,0 +1,68 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/d-117722-71859-1qgufqb.6hs8xgvi/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/d-117722-71859-1qgufqb.6hs8xgvi/package.tgz",
+        "spec": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/d-117722-71859-1qgufqb.6hs8xgvi/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/apm-install-dir-117722-71859-sxrb4m.74yu0ltyb9"
+    ]
+  ],
+  "_from": "../d-117722-71859-1qgufqb.6hs8xgvi/package.tgz",
+  "_id": "language-varnish@0.6.0",
+  "_inCache": true,
+  "_location": "/language-varnish",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/d-117722-71859-1qgufqb.6hs8xgvi/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/d-117722-71859-1qgufqb.6hs8xgvi/package.tgz",
+    "spec": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/d-117722-71859-1qgufqb.6hs8xgvi/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-117722-71859-1qgufqb.6hs8xgvi/package.tgz",
+  "_shasum": "eae77914f22725cadc50ea0e8ab93e575ab7f7fd",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/d-117722-71859-1qgufqb.6hs8xgvi/package.tgz",
+  "_where": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/apm-install-dir-117722-71859-sxrb4m.74yu0ltyb9",
+  "bugs": {
+    "url": "https://github.com/jacobbednarz/atom-language-varnish/issues"
+  },
+  "dependencies": {},
+  "description": "Language support for Varnish configuration files",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/jacobbednarz/atom-language-varnish#readme",
+  "license": "MIT",
+  "name": "language-varnish",
+  "optionalDependencies": {},
+  "readme": "# Syntax support for VCL files in Atom\n\nContributions are welcome and bonus are awarded for pull requests. Please fork and send a pull requests for updates to grammars, snippets or documentation.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacobbednarz/atom-language-varnish.git"
+  },
+  "version": "0.6.0",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}

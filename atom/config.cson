@@ -1,0 +1,191 @@
+"*":
+  aligner:
+    alignComments: true
+  "aligner-ruby": {}
+  "atom-beautify":
+    apex:
+      disabled: true
+    arduino:
+      disabled: true
+    bash:
+      disabled: true
+    c:
+      disabled: true
+    cfml:
+      disabled: true
+    clj:
+      disabled: true
+    coffeescript:
+      disabled: true
+    cpp:
+      disabled: true
+    crystal:
+      disabled: true
+    cs:
+      disabled: true
+    d:
+      disabled: true
+    elm:
+      disabled: true
+    erlang:
+      disabled: true
+    fortran:
+      disabled: true
+    gherkin:
+      disabled: true
+    glsl:
+      disabled: true
+    go:
+      disabled: true
+    gohtml:
+      disabled: true
+    haskell:
+      disabled: true
+    jade:
+      disabled: true
+    java:
+      disabled: true
+    latex:
+      disabled: true
+    less: {}
+    lua:
+      disabled: true
+    marko:
+      disabled: true
+    nunjucks:
+      disabled: true
+    objectivec:
+      disabled: true
+    ocaml:
+      disabled: true
+    pawn:
+      disabled: true
+    perl:
+      disabled: true
+    php:
+      disabled: true
+    puppet:
+      disabled: true
+    python:
+      disabled: true
+    r:
+      disabled: true
+    riot:
+      disabled: true
+    rust:
+      disabled: true
+    spacebars:
+      disabled: true
+    swig:
+      disabled: true
+    tss:
+      disabled: true
+    twig:
+      disabled: true
+    typescript:
+      disabled: true
+    ux:
+      disabled: true
+    vala:
+      disabled: true
+    visualforce:
+      disabled: true
+    vue:
+      disabled: true
+    xtemplate:
+      disabled: true
+  "atom-package-deps":
+    ignored: []
+  "clean-context-menu":
+    closePane: false
+    editorEditHistory: "hidden"
+    tabsCloseThings: "hidden"
+    tabsSplitPanes: "hidden"
+    treeEdit: "hidden"
+  core:
+    closeDeletedFileTabs: true
+    disabledPackages: [
+      "background-tips"
+      "language-c"
+      "language-clojure"
+      "language-csharp"
+      "language-objective-c"
+      "language-perl"
+      "language-php"
+      "language-toml"
+      "timecop"
+      "welcome"
+      "language-make"
+      "spell-check"
+      "styleguide"
+      "context-menu-remove"
+      "react"
+      "language-coffee-script"
+      "github"
+      "language-git"
+      "language-typescript"
+      "update-package-dependencies"
+      "language-java"
+      "metrics"
+      "package-generator"
+    ]
+    ignoredNames: [
+      ".git"
+      ".DS_Store"
+      "*.sql"
+      "templates.js"
+      "db/data_migrate"
+      "db/migrate"
+    ]
+    packagesWithKeymapsDisabled: [
+      "aligner"
+    ]
+    projectHome: "/Users/wbotelhos/workspace"
+    telemetryConsent: "no"
+  editor:
+    invisibles: {}
+    preferredLineLength: 120
+    showInvisibles: true
+    softWrap: false
+    tabType: "soft"
+  "exception-reporting":
+    userId: "df7606ea-1444-aca1-4da3-282c6fae5bf1"
+  "git-diff":
+    showIconsInEditorGutter: true
+  linter: {}
+  "linter-eslint": {}
+  "linter-rubocop":
+    command: "bundle exec ~/.rvm/gems/ruby-2.4.3@danca/wrappers/rubocop"
+  "linter-sass-lint": {}
+  "linter-ui-default":
+    panelHeight: 69
+  "markdown-preview":
+    breakOnSingleNewline: true
+    useGitHubStyle: true
+  "path-copy":
+    copyExtension: false
+    copyFolderPath: false
+    copyFullName: false
+    copyFullPath: false
+    copyProjectPath: false
+    copyShortName: false
+    statusNotifications: false
+  "rails-transporter":
+    viewFileExtension: [
+      "html.erb"
+    ]
+  "rubocop-auto-correct":
+    autoRun: true
+    correctFile: true
+  stylefmt:
+    formatOnSave: true
+  "tree-view":
+    autoReveal: false
+    hideVcsIgnoredFiles: true
+    squashDirectoryNames: true
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
+".rspec.ruby.source":
+  editor:
+    showIndentGuide: false
+    showInvisibles: false

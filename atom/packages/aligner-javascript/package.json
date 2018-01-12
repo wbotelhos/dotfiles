@@ -1,0 +1,87 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/d-11774-75597-z9e85o.o4dnqgds4i/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/d-11774-75597-z9e85o.o4dnqgds4i/package.tgz",
+        "spec": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/d-11774-75597-z9e85o.o4dnqgds4i/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/apm-install-dir-11774-75597-ccbj8z.fm8vg9cnmi"
+    ]
+  ],
+  "_from": "../d-11774-75597-z9e85o.o4dnqgds4i/package.tgz",
+  "_id": "aligner-javascript@1.3.0",
+  "_inCache": true,
+  "_location": "/aligner-javascript",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/d-11774-75597-z9e85o.o4dnqgds4i/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/d-11774-75597-z9e85o.o4dnqgds4i/package.tgz",
+    "spec": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/d-11774-75597-z9e85o.o4dnqgds4i/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-11774-75597-z9e85o.o4dnqgds4i/package.tgz",
+  "_shasum": "1a85b5ff284eac28912df5891be715d53a593336",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/d-11774-75597-z9e85o.o4dnqgds4i/package.tgz",
+  "_where": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/apm-install-dir-11774-75597-ccbj8z.fm8vg9cnmi",
+  "bugs": {
+    "url": "https://github.com/adrianlee44/atom-aligner-javascript/issues"
+  },
+  "dependencies": {},
+  "description": "Javascript support for aligner",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0"
+  },
+  "homepage": "https://github.com/adrianlee44/atom-aligner-javascript#readme",
+  "keywords": [
+    "aligner",
+    "alignment",
+    "align",
+    "javascript",
+    "babel"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "aligner-javascript",
+  "optionalDependencies": {},
+  "providedServices": {
+    "aligner.provider": {
+      "versions": {
+        "1.0.0": "getProvider"
+      }
+    }
+  },
+  "readme": "# aligner-javascript\n\n[Aligner](https://github.com/adrianlee44/atom-aligner) add-on to support Javascript.\n\n## Supported character / operator\n`=`: assignment\n```javascript\nlet foo   = \"bar\"\nlet test  = \"notest\"\nlet hello = \"world\"\n```\n`+=`, `-=` and other with `=`\n```javascript\nlet foo    = \"bar\"\nlet test  += \"notest\"\nlet hello -= \"world\"\n```\n`:`: Object\n```javascript\nrandom = {\n  troll: \"internet\",\n  foo:   \"bar\",\n  bar:   \"beer\"\n}\n```\n`,`: Items in arrays\n```javascript\n[\"helloText\", 123456, \"world\"]\n[\"foo\"      ,  32124, \"bar\"]\n```\n`from`:\n```\nimport * from 'fs';\nimport * from 'https';\n```\nComments (if `Align Comments` options on)\n```javascript\nlet hello = 'world'; // line 1\nlet foo   = 'bar';   // line 2\n```\n\n## Installation\nAligner must be installed along with this package. For more information, please check out [Aligner](https://github.com/adrianlee44/atom-aligner)\n\n## Changelog\n- 2017-08-02   v1.3.0   Add support for JSON\n- 2017-07-06   v1.2.0   Add support for inline Javascript\n- 2017-05-13   v1.1.0   Update README\n- 2016-07-21   v1.0.0   Initial release\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrianlee44/atom-aligner-javascript.git"
+  },
+  "version": "1.3.0",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".js": [
+        "lib/main.js",
+        "lib/provider.js"
+      ],
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}

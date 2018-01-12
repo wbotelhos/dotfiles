@@ -1,0 +1,34 @@
+# https://tools.ietf.org/html/rfc4180
+name: 'CSV'
+scopeName: 'text.csv'
+fileTypes: [
+  'csv'
+]
+patterns: [
+  name: 'constant.character.separator.csv'
+  match: ','
+,
+  name: 'constant.numeric.cell.csv'
+  match: '((?<=,|^)[[^",]&&[\\d.]]+(?=,|$))|(")((?:[[^"]&&[\\d.]]|"")*)(")'
+  captures:
+    2: name: 'variable.begin.csv'
+    3:
+      patterns: [
+        match: '("")'
+        captures:
+          0: name: 'constant.character.escape.csv'
+      ]
+    4: name: 'variable.ending.csv'
+,
+  name: 'string.cell.csv'
+  match: '([^",]+)|(")((?:[^"]|"")*)(")'
+  captures:
+    2: name: 'variable.begin.csv'
+    3:
+      patterns: [
+        match: '("")'
+        captures:
+          0: name: 'constant.character.escape.csv'
+      ]
+    4: name: 'variable.ending.csv'
+]

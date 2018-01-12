@@ -1,0 +1,73 @@
+'.erb':
+  'binding.pry':
+    'prefix': 'deb'
+    'body': "<% binding.pry; p 'debugging...' %>"
+
+'.md':
+  'bad':
+    'prefix': 'bad'
+    'body': """
+    #### $1
+
+    `# Bad`
+
+    ```
+    $2
+    ```
+
+    `# Good`
+
+    ```
+    $3
+    ```
+
+    """
+
+'.rb':
+  'binding.pry':
+    'prefix': 'deb'
+    'body': "binding.pry; p 'debugging...'"
+
+'.ruby':
+  'before':
+    'prefix': 'before'
+    'body': """
+    before do
+      $1
+    end
+
+    """
+
+  'binding.pry':
+    'prefix': 'deb'
+    'body': "binding.pry; p 'debugging...'"
+
+  'context':
+    'prefix': 'context'
+    'body': """
+    context '$1' do
+      $2
+    end
+
+    """
+
+  ':focus':
+    'prefix': 'fc'
+    'body': ', :focus'
+
+  ':path':
+    'prefix': 'path'
+    'body': ", path: '../$1'"
+
+  ':puts':
+    'prefix': 'puts'
+    'body': """
+    puts '-' * 50
+    puts $1
+    puts '-' * 50
+    """
+
+'.js':
+  'debugger':
+    'prefix': 'deb'
+    'body': 'debugger;'

@@ -1,0 +1,71 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/d-11723-75691-ajx4qy/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/d-11723-75691-ajx4qy/package.tgz",
+        "spec": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/d-11723-75691-ajx4qy/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/apm-install-dir-11723-75691-19l4u3e"
+    ]
+  ],
+  "_from": "../d-11723-75691-ajx4qy/package.tgz",
+  "_id": "erb-snippets@1.1.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/erb-snippets",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/d-11723-75691-ajx4qy/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/d-11723-75691-ajx4qy/package.tgz",
+    "spec": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/d-11723-75691-ajx4qy/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-11723-75691-ajx4qy/package.tgz",
+  "_shasum": "08c3e3df228313306478d69ca8a86875f307bc63",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/d-11723-75691-ajx4qy/package.tgz",
+  "_where": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/apm-install-dir-11723-75691-19l4u3e",
+  "activationCommands": {
+    "atom-workspace": "erb-snippets:erb_tags"
+  },
+  "bugs": {
+    "url": "https://github.com/MartinPeverelli/erb-snippets/issues"
+  },
+  "dependencies": {
+    "underscore-plus": "1.x"
+  },
+  "description": "Useful snippets and hotkeys for ERB templates.",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/MartinPeverelli/erb-snippets#readme",
+  "keywords": [
+    "erb",
+    "snippets",
+    "hotkeys",
+    "templates"
+  ],
+  "license": "MIT",
+  "main": "./lib/erb-snippets",
+  "name": "erb-snippets",
+  "optionalDependencies": {},
+  "readme": "# erb-snippets\n\nSnippets and tags hotkey useful for writing ERB.\n\n## ERB tags:\n`command`+`shift`+`.`\n\nSupports multiple line/selection. Cycles through the tags.\n\n![ERB Tags animation](https://raw.githubusercontent.com/MartinPeverelli/erb-snippets/master/erb-animation.gif)\n\nCredits to [@eddorre](https://github.com/eddorre), I did the conversion from his\noriginal SublimeText2 plugin.\nhttps://github.com/eddorre/SublimeERB\n\n## ERB snippets:\n\nif+`tab`\n```\n<% if {condition} %>\n  {true-block}\n<% end %>\n```\n\nife+`tab`\n```\n<% if {condition} %>\n  {true-block}\n<% else %>\n  {false-block}\n<% end %>\n```\n\nelse+`tab`\n```\n<% else %>\n```\n\nelsif+`tab`\n```\n<% elsif {condition} %>\n```\n\nunless+`tab`\n```\n<% unless {condition} %>\n  {false-block}\n<% end %>\n```\n\nend+`tab`\n```\n<% end %>\n```\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MartinPeverelli/erb-snippets.git"
+  },
+  "version": "1.1.0"
+}

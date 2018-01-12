@@ -1,0 +1,73 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/d-117428-5336-1txte5c.asgftg9zfr/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/d-117428-5336-1txte5c.asgftg9zfr/package.tgz",
+        "spec": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/d-117428-5336-1txte5c.asgftg9zfr/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/apm-install-dir-117428-5336-1st1jn3.y8lk4holxr"
+    ]
+  ],
+  "_from": "../d-117428-5336-1txte5c.asgftg9zfr/package.tgz",
+  "_id": "aligner-ruby@1.6.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/aligner-ruby",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/d-117428-5336-1txte5c.asgftg9zfr/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/d-117428-5336-1txte5c.asgftg9zfr/package.tgz",
+    "spec": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/d-117428-5336-1txte5c.asgftg9zfr/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-117428-5336-1txte5c.asgftg9zfr/package.tgz",
+  "_shasum": "f4d8494743f245aa57d63d642788dd99d4ac75f7",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/d-117428-5336-1txte5c.asgftg9zfr/package.tgz",
+  "_where": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/apm-install-dir-117428-5336-1st1jn3.y8lk4holxr",
+  "bugs": {
+    "url": "https://github.com/adrianlee44/atom-aligner-ruby/issues"
+  },
+  "dependencies": {},
+  "description": "Ruby support for aligner",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.9.0"
+  },
+  "homepage": "https://github.com/adrianlee44/atom-aligner-ruby#readme",
+  "keywords": [
+    "aligner",
+    "alignment",
+    "align",
+    "ruby"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "aligner-ruby",
+  "optionalDependencies": {},
+  "providedServices": {
+    "aligner.provider": {
+      "versions": {
+        "1.0.0": "getProvider"
+      }
+    }
+  },
+  "readme": "# aligner-ruby\n\n[Aligner](https://github.com/adrianlee44/atom-aligner) add-on to support Ruby and Ruby on Rails.\n\n## Installation\nAligner must be installed along with this package. For more information, please check out [Aligner](https://github.com/adrianlee44/atom-aligner)\n\n## Changelog\n- 2017-05-26   v1.6.1   Fix typo in title for = config\n- 2017-05-18   v1.6.0   Add support for `eq` in Rspec\n- 2016-08-01   v1.5.0   Add prefix support to `=` operator\n- 2015-05-09   v1.4.0   Add Rspec support\n- 2015-04-24   v1.3.0   Add `=` support (#2)\n- 2015-04-09   v1.2.1   Reverted Atom requirement back to v0.174.0\n- 2015-04-07   v1.2.0   Add `:` support for 1.9 syntax\n- 2015-04-07   v1.1.0   Add Ruby on Rails support\n- 2015-03-23   v1.0.0   Initial release\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrianlee44/atom-aligner-ruby.git"
+  },
+  "version": "1.6.1"
+}

@@ -1,0 +1,60 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/d-116116-60600-1ilhp0o/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/d-116116-60600-1ilhp0o/package.tgz",
+        "spec": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/d-116116-60600-1ilhp0o/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/apm-install-dir-116116-60600-14lo3qq"
+    ]
+  ],
+  "_from": "../d-116116-60600-1ilhp0o/package.tgz",
+  "_id": "block-travel@1.0.5",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/block-travel",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/d-116116-60600-1ilhp0o/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/d-116116-60600-1ilhp0o/package.tgz",
+    "spec": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/d-116116-60600-1ilhp0o/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-116116-60600-1ilhp0o/package.tgz",
+  "_shasum": "4c9a240512058198cffaec947eb75cefdc01c916",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/d-116116-60600-1ilhp0o/package.tgz",
+  "_where": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/apm-install-dir-116116-60600-14lo3qq",
+  "bugs": {
+    "url": "https://github.com/leejarvis/block-travel/issues"
+  },
+  "dependencies": {},
+  "description": "Quickly travel up/down between blocks of code",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "homepage": "https://github.com/leejarvis/block-travel#readme",
+  "license": "MIT",
+  "main": "./lib/block-travel",
+  "name": "block-travel",
+  "optionalDependencies": {},
+  "readme": "# Block travel package\n\nBlock travel uses empty lines to travel quickly\nthrough blocks of code.\n\n* `alt-up` to travel up through blocks of code\n* `alt-down` to travel down through blocks of code\n* `alt-shift-up` to travel and select up through blocks of code\n* `alt-shift-down` to travel and select down through blocks of code\n\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leejarvis/block-travel.git"
+  },
+  "version": "1.0.5"
+}

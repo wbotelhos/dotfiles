@@ -1,0 +1,92 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/d-117310-47159-18mqeeg/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/d-117310-47159-18mqeeg/package.tgz",
+        "spec": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/d-117310-47159-18mqeeg/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/apm-install-dir-117310-47159-1hu0lpf"
+    ]
+  ],
+  "_from": "../d-117310-47159-18mqeeg/package.tgz",
+  "_id": "clean-context-menu@0.3.2",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/clean-context-menu",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/d-117310-47159-18mqeeg/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/d-117310-47159-18mqeeg/package.tgz",
+    "spec": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/d-117310-47159-18mqeeg/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-117310-47159-18mqeeg/package.tgz",
+  "_shasum": "4e79f0163fbd8c8a04e02d3419b9c78d7fc2e247",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/d-117310-47159-18mqeeg/package.tgz",
+  "_where": "/private/var/folders/6t/x2x_s7tn5kl4v4wn9lx1dtk80000gn/T/apm-install-dir-117310-47159-1hu0lpf",
+  "bugs": {
+    "url": "https://github.com/m-hall/clean-context-menu/issues"
+  },
+  "dependencies": {},
+  "description": "Cleans up the context menus when you find they are getting too large.",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "eslintConfig": {
+    "rules": {
+      "no-empty": 0,
+      "no-console": 0,
+      "no-new": 0,
+      "no-extra-semi": 1,
+      "semi": [
+        2,
+        "always"
+      ],
+      "func-names": 0,
+      "strict": [
+        0,
+        "global"
+      ],
+      "no-param-reassign": [
+        2,
+        {
+          "props": false
+        }
+      ],
+      "comma-dangle": 0
+    },
+    "globals": {
+      "atom": "true"
+    },
+    "env": {
+      "es6": true,
+      "node": true
+    }
+  },
+  "homepage": "https://github.com/m-hall/clean-context-menu#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "clean-context-menu",
+  "optionalDependencies": {},
+  "readme": "# Clean Context Menu package\n\nCleans up the context menus when you find they are getting too large.\n\n## Features\nAllows you to move similar items into sub-menus or hide them completely.\n\n![Demo](https://raw.githubusercontent.com/m-hall/clean-context-menu/master/demo.gif)\n\n### Supported Groups\n - Tabs: Split Panes\n    - Split Left\n    - Split Right\n    - Split Up\n    - Split Down\n - Tabs: Close...\n    - Close Other Tabs\n    - Close Tabs To The Right\n    - Close Saved Tabs\n    - Close All Tabs\n - Editor: Split Panes\n    - Split Left\n    - Split Right\n    - Split Up\n    - Split Down\n - Editor: Edit\n    - Cut\n    - Copy\n    - Paste\n    - Delete\n    - Select All\n - Editor: Edit - History\n    - Undo\n    - Redo\n - Tree: Split Panes\n    - Split Left\n    - Split Right\n    - Split Up\n    - Split Down\n - Tree: Edit\n    - Cut\n    - Copy\n    - Paste\n - Tree: Edit - File Commands\n    - Rename\n    - Duplicate\n    - Delete\n - Close Pane (single item)\n - Other\n    - Comma separated list of commands to hide or move to submenu \"Other\"\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m-hall/clean-context-menu.git"
+  },
+  "version": "0.3.2"
+}
