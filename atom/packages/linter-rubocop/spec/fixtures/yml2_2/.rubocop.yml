@@ -1,4 +1,0 @@
-Style/EndOfLine:
-  EnforcedStyle: lf
-AllCops:
-  TargetRubyVersion: 2.2
