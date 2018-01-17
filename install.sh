@@ -52,6 +52,10 @@ begin() {
   echo -e "${GRAY}Starting ${JOB_NAME}...${NO_COLOR}\n"
 }
 
+brewer() {
+  brew install redis
+}
+
 config() {
   mkdir -p ~/.bundle
   mkdir -p ~/.ssh
