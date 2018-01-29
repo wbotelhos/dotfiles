@@ -21,6 +21,7 @@ JOB_NAME='Dotfiles#install'
 atom() {
   cp -rp ./atom ~/.atom
 
+  apm install aligner
   apm install aligner-javascript
   apm install aligner-ruby
   apm install atom-handlebars
