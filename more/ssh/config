@@ -7,14 +7,8 @@ Host danca danca.com
   IdentityFile ~/.ssh/danca.pem
   User ubuntu
 
-Host forrostream forrostream.com
-  HostName forrostream.com
+Host blog wbotelhos wbotelhos.com
+  HostName 52.87.64.21
   IdentitiesOnly yes
-  IdentityFile ~/.ssh/forrostream
-  User user
-
-Host wbotelhos wbotelhos.com
-  HostName wbotelhos.com
-  IdentitiesOnly yes
-  IdentityFile ~/.ssh/wbotelhos
-  User user
+  IdentityFile ~/.ssh/blog.pem
+  User ubuntu
