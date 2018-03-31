@@ -37,13 +37,19 @@ brewer() {
 
   brew cask install caskroom/cask/java
 
+  # MySQL
+
+  brew install cmake
+  brew install mysql
+
   # reload
 
   reload
 
-  # dependencies
+  # Node
 
   nvm install node 9
+  npm install -g npm@latest
 }
 
 config() {
