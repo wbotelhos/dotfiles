@@ -71,7 +71,7 @@ alias stash='git add -A && git stash'
 
 ## JS
 
-alias hbs='gulp templates'
+alias hbs='gulp hbs'
 alias jasmine='node_modules/jasmine-node/bin/jasmine-node --forceexit'
 alias jasmine2='node_modules/jasmine-node/bin/jasmine-node --forceExit'
 
