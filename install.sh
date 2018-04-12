@@ -19,7 +19,13 @@ JOB_NAME='Dotfiles#install'
 #####################
 
 atom() {
-  cp -rp ./atom ~/.atom
+  mkdir -p ~/.atom
+  cp -rp ./atom/* ~/.atom
+}
+
+aws() {
+  mkdir -p ~/.aws
+  cp -rp ~/Dropbox/aws/* ~/.aws
 }
 
 begin() {
@@ -28,9 +34,14 @@ begin() {
 }
 
 brewer() {
+  brew install chromedriver
   brew install git
+  brew install gpg
+  brew install imagemagick@6 && brew link imagemagick@6 --force
   brew install nvm
+  brew install packer
   brew install redis
+  brew install terraform
   brew install wget
 
   # need password
@@ -69,6 +80,12 @@ dotfiles() {
 end() {
   echo -e "${GREEN}Done!${NO_COLOR}"
   echo -e "-------------------------------------\n"
+}
+
+gem() {
+  mkdir -p ~/.gem
+  cp -rp ~/Dropbox/gem/* ~/.gem
+  chmod 600 ~/.gem/*
 }
 
 job() {
@@ -111,6 +128,8 @@ linking
 job
 reload
 atom
+aws
 brewer
+gem
 
 end
