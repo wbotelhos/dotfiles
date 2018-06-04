@@ -148,6 +148,10 @@ guard() {
   bundle exec guard
 }
 
+hsts() {
+  curl https://hstspreload.com/api/v1/status/${1}
+}
+
 keygen() {
   KEY_PATH=~/.ssh/"${1}"
   EMAIL=${2}
