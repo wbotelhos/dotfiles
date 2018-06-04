@@ -80,15 +80,17 @@ alias jasmine2='node_modules/jasmine-node/bin/jasmine-node --forceExit'
 alias be='bundle exec'
 alias bi='bundle install'
 alias cucumber='bundle exec cucumber'
-alias migrate='RAILS_ENV=development DATA_MIGRATER=false rake db:migrate && DATA_MIGRATER=false rake db:test:prepare'
+alias migrate='DATA_MIGRATER=false rake db:migrate'
+alias prepare='DATA_MIGRATER=false rake db:test:prepare'
 alias r='RAILS_MAX_THREADS=1 bundle exec rspec'
-alias rr='BROWSER=chrome_headless bundle exec rspec'
 alias rake='bundle exec rake'
 alias rc='rails c'
 alias route='rake routes | grep'
+alias rr='BROWSER=chrome_headless bundle exec rspec'
 alias rs='BULLET=true rails s'
 alias rspec='bundle exec rspec'
-alias seed='RAILS_ENV=development DATA_MIGRATER=false rake db:seed'
+alias schema='DATA_MIGRATER=false rake db:schema:load'
+alias seed='DATA_MIGRATER=false rake db:seed'
 alias spec='bundle exec rspec spec'
 
 # JOB
@@ -185,7 +187,7 @@ redo() {
     STEP=${1}
   fi
 
-  rake db:rollback STEP=${STEP} && rake db:migrate && rake db:test:prepare
+  rake db:rollback STEP=${STEP} && rake db:migrate
 }
 
 rollback() {
