@@ -38,6 +38,7 @@ brewer() {
   brew install git
   brew install gpg
   brew install imagemagick@6 && brew link imagemagick@6 --force
+  brew install libxml2
   brew install nvm
   brew install packer
   brew install redis
