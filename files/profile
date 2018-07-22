@@ -171,13 +171,15 @@ merge_theirs() {
 }
 
 reload() {
-  BASHRC=~/.bashrc
   BASH_PROFILE=~/.bash_profile
+  BASHRC=~/.bashrc
   JOB=~/.job
+  PROFILE=~/.profile
 
-  [ -f $BASHRC ]       && source $BASHRC
   [ -f $BASH_PROFILE ] && source $BASH_PROFILE
+  [ -f $BASHRC ]       && source $BASHRC
   [ -f $JOB ]          && source $JOB
+  [ -f $PROFILE ]      && source $PROFILE
 }
 
 redo() {

@@ -94,17 +94,21 @@ job() {
 }
 
 linking() {
-  if [ `uname` == 'Linux' ]; then
-    ENTRY='source ~/.bash_profile'
-    FILE=~/.bashrc
-    RESULT=$(grep "${ENTRY}" $FILE)
+  ENTRY='source ~/.profile'
 
-    [ "$RESULT" == '' ] && echo $ENTRY >> $FILE
+  if [ `uname` == 'Linux' ]; then
+    FILE=~/.bashrc
+  else
+    FILE=~/.bash_profile
   fi
+
+  RESULT=$(grep "${ENTRY}" $FILE)
+
+  [ "$RESULT" == '' ] && echo $ENTRY >> $FILE
 }
 
 reload() {
-  . ~/.bash_profile
+  . ~/.profile
 }
 
 templates() {
