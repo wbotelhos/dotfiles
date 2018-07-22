@@ -11,6 +11,7 @@ apm install erb-snippets
 apm install highlight-selected
 apm install language-csv
 apm install language-graphql
+apm install language-nginx
 apm install language-rspec
 apm install language-terraform
 apm install language-varnish
