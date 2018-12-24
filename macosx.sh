@@ -67,6 +67,10 @@ sudo defaults write /System/Library/LaunchAgents/com.apple.notificationcenterui 
 echo 'Speed up window resize animation'
 sudo defaults write -g NSWindowResizeTime -float 0.003
 
+echo 'Fix Blurry Fonts on Mojave'
+defaults -currentHost write -globalDomain AppleFontSmoothing -int 3
+defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
+
 echo 'Kill affected applications'
 for app in Safari Finder Dock Mail SystemUIServer; do killall "$app" >/dev/null 2>&1; done
 
