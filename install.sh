@@ -24,8 +24,7 @@ atom() {
 }
 
 aws() {
-  mkdir -p ~/.aws
-  cp -rp ~/Dropbox/aws/* ~/.aws
+  ln -nfs ~/Dropbox/aws ~/.aws
 }
 
 begin() {
@@ -55,14 +54,14 @@ brewer() {
   brew install cmake
   brew install mysql
 
-  # reload
-
-  reload
-
   # Node
 
   nvm install node 9
   npm install -g npm@latest
+
+  # reload
+
+  reload
 }
 
 config() {
@@ -85,9 +84,7 @@ end() {
 }
 
 gem() {
-  mkdir -p ~/.gem
-  cp -rp ~/Dropbox/gem/* ~/.gem
-  chmod 600 ~/.gem/*
+  ln -nfs ~/Dropbox/gem ~/.gem
 }
 
 job() {
