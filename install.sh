@@ -38,7 +38,6 @@ brewer() {
   brew install gpg
   brew install imagemagick@6 && brew link imagemagick@6 --force # gem pristine rmagick
   brew install libxml2
-  brew install mysql@5.6
   brew install nvm
   brew install packer
   brew install redis
@@ -52,7 +51,7 @@ brewer() {
   # MySQL
 
   brew install cmake
-  brew install mysql
+  brew install mysql@5.6
 
   # Node
 
