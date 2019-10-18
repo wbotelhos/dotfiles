@@ -18,15 +18,6 @@ JOB_NAME='Dotfiles#install'
 # --- functions --- #
 #####################
 
-atom() {
-  mkdir -p ~/.atom
-  cp -rp ./atom/* ~/.atom
-}
-
-aws() {
-  ln -nfs ~/Dropbox/aws ~/.aws
-}
-
 begin() {
   echo -e "-------------------------------------"
   echo -e "${GRAY}Starting ${JOB_NAME}...${NO_COLOR}\n"
@@ -63,12 +54,10 @@ brewer() {
   reload
 }
 
-config() {
+bundle_config() {
   mkdir -p ~/.bundle
-  mkdir -p ~/.ssh
 
   cp more/bundle/config ~/.bundle/config
-  cp more/ssh/config    ~/.ssh/config
 }
 
 dotfiles() {
@@ -84,10 +73,6 @@ end() {
 
 gem() {
   ln -nfs ~/Dropbox/gem ~/.gem
-}
-
-job() {
-  cp more/job ~/.job
 }
 
 linking() {
@@ -108,12 +93,21 @@ reload() {
   . ~/.profile
 }
 
+symlinks() {
+  ln -nfs ~/Dropbox/atom             ~/.atom
+  ln -nfs ~/Dropbox/aws              ~/.aws
+  ln -nfs ~/Dropbox/chef             ~/.chef
+  ln -nfs ~/Dropbox/dotfiles/job     ~/.job
+  ln -nfs ~/Dropbox/dotfiles/private ~/.private
+  ln -nfs ~/Dropbox/ssh              ~/.ssh
+}
+
 templates() {
   cp -R more/git-hooks ~/.git-hooks
 }
 
 terminal() {
-  [ `uname` != 'Linux' ] && open ./more/wbotelhos.terminal
+  [ `uname` != 'Linux' ] && open ./more/custom.terminal
 }
 
 ###################
@@ -123,15 +117,13 @@ terminal() {
 begin
 
 dotfiles
-config
+bundle_config
+symlinks
 templates
-terminal
 linking
-job
 reload
-atom
-aws
 brewer
 gem
+terminal
 
 end

@@ -1,8 +1,0 @@
-'.platform-darwin atom-text-editor':
-  'ctrl-shift-a': 'aligner:align'
-
-'.platform-win32 atom-text-editor, .platform-linux atom-text-editor':
-  'ctrl-shift-a': 'aligner:align'
-
-'atom-text-editor':
-  'cmd-alt-.': 'erb-snippets:erb_tags'
