@@ -103,9 +103,10 @@ alias schema='DATA_MIGRATER=false rake db:schema:load'
 alias seed='DATA_MIGRATER=false rake db:seed'
 alias spec='bundle exec rspec spec'
 
-# JOB
+# Sources
 
 source ~/.job
+source ~/.private
 
 # RVM
 
