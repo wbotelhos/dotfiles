@@ -1,6 +1,6 @@
 # ENVIRONMENT
 
-export EDITOR=/usr/local/bin/atom
+export EDITOR='atom --wait'
 export GIT_EDITOR=/usr/bin/vim
 
 export GECKODRIVER_HOME=~/development
