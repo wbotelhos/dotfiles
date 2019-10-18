@@ -3,6 +3,13 @@
 export EDITOR='atom --wait'
 export GIT_EDITOR=/usr/bin/vim
 
+export LANG=en_US.UTF-8
+export LC_COLLATE=en_US
+export LC_MESSAGES=en_US
+export LC_MONETARY=en_US
+export LC_NUMERIC=en_US
+export LC_TIME=en_US
+
 export GECKODRIVER_HOME=~/development
 export JAVA_HOME=$(/usr/libexec/java_home)
 export M2_HOME=~/development/apache-maven-3.3.9
