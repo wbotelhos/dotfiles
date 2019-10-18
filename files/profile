@@ -216,9 +216,9 @@ rollback() {
 
 rsp() {
   if [ ! -z "${1}" ]; then
-    BULLET=true bundle exec rails s -p $1
+    BULLET=true LOG_LEVEL=INFO bundle exec rails s -p $1
   else
-    BULLET=true bundle exec rails s -p 3001
+    BULLET=true LOG_LEVEL=INFO bundle exec rails s -p 3001
   fi
 }
 
