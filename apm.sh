@@ -10,11 +10,13 @@ apm install clean-context-menu
 apm install erb-snippets
 apm install highlight-selected
 apm install language-csv
+apm install language-docker
 apm install language-graphql
 apm install language-nginx
 apm install language-rspec
 apm install language-terraform
 apm install language-varnish
+apm install linter-docker
 apm install linter-eslint
 apm install linter-js-yaml
 apm install linter-json-lint
