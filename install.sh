@@ -54,25 +54,9 @@ brewer() {
   reload
 }
 
-bundle_config() {
-  mkdir -p ~/.bundle
-
-  cp more/bundle/config ~/.bundle/config
-}
-
-dotfiles() {
-  for file in `ls files`; do
-    cp files/${file} ~/.${file}
-  done
-}
-
 end() {
   echo -e "${GREEN}Done!${NO_COLOR}"
   echo -e "-------------------------------------\n"
-}
-
-gem() {
-  ln -nfs ~/Dropbox/gem ~/.gem
 }
 
 linking() {
@@ -90,20 +74,32 @@ linking() {
 }
 
 reload() {
-  . ~/.profile
+  source ~/.profile
 }
 
 symlinks() {
-  ln -nfs ~/Dropbox/atom             ~/.atom
-  ln -nfs ~/Dropbox/aws              ~/.aws
-  ln -nfs ~/Dropbox/chef             ~/.chef
-  ln -nfs ~/Dropbox/dotfiles/job     ~/.job
-  ln -nfs ~/Dropbox/dotfiles/private ~/.private
-  ln -nfs ~/Dropbox/ssh              ~/.ssh
-}
+  ln -nfs ~/Dropbox/configs/atom      ~/.atom
+  ln -nfs ~/Dropbox/configs/aws       ~/.aws
+  ln -nfs ~/Dropbox/configs/bundle    ~/.bundle
+  ln -nfs ~/Dropbox/configs/chef      ~/.chef
+  ln -nfs ~/Dropbox/configs/gem       ~/.gem
+  ln -nfs ~/Dropbox/configs/git-hooks ~/.git-hooks
+  ln -nfs ~/Dropbox/configs/gnupg     ~/.gnupg
+  ln -nfs ~/Dropbox/configs/ssh       ~/.ssh
 
-templates() {
-  cp -R more/git-hooks ~/.git-hooks
+  ln -nfs ~/Dropbox/configs/files/aprc      ~/.aprc
+  ln -nfs ~/Dropbox/configs/files/caprc     ~/.caprc
+  ln -nfs ~/Dropbox/configs/files/gemrc     ~/.gemrc
+  ln -nfs ~/Dropbox/configs/files/gitconfig ~/.gitconfig
+  ln -nfs ~/Dropbox/configs/files/hgrc      ~/.hgrc
+  ln -nfs ~/Dropbox/configs/files/irbrc     ~/.irbrc
+  ln -nfs ~/Dropbox/configs/files/job       ~/.job
+  ln -nfs ~/Dropbox/configs/files/jshintrc  ~/.jshintrc
+  ln -nfs ~/Dropbox/configs/files/private   ~/.private
+  ln -nfs ~/Dropbox/configs/files/profile   ~/.profile
+  ln -nfs ~/Dropbox/configs/files/pryrc     ~/.pryrc
+  ln -nfs ~/Dropbox/configs/files/rspec     ~/.rspec
+  ln -nfs ~/Dropbox/configs/files/rvmrc     ~/.rvmrc
 }
 
 terminal() {
@@ -116,14 +112,10 @@ terminal() {
 
 begin
 
-dotfiles
-bundle_config
 symlinks
-templates
 linking
 reload
 brewer
-gem
 terminal
 
 end
