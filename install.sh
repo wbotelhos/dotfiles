@@ -21,7 +21,13 @@ JOB_NAME='Dotfiles#install'
 aws_cli() {
   curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
   unzip awscli-bundle.zip
-  sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws  
+  sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
+}
+
+aws_session_manager() {
+  curl "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/mac/sessionmanager-bundle.zip" -o "sessionmanager-bundle.zip"
+  unzip sessionmanager-bundle.zip
+  sudo ./sessionmanager-bundle/install -i /usr/local/sessionmanagerplugin -b /usr/local/bin/session-manager-plugin
 }
 
 begin() {
@@ -126,6 +132,7 @@ brewer
 rvm_install
 reload
 aws_cli
+aws_session_manager
 terminal
 
 end
