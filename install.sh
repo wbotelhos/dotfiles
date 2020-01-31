@@ -18,6 +18,12 @@ JOB_NAME='Dotfiles#install'
 # --- functions --- #
 #####################
 
+aws_cli() {
+  curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
+  unzip awscli-bundle.zip
+  sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws  
+}
+
 begin() {
   echo -e "-------------------------------------"
   echo -e "${GRAY}Starting ${JOB_NAME}...${NO_COLOR}\n"
@@ -37,7 +43,7 @@ brewer() {
 
   # need password
 
-  brew cask install caskroom/cask/java
+  brew cask install java
 
   # MySQL
 
@@ -59,22 +65,24 @@ end() {
   echo -e "-------------------------------------\n"
 }
 
-linking() {
-  ENTRY='source ~/.profile'
-
+linux() {
   if [ `uname` == 'Linux' ]; then
+    ENTRY='source ~/.profile'
+
     FILE=~/.bashrc
-  else
-    FILE=~/.bash_profile
+
+    RESULT=$(grep "${ENTRY}" $FILE)
+
+    [ "$RESULT" == '' ] && echo $ENTRY >> $FILE
   fi
-
-  RESULT=$(grep "${ENTRY}" $FILE)
-
-  [ "$RESULT" == '' ] && echo $ENTRY >> $FILE
 }
 
 reload() {
   source ~/.profile
+}
+
+rvm_install() {
+  \curl -sSL https://get.rvm.io | bash
 }
 
 symlinks() {
@@ -113,9 +121,11 @@ terminal() {
 begin
 
 symlinks
-linking
-reload
+linux
 brewer
+rvm_install
+reload
+aws_cli
 terminal
 
 end
