@@ -44,7 +44,7 @@ brewer() {
   brew install nvm
   brew install packer
   brew install redis
-  brew install terraform
+  brew install tfenv
   brew install wget
 
   # need password
