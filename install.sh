@@ -71,18 +71,6 @@ end() {
   echo -e "-------------------------------------\n"
 }
 
-linux() {
-  if [ `uname` == 'Linux' ]; then
-    ENTRY='source ~/.profile'
-
-    FILE=~/.bashrc
-
-    RESULT=$(grep "${ENTRY}" $FILE)
-
-    [ "$RESULT" == '' ] && echo $ENTRY >> $FILE
-  fi
-}
-
 reload() {
   source ~/.profile
 }
@@ -114,6 +102,9 @@ symlinks() {
   ln -nfs ~/Dropbox/configs/files/pryrc     ~/.pryrc
   ln -nfs ~/Dropbox/configs/files/rspec     ~/.rspec
   ln -nfs ~/Dropbox/configs/files/rvmrc     ~/.rvmrc
+
+  ln -nfs ~/Dropbox/configs/files/profile   ~/.bash_profile
+  ln -nfs ~/Dropbox/configs/files/profile   ~/.bashrc
 }
 
 terminal() {
@@ -127,7 +118,6 @@ terminal() {
 begin
 
 symlinks
-linux
 brewer
 rvm_install
 reload
