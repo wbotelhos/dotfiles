@@ -66,6 +66,14 @@ brewer() {
   reload
 }
 
+divvy() {
+  TO=~/Library/Preferences/com.mizage.Divvy.plist
+
+  rm $TO
+
+  ln -nfs ~/Dropbox/configs/data/com.mizage.Divvy.plist $TO
+}
+
 end() {
   echo -e "${GREEN}Done!${NO_COLOR}"
   echo -e "-------------------------------------\n"
@@ -118,6 +126,7 @@ terminal() {
 begin
 
 symlinks
+divvy
 brewer
 rvm_install
 reload
