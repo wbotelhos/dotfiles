@@ -36,7 +36,6 @@ begin() {
 }
 
 brewer() {
-  brew install chromedriver
   brew install git
   brew install gpg
   brew install imagemagick@6 && brew link imagemagick@6 --force # gem pristine rmagick
@@ -50,16 +49,6 @@ brewer() {
   # need password
 
   brew cask install java
-
-  # MySQL
-
-  brew install cmake
-  brew install mysql@5.6
-
-  # Node
-
-  nvm install node 9
-  npm install -g npm@latest
 
   # reload
 
@@ -96,27 +85,25 @@ symlinks() {
   ln -nfs ~/Dropbox/configs/git-hooks ~/.git-hooks
   ln -nfs ~/Dropbox/configs/gnupg     ~/.gnupg
   ln -nfs ~/Dropbox/configs/ngrok2    ~/.ngrok2
-  ln -nfs ~/Dropbox/configs/ssh       ~/.ssh
+  ln -nfs ~/Dropbox/configs/ssh       ~/.ssh && chmod 600 ~/.ssh/*
 
-  ln -nfs ~/Dropbox/configs/files/aprc          ~/.aprc
-  ln -nfs ~/Dropbox/configs/files/caprc         ~/.caprc
-  ln -nfs ~/Dropbox/configs/files/gemrc         ~/.gemrc
-  ln -nfs ~/Dropbox/configs/files/gitconfig     ~/.gitconfig
-  ln -nfs ~/Dropbox/configs/files/hgrc          ~/.hgrc
-  ln -nfs ~/Dropbox/configs/files/irbrc         ~/.irbrc
-  ln -nfs ~/Dropbox/configs/files/job           ~/.job
-  ln -nfs ~/Dropbox/configs/files/jshintrc      ~/.jshintrc
-  ln -nfs ~/Dropbox/configs/files/private       ~/.private
-  ln -nfs ~/Dropbox/configs/files/profile       ~/.profile
-  ln -nfs ~/Dropbox/configs/files/pryrc         ~/.pryrc
-  ln -nfs ~/Dropbox/configs/files/rspec         ~/.rspec
-  ln -nfs ~/Dropbox/configs/files/rvmrc         ~/.rvmrc
-  ln -nfs ~/Dropbox/configs/files/ultrahook     ~/.ultrahook
-  ln -nfs ~/Dropbox/configs/localhost/danca.crt /tmp/danca.crt
-  ln -nfs ~/Dropbox/configs/localhost/danca.key /tmp/danca.key
+  ln -nfs ~/Dropbox/configs/files/aprc      ~/.aprc
+  ln -nfs ~/Dropbox/configs/files/caprc     ~/.caprc
+  ln -nfs ~/Dropbox/configs/files/gemrc     ~/.gemrc
+  ln -nfs ~/Dropbox/configs/files/gitconfig ~/.gitconfig
+  ln -nfs ~/Dropbox/configs/files/hgrc      ~/.hgrc
+  ln -nfs ~/Dropbox/configs/files/irbrc     ~/.irbrc
+  ln -nfs ~/Dropbox/configs/files/job       ~/.job
+  ln -nfs ~/Dropbox/configs/files/jshintrc  ~/.jshintrc
+  ln -nfs ~/Dropbox/configs/files/private   ~/.private
+  ln -nfs ~/Dropbox/configs/files/profile   ~/.profile
+  ln -nfs ~/Dropbox/configs/files/pryrc     ~/.pryrc
+  ln -nfs ~/Dropbox/configs/files/rspec     ~/.rspec
+  ln -nfs ~/Dropbox/configs/files/rvmrc     ~/.rvmrc
+  ln -nfs ~/Dropbox/configs/files/ultrahook ~/.ultrahook
 
-  ln -nfs ~/Dropbox/configs/files/profile   ~/.bash_profile
-  ln -nfs ~/Dropbox/configs/files/profile   ~/.bashrc
+  ln -nfs ~/Dropbox/configs/files/profile ~/.bash_profile
+  ln -nfs ~/Dropbox/configs/files/profile ~/.bashrc
 }
 
 terminal() {
