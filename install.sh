@@ -48,7 +48,12 @@ brewer() {
 
   # need password
 
-  brew cask install java
+  brew update
+  brew tap adoptopenjdk/openjdk
+  brew upgrade
+  brew install adoptopenjdk/openjdk/adoptopenjdk8
+  brew cleanup
+  brew cask cleanup
 
   # reload
 
