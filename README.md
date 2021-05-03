@@ -15,16 +15,10 @@ git clone git@github.com:wbotelhos/dotfiles.git
 ### Optimize MacOSX
 
 ```sh
-./dotfiles/apm.sh
+./dotfiles/macosx.sh
 ```
 
-### Install Atom Plugins
-
-```sh
-./dotfiles/apm.sh
-```
-
-### Run My Personal Config
+### Install configs
 
 ```sh
 ./dotfiles/install.sh
