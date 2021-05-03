@@ -82,32 +82,14 @@ rvm_install() {
 }
 
 symlinks() {
-  ln -nfs ~/Dropbox/configs/aws       ~/.aws
-  ln -nfs ~/Dropbox/configs/bundle    ~/.bundle
-  ln -nfs ~/Dropbox/configs/chef      ~/.chef
-  ln -nfs ~/Dropbox/configs/gem       ~/.gem
   ln -nfs ~/Dropbox/configs/git-hooks ~/.git-hooks
   ln -nfs ~/Dropbox/configs/gnupg     ~/.gnupg
-  ln -nfs ~/Dropbox/configs/ngrok2    ~/.ngrok2
   ln -nfs ~/Dropbox/configs/ssh       ~/.ssh && chmod 600 ~/.ssh/*
 
-  ln -nfs ~/Dropbox/configs/files/aprc      ~/.aprc
   ln -nfs ~/Dropbox/configs/files/caprc     ~/.caprc
-  ln -nfs ~/Dropbox/configs/files/gemrc     ~/.gemrc
-  ln -nfs ~/Dropbox/configs/files/gitconfig ~/.gitconfig
-  ln -nfs ~/Dropbox/configs/files/hgrc      ~/.hgrc
-  ln -nfs ~/Dropbox/configs/files/irbrc     ~/.irbrc
   ln -nfs ~/Dropbox/configs/files/job       ~/.job
-  ln -nfs ~/Dropbox/configs/files/jshintrc  ~/.jshintrc
   ln -nfs ~/Dropbox/configs/files/private   ~/.private
-  ln -nfs ~/Dropbox/configs/files/profile   ~/.profile
-  ln -nfs ~/Dropbox/configs/files/pryrc     ~/.pryrc
-  ln -nfs ~/Dropbox/configs/files/rspec     ~/.rspec
-  ln -nfs ~/Dropbox/configs/files/rvmrc     ~/.rvmrc
   ln -nfs ~/Dropbox/configs/files/ultrahook ~/.ultrahook
-
-  ln -nfs ~/Dropbox/configs/files/profile ~/.bash_profile
-  ln -nfs ~/Dropbox/configs/files/profile ~/.bashrc
 }
 
 terminal() {
