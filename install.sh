@@ -93,7 +93,7 @@ symlinks() {
 }
 
 terminal() {
-  [ `uname` != 'Linux' ] && open ./more/custom.terminal
+  [ `uname` != 'Linux' ] && open ./custom.terminal
 }
 
 ###################
