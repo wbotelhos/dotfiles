@@ -77,7 +77,6 @@ rvm_install() {
 }
 
 symlinks() {
-  ln -nfs ~/Dropbox/configs/atom      ~/.atom
   ln -nfs ~/Dropbox/configs/aws       ~/.aws
   ln -nfs ~/Dropbox/configs/bundle    ~/.bundle
   ln -nfs ~/Dropbox/configs/chef      ~/.chef
