@@ -95,6 +95,9 @@ RSpec/MultipleMemoizedHelpers:
 RSpec/NestedGroups:
   Max: 5
 
+RSpec/Rails/HaveHttpStatus:
+  Enabled: false
+
 Style/Documentation:
   Enabled: false
 
