@@ -80,6 +80,12 @@ Rails/HttpStatus:
 RSpec/AnyInstance:
   Enabled: false
 
+RSpec/BeNil:
+  Enabled: false
+
+RSpec/Capybara/SpecificFinders:
+  Enabled: false
+
 RSpec/ExampleLength:
   Enabled: false
 
