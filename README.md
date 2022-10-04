@@ -1,6 +1,6 @@
 # Dotfiles
 
-[![Sponsor](https://img.shields.io/badge/sponsor-%3C3-green)](https://www.patreon.com/wbotelhos)
+[![Sponsor](https://img.shields.io/badge/sponsor-%3C3-green)](https://github.com/sponsors/wbotelhos)
 
 My personal settings including MacOSX Tweak.
 
