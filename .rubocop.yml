@@ -36,6 +36,9 @@ AllCops:
 
   NewCops: enable
 
+Capybara/SpecificFinders:
+  Enabled: false
+
 Layout/ArgumentAlignment:
   EnforcedStyle: with_fixed_indentation
 
@@ -81,9 +84,6 @@ RSpec/AnyInstance:
   Enabled: false
 
 RSpec/BeNil:
-  Enabled: false
-
-RSpec/Capybara/SpecificFinders:
   Enabled: false
 
 RSpec/ExampleLength:
