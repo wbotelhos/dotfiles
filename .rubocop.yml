@@ -70,12 +70,23 @@ Metrics/MethodLength:
 Naming/MethodParameterName:
   AllowedNames:
     - id
+    - lr
 
 Naming/VariableNumber:
   EnforcedStyle: snake_case
 
 Rails:
   Enabled: true
+
+Rails/ActionOrder:
+  ExpectedOrder:
+    - create
+    - destroy
+    - edit
+    - index
+    - new
+    - show
+    - update
 
 Rails/HttpStatus:
   EnforcedStyle: numeric
@@ -85,6 +96,9 @@ RSpec/AnyInstance:
 
 RSpec/BeNil:
   Enabled: false
+
+RSpec/DescribedClass:
+  EnforcedStyle: explicit
 
 RSpec/ExampleLength:
   Enabled: false
@@ -98,14 +112,20 @@ RSpec/MultipleExpectations:
 RSpec/MultipleMemoizedHelpers:
   Max: 15
 
+Style/NegatedIf:
+  EnforcedStyle: postfix
+
 RSpec/NestedGroups:
-  Max: 5
+  Max: 10
 
 RSpec/Rails/HaveHttpStatus:
   Enabled: false
 
 Style/Documentation:
   Enabled: false
+
+Style/HashSyntax:
+  EnforcedShorthandSyntax: never
 
 Style/PercentLiteralDelimiters:
   PreferredDelimiters:
