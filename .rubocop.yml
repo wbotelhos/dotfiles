@@ -1,6 +1,8 @@
 require:
+  - rubocop-graphql
   - rubocop-performance
   - rubocop-rails
+  - rubocop-rake
   - rubocop-rspec
 
 AllCops:
