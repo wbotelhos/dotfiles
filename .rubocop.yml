@@ -108,6 +108,9 @@ RSpec/ExampleLength:
 RSpec/FilePath:
   Enabled: false
 
+RSpec/MatchArray:
+  Enabled: false
+
 RSpec/MultipleExpectations:
   Enabled: false
 
