@@ -71,6 +71,7 @@ Metrics/MethodLength:
 
 Naming/MethodParameterName:
   AllowedNames:
+    - el
     - id
     - lr
 
