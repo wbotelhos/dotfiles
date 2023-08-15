@@ -100,8 +100,11 @@ RSpec/AnyInstance:
 RSpec/BeNil:
   Enabled: false
 
-RSpec/DescribedClass:
+Naming/BlockForwarding:
   EnforcedStyle: explicit
+
+RSpec/DescribedClass:
+  EnforcedStyle: described_class
 
 RSpec/ExampleLength:
   Enabled: false
