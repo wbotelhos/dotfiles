@@ -71,6 +71,9 @@ echo 'Fix Blurry Fonts on Mojave'
 defaults -currentHost write -globalDomain AppleFontSmoothing -int 3
 defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
 
+echo 'Disable Popup Showing Accented Characters When Holding Down a Key'
+defaults write -g ApplePressAndHoldEnabled -bool false
+
 echo 'Kill affected applications'
 for app in Safari Finder Dock Mail SystemUIServer; do killall "$app" >/dev/null 2>&1; done
 
