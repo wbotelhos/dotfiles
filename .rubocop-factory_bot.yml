@@ -33,3 +33,6 @@ AllCops:
     - vendor/**/*
 
   NewCops: enable
+
+FactoryBot/CreateList:
+  Enabled: false

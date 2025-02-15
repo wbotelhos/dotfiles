@@ -34,5 +34,8 @@ AllCops:
 
   NewCops: enable
 
+Capybara/RSpec/HaveSelector:
+  Enabled: false
+
 Capybara/SpecificFinders:
   Enabled: false

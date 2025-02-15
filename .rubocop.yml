@@ -57,6 +57,9 @@ Metrics/AbcSize:
 Metrics/BlockLength:
   Enabled: false
 
+Metrics/ClassLength:
+  Enabled: false
+
 Metrics/MethodLength:
   Max: 50
 
@@ -67,19 +70,23 @@ Naming/MethodParameterName:
     - lr
 
 Naming/VariableNumber:
+  AllowedPatterns: ['_v\d+\z']
   EnforcedStyle: snake_case
 
 Naming/BlockForwarding:
   EnforcedStyle: explicit
 
-Style/NegatedIf:
-  EnforcedStyle: postfix
-
 Style/Documentation:
   Enabled: false
 
 Style/HashSyntax:
-  EnforcedShorthandSyntax: never
+  EnforcedShorthandSyntax: always
+
+Style/IfUnlessModifier:
+  Enabled: false
+
+Style/NegatedIf:
+  Enabled: false
 
 Style/PercentLiteralDelimiters:
   PreferredDelimiters:

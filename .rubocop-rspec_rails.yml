@@ -1,2 +1,5 @@
 require:
   - rubocop-rspec_rails
+
+RSpecRails/HaveHttpStatus:
+  Enabled: false
