@@ -60,3 +60,6 @@ RSpec/MultipleMemoizedHelpers:
 
 RSpec/NestedGroups:
   Max: 10
+
+RSpec/SpecFilePathFormat:
+  Enabled: false

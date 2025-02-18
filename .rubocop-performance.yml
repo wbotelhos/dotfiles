@@ -1,1 +1,4 @@
 plugins: rubocop-performance
+
+Performance/MethodObjectAsBlock:
+  Enabled: false
