@@ -1,5 +1,4 @@
-require:
-  - rubocop-capybara
+plugins: rubocop-capybara
 
 AllCops:
   Exclude:
