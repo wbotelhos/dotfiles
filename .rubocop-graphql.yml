@@ -1,5 +1,4 @@
-require:
-  - rubocop-graphql
+plugins: rubocop-graphql
 
 AllCops:
   Exclude:
