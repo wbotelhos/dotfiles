@@ -32,3 +32,12 @@ AllCops:
     - vendor/**/*
 
   NewCops: enable
+
+GraphQL/ArgumentDescription:
+  Enabled: false
+
+GraphQL/FieldDescription:
+  Enabled: false
+
+GraphQL/ObjectDescription:
+  Enabled: false
