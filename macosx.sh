@@ -77,6 +77,9 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 echo 'Kill affected applications'
 for app in Safari Finder Dock Mail SystemUIServer; do killall "$app" >/dev/null 2>&1; done
 
+echo 'Hide Desktop Icons'
+defaults write com.apple.finder CreateDesktop -bool false
+
 echo 'Kill Finder'
 killall Finder
 
