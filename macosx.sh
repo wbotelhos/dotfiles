@@ -20,11 +20,47 @@ defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 echo 'Disable the "Are you sure you want to open this application?" dialog'
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 
-echo 'Don’t animate opening applications from the Dock'
+echo 'Disable window animations'
+defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
+
+echo 'Disable scroll animations'
+defaults write NSGlobalDomain NSScrollAnimationEnabled -bool false
+
+echo 'Disable Quick Look panel animation'
+defaults write NSGlobalDomain QLPanelAnimationDuration -float 0
+
+echo 'Disable scroll view rubberbanding'
+defaults write NSGlobalDomain NSScrollViewRubberbanding -bool false
+
+echo 'Disable document revisions window animation'
+defaults write NSGlobalDomain NSDocumentRevisionsWindowTransformAnimation -bool false
+
+echo 'Disable toolbar full screen animation'
+defaults write NSGlobalDomain NSToolbarFullScreenAnimationDuration -float 0
+
+echo 'Disable browser column animation'
+defaults write NSGlobalDomain NSBrowserColumnAnimationSpeedMultiplier -float 0
+
+echo 'Enable reduce motion in Accessibility'
+defaults write com.apple.Accessibility ReduceMotionEnabled -bool true
+
+echo 'Disable Dock autohide animation'
+defaults write com.apple.dock autohide-time-modifier -float 0
+defaults write com.apple.dock autohide-delay -float 0
+
+echo 'Disable Springboard animations'
+defaults write com.apple.dock springboard-show-duration -float 0
+defaults write com.apple.dock springboard-hide-duration -float 0
+defaults write com.apple.dock springboard-page-duration -float 0
+
+echo 'Disable Dock launch animation'
 defaults write com.apple.dock launchanim -bool false
 
-echo 'Disable opening and closing window animations'
-defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
+echo 'Set Dock minimize effect to scale'
+defaults write com.apple.dock mineffect -string "scale"
+
+echo 'Disable Finder animations'
+defaults write com.apple.finder DisableAllAnimations -bool true
 
 echo 'Avoid creating .DS_Store files on network volumes'
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
@@ -36,9 +72,6 @@ echo 'Require password immediately after sleep or screen saver begins'
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
-echo 'Remove useless icons from Safari’s bookmarks bar'
-defaults write com.apple.Safari ProxiesInBookmarksBar '()'
-
 echo 'Disable the Ping sidebar in iTunes'
 defaults write com.apple.iTunes disablePingSidebar -bool true
 
@@ -48,21 +81,11 @@ defaults write com.apple.iTunes disablePing -bool true
 echo 'Make ⌘ + F focus the search input in iTunes'
 defaults write com.apple.iTunes NSUserKeyEquivalents -dict-add 'Target Search Field' '@F'
 
-echo 'Disable send and reply animations in Mail.app'
-defaults write com.apple.Mail DisableReplyAnimations -bool true
-defaults write com.apple.Mail DisableSendAnimations -bool true
-
 echo 'Enables keyboard auto repeat'
 defaults write -g ApplePressAndHoldEnabled -bool false
 
-echo 'Workaround for Accessibility Issues on Mac OS X Mavericks'
-sudo sqlite3 /Library/Application\ Support/com.apple.TCC/TCC.db 'delete from access where client like "%divvy%"'
-
-echo 'Showing the Users directory (temporary)'
+echo 'Showing the Users directory'
 sudo chflags nohidden /Users
-
-echo 'Disabling Notification Center'
-sudo defaults write /System/Library/LaunchAgents/com.apple.notificationcenterui KeepAlive -bool False
 
 echo 'Speed up window resize animation'
 sudo defaults write -g NSWindowResizeTime -float 0.003
