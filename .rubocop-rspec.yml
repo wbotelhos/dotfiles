@@ -45,9 +45,6 @@ RSpec/DescribedClass:
 RSpec/ExampleLength:
   Enabled: false
 
-RSpecRails/HaveHttpStatus:
-  Enabled: false
-
 RSpec/IndexedLet:
   Enabled: false
 
